@@ -84,6 +84,12 @@ ucidef_set_interfaces_lan_wan() {
 	ucidef_set_interface_wan "$wan_if"
 }
 
+ucidef_set_interface_raw() {
+	json_select_object network
+	_ucidef_set_interface "$@"
+	json_select ..
+}
+
 _ucidef_add_switch_port() {
 	# inherited: $num $device $need_tag $want_untag $role $index $prev_role
 	# inherited: $n_cpu $n_ports $n_vlan $cpu0 $cpu1 $cpu2 $cpu3 $cpu4 $cpu5
