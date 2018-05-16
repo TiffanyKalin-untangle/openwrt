@@ -196,6 +196,7 @@ ramips_setup_interfaces()
 	gl-mt300n|\
 	gl-mt750|\
 	hg255d|\
+	iodata,wn-gx300gr|\
 	jhr-n805r|\
 	jhr-n825r|\
 	jhr-n926r|\
