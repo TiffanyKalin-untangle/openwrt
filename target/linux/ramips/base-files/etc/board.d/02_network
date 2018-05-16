@@ -87,6 +87,7 @@ ramips_setup_interfaces()
 	dir-300-b7|\
 	dir-320-b1|\
 	dir-610-a1|\
+	dir-615-h1|\
 	dir-810l|\
 	dlink,dwr-116-a1|\
 	dlink,dwr-921-c1|\
@@ -94,23 +95,27 @@ ramips_setup_interfaces()
 	ew1200|\
 	firewrt|\
 	hc5661a|\
+	hc5962|\
 	hlk-rm04|\
 	k2p|\
 	kn|\
 	kn_rc|\
 	mac1200rv2|\
+	miwifi-mini|\
 	miwifi-nano|\
 	mt7621|\
 	mt7628|\
 	mtc,wr1201|\
 	mzk-750dhp|\
 	mzk-w300nh2|\
+	d-team,newifi-d2|\
 	nixcore-x1-8M|\
 	nixcore-x1-16M|\
 	oy-0001|\
 	pbr-m1|\
 	psg1208|\
 	psg1218a|\
+	r6220|\
 	rt-n12p|\
 	sap-g3200u3|\
 	sk-wb8|\
@@ -125,6 +130,8 @@ ramips_setup_interfaces()
 	whr-g300n|\
 	mqmaker,witi-256m|\
 	mqmaker,witi-512m|\
+	wl-wn575a3|\
+	wndr3700v5|\
 	youku-yk1|\
 	youku,yk-l2|\
 	zbt-ape522ii|\
@@ -226,6 +233,7 @@ ramips_setup_interfaces()
 	awm002-evb-8M|\
 	bdcom,wap2100-sk|\
 	dir-645|\
+	f5d8235-v2|\
 	gl-mt300a|\
 	gl-mt300n|\
 	gl-mt750|\
@@ -236,6 +244,7 @@ ramips_setup_interfaces()
 	jhr-n926r|\
 	mikrotik,rb750gr3|\
 	mzk-wdpr|\
+	rb750gr3|\
 	rt-n14u|\
 	skylab,skw92a|\
 	tplink,c20-v4|\
@@ -442,6 +451,10 @@ ramips_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"1:lan" "2:lan" "3:lan" "4:lan" "0:wan" "5@eth0"
 		;;
+	wcr-1166ds)
+		ucidef_add_switch "switch0" \
+			"3:lan" "4:wan" "6@eth0"
+		;;
 	wcr-150gn|\
 	we1026-5g-16m)
 		ucidef_add_switch "switch0" \
@@ -549,6 +562,9 @@ ramips_setup_macs()
 		wan_mac=$(mtd_get_mac_binary devdata 7)
 		;;
 	cy-swr1100|\
+	dch-m225)
+		lan_mac=$(mtd_get_mac_ascii factory lanmac)
+		;;
 	dir-645)
 		lan_mac=$(mtd_get_mac_ascii nvram lanmac)
 		wan_mac=$(mtd_get_mac_ascii nvram wanmac)
@@ -611,6 +627,9 @@ ramips_setup_macs()
 		lan_mac=$(mtd_get_mac_binary factory_info 13)
 		wan_mac=$(macaddr_add "$lan_mac" 1)
 		;;
+	mir3g)
+		lan_mac=$(mtd_get_mac_binary Factory 0xe006)
+		;;
 	miwifi-mini)
 		wan_mac=$(cat /sys/class/net/eth0/address)
 		lan_mac=$(macaddr_setbit_la "$wan_mac")
@@ -637,6 +656,10 @@ ramips_setup_macs()
 		lan_mac=$(mtd_get_mac_binary factory 40)
 		wan_mac=$(mtd_get_mac_binary factory 46)
 		;;
+	r6220)
+		wan_mac=$(mtd_get_mac_binary factory 4)
+		lan_mac=$(macaddr_add "$wan_mac" 1)
+		;;
 	rt-n56u)
 		lan_mac=$(cat /sys/class/net/eth0/address)
 		lan_mac=$(macaddr_setbit_la "$lan_mac")
@@ -655,6 +678,10 @@ ramips_setup_macs()
 	tiny-ac)
 		lan_mac=$(mtd_get_mac_ascii u-boot-env LAN_MAC_ADDR)
 		wan_mac=$(mtd_get_mac_ascii u-boot-env WAN_MAC_ADDR)
+		;;
+	vr500)
+		lan_mac=$(mtd_get_mac_binary factory 57344)
+		wan_mac=$(mtd_get_mac_binary factory 57350)
 		;;
 	w306r-v20)
 		lan_mac=$(cat /sys/class/net/eth0/address)
