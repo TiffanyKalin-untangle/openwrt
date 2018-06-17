@@ -242,6 +242,7 @@ endef
 TARGET_DEVICES += dlink-dir-885l
 
 # Linksys devices are disabled due to problem with 2 TRX partitions
+
 define Device/linksys-ea6300-v1
   DEVICE_TITLE := Linksys EA6300 V1
   DEVICE_PACKAGES := $(B43) $(USB3_PACKAGES)
@@ -271,6 +272,7 @@ define Device/luxul
   IMAGES := lxl
   IMAGE/lxl := append-ubi | trx-nand | luxul-lxl
 endef
+TARGET_DEVICES += luxul-xap-1410
 
 define Device/luxul-abr-4500
   $(Device/luxul)
