@@ -253,6 +253,11 @@ $(eval $(call nf_add,IPT_NFLOG,CONFIG_NETFILTER_XT_TARGET_NFLOG, $(P_XT)xt_NFLOG
 $(eval $(call nf_add,IPT_NFQUEUE,CONFIG_NETFILTER_XT_TARGET_NFQUEUE, $(P_XT)xt_NFQUEUE))
 
 
+# conndict
+
+$(eval $(call nf_add,IPT_CONNDICT,CONFIG_NETFILTER_XT_MATCH_CONNDICT, $(P_XT)xt_conndict))
+
+
 # debugging
 
 $(eval $(call nf_add,IPT_DEBUG,CONFIG_NETFILTER_XT_TARGET_TRACE, $(P_XT)xt_TRACE))
