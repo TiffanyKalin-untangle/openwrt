@@ -1089,6 +1089,7 @@ static void __init rbmap_setup(void)
 				GPIOF_OUT_INIT_LOW | GPIOF_EXPORT_DIR_FIXED,
 				"POE power");
 
+	/* USB power GPIO is inverted, set GPIOF_ACTIVE_LOW for consistency */
 	if (flags & RBSPI_HAS_USB)
 		gpio_request_one(RBMAP_GPIO_USB_PWROFF,
 				GPIOF_OUT_INIT_HIGH | GPIOF_ACTIVE_LOW |
