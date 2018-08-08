@@ -145,6 +145,7 @@ define Build/InstallDev
 	$(CP) $(PKG_BUILD_DIR)/include/{libgenl,libnetlink}.h $(1)/usr/include/
 	$(INSTALL_DIR) $(1)/usr/lib
 	$(CP) $(PKG_BUILD_DIR)/lib/libnetlink.a $(1)/usr/lib/
+	$(CP) $(PKG_BUILD_DIR)/lib/libutil.a $(1)/usr/lib/
 endef
 
 define Package/ip-tiny/install
