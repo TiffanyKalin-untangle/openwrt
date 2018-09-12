@@ -80,8 +80,7 @@ Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org>
 -			for (i = 0; i < j; i++)
 -				kvfree(to_free[i]);
 -		}
-+	unsigned int i;
- 
+-
 -		reg += n;
 -		hookcount -= n;
 -	} while (hookcount > 0);
@@ -90,6 +89,3 @@ Signed-off-by: Pablo Neira Ayuso <pablo@netfilter.org>
  }
  EXPORT_SYMBOL(nf_unregister_net_hooks);
  
--- 
-2.11.0
-
