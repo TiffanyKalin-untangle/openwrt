@@ -894,6 +894,7 @@ define KernelPackage/sched
 	CONFIG_NET_SCH_TEQL \
 	CONFIG_NET_SCH_FQ \
 	CONFIG_NET_SCH_PIE \
+	CONFIG_NET_CLS_BASIC \
 	CONFIG_NET_ACT_POLICE \
 	CONFIG_NET_ACT_GACT \
 	CONFIG_NET_ACT_IPT \
@@ -1134,7 +1135,7 @@ $(eval $(call KernelPackage,rxrpc))
 define KernelPackage/mpls
   SUBMENU:=$(NETWORK_SUPPORT_MENU)
   TITLE:=MPLS support
-  DEPENDS:=+LINUX_4_19:kmod-iptunnel
+  DEPENDS:=@!(LINUX_3_18||LINUX_4_1)
   KCONFIG:= \
 	CONFIG_MPLS=y \
 	CONFIG_LWTUNNEL=y \
@@ -1211,7 +1212,7 @@ $(eval $(call KernelPackage,mdio))
 define KernelPackage/macsec
   SUBMENU:=$(NETWORK_SUPPORT_MENU)
   TITLE:=IEEE 802.1AE MAC-level encryption (MAC)
-  DEPENDS:=+kmod-crypto-gcm
+  DEPENDS:=+kmod-crypto-gcm @!LINUX_3_18 @!LINUX_4_1 @!LINUX_4_4
   KCONFIG:=CONFIG_MACSEC
   FILES:=$(LINUX_DIR)/drivers/net/macsec.ko
   AUTOLOAD:=$(call AutoLoad,13,macsec)
