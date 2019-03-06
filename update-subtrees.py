@@ -2,7 +2,7 @@
 
 import subprocess
 
-SUBTREES = { 'mfw': 'git@github.com:untangle/mfw_build.git' }
+SUBTREES = { 'build': 'git@github.com:untangle/mfw_build.git' }
 
 branch = subprocess.getoutput('git symbolic-ref --short HEAD')
 
