@@ -84,8 +84,9 @@ for l in commits:
         print(l.strip())
 
 sortedset=sorted(thisset)
-for s in sortedset:
-    print s
+#for s in sortedset:
+#    print s
+print total_count
 print len(sortedset)
 commits.close()
 
