@@ -1,0 +1,1075 @@
+1967495c8744edca9ff3b8250c3680ffdc64d6c7 Brett Mastbergen: initial commit
+61d5edd5f43cd79bda2a16a7ed2c166ec418204e Brett Mastbergen: update packetd
+047d842a2b9a0e795b99a45e0a627ea991245602 Brett Mastbergen: add geoip-database
+db1b6c5f7b7cbe79b77d81b284c94b481769c368 Brett Mastbergen: add libnavl
+e839f090fe4b3d995236ef5b55001cf6faa03f1b Brett Mastbergen: Add untangle patches directory
+cf8f45060c82f2702c4ea052824d54ba9a54d082 Brett Mastbergen: Add configs directory with initial x86 config
+2efe8ee49250327e08c640edc00bf0b664461ba8 Sébastien Delafond: Remove duplicated libnavl dynamic library
+35381a72eaae1e73d51eab805d525c8817b5f1a4 Sébastien Delafond: Remove large binaries from git repository
+7347187c56d346b34e09a55a62d0f27ace18f7fb Sébastien Delafond: Add README.md
+d6ac2d167b800eec41d3cf0bd4b93fd5ca6c0c67 Sébastien Delafond: Fix typos in README.md
+812cbf4391bef454cdf0b22d2fe30bc8b189c846 Sébastien Delafond: Basic script to retrieve pre-compiled binaries
+bd3421a7e811f46495e18516f02a4a170a53ecd4 Sébastien Delafond: In each Makefile, grab binary from the mirror
+8f42560876b3ea00a1d5d08d49a401199f371eec Sébastien Delafond: Remove unused shell script
+05c70c15dd85d8202e6ab23ed4b8f6c63f418522 Sébastien Delafond: Build packetd from source
+1309fb5a99d256cf231b14fba7f93ef10583ba71 Sébastien Delafond: We have a compile step
+7eef8bd411ab8526116136caf569a83711113b63 Sébastien Delafond: Use an existing git tag for PKG_SOURCE_VERSION
+357e901969cbff92ecc1c510b8a99922bb50c1a3 Sébastien Delafond: Use update_rules directly from upstream
+6cd062b0c41066ad49b3440e3c40e288334c3433 Sébastien Delafond: Manually document build dependencies for now
+04dddf00056f789212c94a87e8c8ffc46d5c1e6c Sébastien Delafond: Define Build/packetd/Compile
+1b112969e4832751bd6e60b27793a2fbe6c21bde Sébastien Delafond: It's Build/Compile without the package name
+cf45f71c02b46aa0ef87849c1ead5f2e400396ce Sébastien Delafond: Let's build packetd directly from its source directory
+9912a8d6a4eab2a032bbb5ffe89b7cb88c329dc1 Sébastien Delafond: Really cd into PKG_BUILD_DIR
+e0386ff3bef7e285bcb7716e031127d690ea1e6e Sébastien Delafond: We don't have vendoring right now, use go get on the build machine
+ac27f43f2183016651c7d5f518d83a55f09a2313 Sébastien Delafond: Fix typo
+6726738c9b5e9e631066a24fc96865e7775a524f Sébastien Delafond: Let's build from the tip of master until we're stabilized
+3602973d861b9f3daae932bcbdd0f58d11b4d85c Sébastien Delafond: Use libnavl.so.4.5 from local untangle-classd, as for now packetd has it as a build dependency
+b7d3b84a03e2f6bf25ebfe57d62910e162d2e0a2 Sébastien Delafond: Document packetd license
+eb6ce812d14fcf21c17794ee4d997658b01f6228 Sébastien Delafond: Add untangle-python-sync-setting package
+5622f5c4ab88044e26a4dd8e33d491d21726a7d8 Sébastien Delafond: Fix typo
+f454d0b978033d0af60551652477f4e507ac4de9 Sébastien Delafond: Relative include path for python-package.mk
+01fcc46b70fb2c5e8ef4736935aa80c3cac9cc9c Sébastien Delafond: No feeds/ prefix for official OpenWRT packages
+8e93bb388c2b02a65628ba20e8bb8422b859a353 Sébastien Delafond: Typos
+eaa3c82f8feb36649fb80cb34c944f1a8eb49e67 Sébastien Delafond: Rename package directory
+302925d4ba1800de7b30a518e33e787e582e8df7 Sébastien Delafond: Use python3 for u-python-sync-settings, and clean up package classifiers
+c8cd52bfeeb85162d5098367866396899e36a87b Sébastien Delafond: Clean up packetd's Makefile
+65fdee53bc6c7fe41a0c3b0fc468b5bbbeedc466 Sébastien Delafond: Install python3 package
+fd17f441051fcbddb52f8cbafa253415dad8ae08 Sébastien Delafond: Simpler subdirectory build for u-python-sync-settings
+7cd97fa639506f45980631d32a2d8a5f0f8d6bac Sébastien Delafond: Update README.md
+de19bb8828f9adfd1f35ef6415656ca44061ef5b Sébastien Delafond: Better formatting for multi-line commands in README.md
+7ad399ab18bd782ea91da35fce8234aa309b1c9a Sébastien Delafond: Fix a couple of remaining typos in README.md
+d50b3192c2fdb8469b3de3d409a2924474e11984 Sébastien Delafond: Remove requirement for untangle-geoip-database
+8fd741b2daf01dece6ef3a6352a673818687a8c3 Sébastien Delafond: Remove requirement for untangle-classd
+e2da9bd0505dc9d9d6c7687470399e09683be700 Sébastien Delafond: Bring back missing rules.mk
+47927de4cad3d84fde1558f98af40fee74faa2d7 Sébastien Delafond: Switch to an actual archive for libnavl
+b04e48be2a30891bd32a07dd20c9dff1b4c64a54 Sébastien Delafond: Re-use PKG_VERSION when possible for libnavl
+38e16df88afc05316213f37525e85dba34fbfcb6 Sébastien Delafond: More documentation
+da92b50daa1cd1f3a1361f13bacff832d31cd58d Sébastien Delafond: Typo in README.md
+b829a849cd228d84fc021c00bdad46e6354cd30c Sébastien Delafond: Change location of geoip DB to where packetd expects it
+3b9076b8b2ca1f609c2d13f4314af71e5e3d8c7c Sébastien Delafond: Store GeoLite Country DB under /usr/share/untangle-geoip
+ef13aea538750b918f84047124f67af21dd8f5f2 Sébastien Delafond: Bump up packetd version string and date
+13ee4da7e62780dea73a735ff48cbe089b958265 Sébastien Delafond: Add diffutils
+ba35e12334bb6e9bd74b9ebb55ceca13b909a196 Sébastien Delafond: Try bsdiff instead
+d37eecd1eab2a9ff8f98c20a9eea98a979c62f98 Sébastien Delafond: No bsdiff
+17dd7fb09f40af1ab7a18be164f52081eefc7b5f Sébastien Delafond: Add diffutils
+94d73aef8ec2b6117050a3a6fe8dd7e210b1a353 Sébastien Delafond: Update documentation
+e5ae979f71ff28e499c604d0fa1fb1bc45a140c9 Sébastien Delafond: More documentation
+45f006cbd0abdc406b11bb2a7cf1e34f8551d839 Sébastien Delafond: Typo in documentation
+8d6fea9a74d77dddb4f35bf727e3ecdb1ae428c6 Sébastien Delafond: Lots of documentation
+36f36f9e43d3bd2a40d06080692744bed363427c Sébastien Delafond: Document default port for packetd's REST interface
+3502455838fd824941a97dd10e62fa70fc978813 Sébastien Delafond: Typo
+708a36dc36ffb223887b6ea8777f8bf8b73c9eb2 Sébastien Delafond: Add diffutils patch, until https://github.com/openwrt/packages/pull/6288 is accepted
+586e371933ad10aa2cd93c31fc00150655c0828e Sébastien Delafond: Classify patches against their respective upstream repository
+4fefe840990fabb7d8369261bf898f93ad2a6e9e Sébastien Delafond: Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)
+cddfcda16e9db67cf8347e66da826e819a03e332 Sébastien Delafond: Update README.md to use the Untangle-patched OpenWRT repository
+2df61d009a59689e9ddadbb3eb42f57ead587542 Sébastien Delafond: Add feeds.conf.untangle, referencing both the Untangle feed and the Untangle-patched Openwrt packages
+2c429368b2efbc282209821d2b8a3ac511b017c0 Sébastien Delafond: Add feeds.conf.untangle, referencing both the Untangle feed and the Untangle-patched Openwrt packages
+1516ad17ef7146d8395d62db502c4802885eba89 Sébastien Delafond: Add a new config.seed file to use MUSL on x86
+6a638cffe3f1daeb0a5287f232ad9a9bec354e49 Sébastien Delafond: Update GeoIP Country checksum
+fd9317a9b2941d94860958c537eae59ed0c5e8b2 Sébastien Delafond: update_rules is now packetd_rules
+ece3e3ba2f2b24243ee1defe6d300c70cfc4a76d Sébastien Delafond: Remove references to libnavl
+57da0d807ced8343869fcac29b482ad4d2ae90f4 Sébastien Delafond: More MUSL-related modifications
+c9e97031f0ac2ecfe88ddcd98ab3035f5ac02bc2 Sébastien Delafond: More work on glibc vs. musl configs
+6850628c5cf988b482daaac2f50f2487d47e4cb5 Sébastien Delafond: Build packetd with OpenWRT's go, not the one on the local build host
+6204e90589f073075ebfc52ff580a6751e4f190e Sébastien Delafond: Remove u-python-sync-settings build dependency on python3-setuptools
+cd8282b45df1b65252382b6b037b53576ed887b5 Sébastien Delafond: Add dependency on golang package
+e7982b4030be7df16c24b561731955ee1d11967b Sébastien Delafond: Raise rootfs partition size
+da6c6ba9a7c2ed31e870bd4c93879723b663ddec Sébastien Delafond: We don't want golang in the final image, but we need it to build packetd
+6dbfc6181d7eae42cca39b24213817b28643b314 Sébastien Delafond: Update documentation
+a9c463f9afa42c42573b3f6776d8bdcd1ca2e204 Sébastien Delafond: Add a Docker-based build infrastructure, plus documentation
+6e12064e456ea263349faebf2cddc51c31f87138 Sébastien Delafond: Add a Docker-based build infrastructure, plus documentation
+db857288280d2c59666087bf05f89e361129e5be Sébastien Delafond: Use V=s in TravisCI
+a23afdf7394481a1f5d9ad2f217c52ac9f945db7 Sébastien Delafond: Use V=s in TravisCI
+c0bfd3e723681a008aa6b72c9e98b50fa86ac755 Sébastien Delafond: Also pass $@ to the "make download" call
+f16a8cb8718c69d9ff0111be07eb7aa7290c36f5 Sébastien Delafond: Also pass $@ to the "make download" call
+d69f338f29d77398da0437a007143d97ae28c190 Sébastien Delafond: Try a lower rootfs size, since we really don't ship much
+240c2b12b563de62151ae95ec52a94cf2f838a65 Brett Mastbergen: Revert "Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)"
+92b59b6857c69e45697e38980b5e8c79d99801e0 Brett Mastbergen: untangle: Add dict support
+6c5c27d5157fa74113ef09a5ffe5d41e9e5cdc3e Brett Mastbergen: Tweak configs for new dict kernel support
+5a0a7ac1aa8e336be3c7438bd3936c35be28bf5c Sébastien Delafond: Remove conndict patch, as it's now living in our openwrt fork
+4bd7f88bb868a98b985e1cb87e71585ca034b0e5 Sébastien Delafond: Use make to build packetd, so we get versioning
+ade06799474ee13b4368f315a96d5727501acc0e Sébastien Delafond: Record myself as maintainer, and document that u-python-sync-settings and packed are moving targets for now
+1c46d662db034ce77d2a51c988faebcce992b957 Sébastien Delafond: Annoying, but 172.1x quickly conflicts with our existing addressing plan
+e7d05ed47efe88c083d845d716b46fda6c62d8a1 Sébastien Delafond: Annoying, but 172.1x quickly conflicts with our existing addressing plan
+9e91822479b74cf8e4c9104ddf2320d7e9896d58 Sébastien Delafond: FORCE_UNSAFE_CONFIGURE=1
+8c8ce3bbc2057e44e6c9d591eb2dd7e36f8dde4e Sébastien Delafond: FORCE_UNSAFE_CONFIGURE=1
+100254d9f58b195483564baa43d7f504934ce676 Sébastien Delafond: Update GeoLite2-Country's checksum
+4a132cfda15411a24a359e9abccef8e548ee92ff Brett Mastbergen: packetd: Add Makefile to GO_PKG_INSTALL_EXTRA
+aa6e6d5c1184db002336be137cc90d60af2707ab Brett Mastbergen: configs: Add initial config for Linksys WRT3200ACM
+dd3f1bf0c7828e524890352ad3fbc245b5a9f74e Brett Mastbergen: configs: wrt3200: Add untangle-python-sync-settings
+35987c20552263a44c7983ac5a22b0f92b0309c2 Sébastien Delafond: More Makefile tweaks
+8156a3f9f1ae05a0e2833b6c4b93ef3ce8ae2b61 Sébastien Delafond: Basic config generator, factorizing common traits between devices/architectures
+7a9ce84421f87432945f63b51c248f9b63039ab8 Sébastien Delafond: Default target config generator is now x86_64
+29921d2c88e98ac91207de9af04ecd7074e6d0ba Sébastien Delafond: Update build documentation
+2012be01d9e77b38f1fc20b055e32402678cfd32 Sébastien Delafond: Add license to README.md
+149283496c3beedcec0be6347285b588028f47ef Sébastien Delafond: Update build.sh and documentation
+a4b7f49ac531e74df70e1d6b826df147993f8487 Sébastien Delafond: Update build.sh and documentation
+894f93f6d82258eaac7e8401a188ff64c3cb416b Sébastien Delafond: Typo in default make switch
+81b75235d691df728811f7d264e21aa87a8841d8 Sébastien Delafond: Typo in default make switch
+2d5bf5e66837f21b29c78f734bffadf42da33c97 Sébastien Delafond: Remove useless networks stanza from docker-compose config
+6a529d393a6c300e954b79bc681e456eb02060ef Sébastien Delafond: Remove useless networks stanza from docker-compose config
+a6d5a00311c0997ad3c91736b1eb01d35b589931 Brett Mastbergen: untangle-python-sync-settings: Depend on diffutils
+1831390f38e12dae69999042d4b10c2075883a92 Brett Mastbergen: configs: Add config for Linksys WRT1900ACS
+65f737a2d0b8a152385c967f9d8b5659f2727fc6 Brett Mastbergen: kernel/libnftnl/nftables: Add 'set' support for nftables dict rules
+ce2908fb8eca1148082eec57f29f21fd40b934bd Brett Mastbergen: netfilter.mk: If CONFIG_NFT_QUEUE is set, include nft_queue.ko
+c653614ad842efd3d4200fdb91132950c1a46c23 Brett Mastbergen: packetd: Enable CONFIG_NFT_QUEUE
+424493d5c1dd07d008690ccc78d0d92651dc3f10 Brett Mastbergen: geoip-database: Update database checksum
+4e21ff2f9c576ef7d00ad5380ecbd029902fd7c8 Sébastien Delafond: Update README.md
+cee39b597ef6caed78b546f24a7bde3986171f52 Sébastien Delafond: Adding admin UI component
+a037d937e1620a9a25dc79cf16e565046a1d2da6 Dirk Morris: Adding JSON settings schema
+371472557541b2e794e7793319169a07d252f633 Sébastien Delafond: Add admin to list of required packages
+ffc3a8ff3c47870afcbc33799550464f6b84550b Sébastien Delafond: [admin] Correct repository URI
+bcc25767bad592c62493d5e3311c3309af565cde Sébastien Delafond: [admin] Install to /var/www
+c759e868c73d0e683a2928cf0dd2bc5c7d400066 Sébastien Delafond: [admin] Run make from $(PKG_BUILD_DIR)
+ba18a8795efb562bebf799dba0490347187463c0 Sébastien Delafond: [admin] Install to /www
+09963bf33b4b3a3a084ebebd5294786660bb3a09 Sébastien Delafond: [admin] Use master branch
+dec5bcadb981e09adc2757d0e522a898b902c7bb Sébastien Delafond: Use official packages repository, now that our diffutils PR has been merged
+80761ca11f603b1ea2a25dd82008c67a873382a8 Sébastien Delafond: Use official packages repository, now that our diffutils PR has been merged
+6aec2504c538a7fb51f59fc01a61f77c851c1a0f Sébastien Delafond: Remove diffutils patches, now that our PR has been accepted upstream
+09f79c78e68a0e7193ae67305ef24f94768c92b3 Sébastien Delafond: Add package diffutils
+5da78fdd5365a9458dd39f503993f6f74f45505f Sébastien Delafond: [build] Install all definitions from packages feed
+d820e902f89baeae7c5496ddee9916189b1eb40a Sébastien Delafond: [build] Install all definitions from packages feed
+0580ba0a1073075f262af4d7ca95dafcc6f1ed62 Sébastien Delafond: Raise FS size to 70M to account for admin UI resources
+db48d522904200815a284b37068c7c7d92406033 Brett Mastbergen: mfw-schema: Add switch settings
+c24e254721c2d3e6824ccb043046f8152b38b4f1 Sébastien Delafond: [admin] Add build dependency
+a0702821233b7e695e1ce48e6cca90a56e3c7f43 Sébastien Delafond: Tag-based versioning scheme
+f4089f2e959802d14252445805b14f71a5011911 Sébastien Delafond: Command-line switch to pass build.sh the UNTANGLE_VERSION variable now recognized by our Makefiles
+f2143a6e321f7b143319139e039423117789c8b7 Sébastien Delafond: Command-line switch to pass build.sh the UNTANGLE_VERSION variable now recognized by our Makefiles
+1fabfb5f5124bf7c65b9719220e8fb9e81920016 Sébastien Delafond: Change semantics of build.sh's -v
+75a02dc0710fb9c6fbfb441e49d7bc1aa310828c Sébastien Delafond: Change semantics of build.sh's -v
+035b6ffd517b58c4b8c9f321c166bb9b35146440 Brett Mastbergen: configs: Add config for Turris Omnia
+f69d360742fcdc5860c983487d28c5861c351da2 Dirk Morris: Remove -j32 which seems to cause periodic build failures
+54c4938d8c57ef4e2fa04114a435c072c2dafeab Dirk Morris: Remove -j32 which seems to cause periodic build failures
+f0b14f54e8689ef1507850c647cba1a8e8d6b894 Brett Mastbergen: build.sh: Add UNTANGLE_VERSION=${VERSION} to make
+ca3dfdc8caaaef97a89cd928c400d50845d62268 Brett Mastbergen: build.sh: Add UNTANGLE_VERSION=${VERSION} to make
+6523140638fbc817353dff914773e06b7d9f75ed Dirk Morris: Add ruby-sass to build requirements to see if that helps fix admin build
+d018af9c6916a39ab150d6856a11b79220dd2b48 Dirk Morris: Add ruby-sass to build requirements to see if that helps fix admin build
+5aa66dba313ca82c20dfe15b982b3468aac419ed Sébastien Delafond: Put ruby-sass at the end of existing dependencies, to re-use as many Docker layers as possible
+d7e190f5a8c46f1f0c3020a7ca3ecac581e364ed Sébastien Delafond: Put ruby-sass at the end of existing dependencies, to re-use as many Docker layers as possible
+7ed146779a648dc197311dda085680f238bafce0 Sébastien Delafond: Add ./tmp to .dockerignore
+2d06bd398e48aff5b56bb9c57112f8386c8d0b50 Sébastien Delafond: Add ./tmp to .dockerignore
+8a11bb1ebd4693fae7fb49e5adb4dc7df7a6215c Sébastien Delafond: Default back to -j32
+ef275fd3c17fbb9f7053353cdece96ad6f459f57 Sébastien Delafond: Default back to -j32
+66e7319b7f9d367ac52a7ccc6d05b8727dc37f8e Sébastien Delafond: Use -m to pass arguments to OpenWRT's make calls
+6485ccf4c3ee02abd69ef4e91373840ba60f2720 Sébastien Delafond: Use -m to pass arguments to OpenWRT's make calls
+01114357587ea0b66db136f49635163b2bdc7499 Brett Mastbergen: geoip-database: Install procd init script without the .init
+0b0d9cd54050851bbb820bb50dc0d2f7154fe9c2 Brett Mastbergen: packetd: Install a procd init script to automatically start packetd
+1e656c32a9f2b855c0af095650c43cd3c7138cfc Brett Mastbergen: sync-settings: Create settings.json if it doesn't exist
+e158418dcd7e5977ef703f7903cae564b2e9982e Brett Mastbergen: configs: Add tcpdump
+d4f52a2d5fe5853ba116a8289d6695a2052a15b5 Brett Mastbergen: configs: Add kmod-nft-nat
+c7376cabb516de28ae1428ba01a13143bfa59885 Brett Mastbergen: configs: Add kmod-nft-nat6
+fc84dfb7eb8e5d87771ba224c1e6d139de61868e Brett Mastbergen: mfw-schema: Add missing comma
+ae8c4702a2cb847bf0ec381884e77cd55143ce09 Brett Mastbergen: configs: Add haveged to improve boot entropy
+cf867ecfc0e68b4d97b087ec38b32917380c9f1e Dirk Morris: Try to disable firewall
+52098290a1436706365dbd3faff4a240988990e5 Dirk Morris: Add run-parts
+6a6465fa5a919c45f6e9f196aaf7088a7899dde6 Dirk Morris: Add run-parts
+005a748ee109460a984ecb46ca5c7b33a91199e1 Dirk Morris: Move disable stuff to another file for better organization
+df9fdd7486142c50aaaab599fa93a767d0ef628c Brett Mastbergen: mfw-schema: Add dns and dhcp settings
+87b23511990f6d4846abf9f677198b0982e17519 Brett Mastbergen: mfw-schema: Define required fields for switch settings
+abb58b1f026b4d0cfa43a354d63e6d2917da4a8a Dirk Morris: Attempt to rename sync-settings package
+968f77bb3c37b042ffb95d74c5256c839035b8ba Dirk Morris: Remove geoip init file
+51c70af9b9b53f4dadb19df29d7807beb4cefa51 Dirk Morris: Add new init.d script for nft-rules
+3546ec1a909feb2bb9ea0736429d51f2d6317080 Dirk Morris: Rename nft to nftables for consistency
+df1e598af0547265402d34e127ba4c4e91bd6061 Dirk Morris: Do not actually run pre/post sync commands when creating initial settings
+80591fc1881bb961562227c94ef21b85326544bb Dirk Morris: Add LC_ALL definition if not defined to avoid annoying perl warning
+a828c09141eb56ec39af64a73a89cda8edc02071 Dirk Morris: Add LC_ALL definition if not defined to avoid annoying perl warning
+9ad2ec56307d82d448ead53b9e44cdd4b900beb6 Dirk Morris: Add creation of default settings to defaults.json
+c1259f8c723709eb5bd7f784b3fdd5aef595e924 Dirk Morris: Fix nftables-rules init.d script
+30e0d83352dc26489f21318a8da0497600b053f3 Dirk Morris: update README.md
+409cef2b9969006517161eb4c496ff7356fe8dfb Dirk Morris: update README.md
+55035badb67145c444ba4d4bf4f0cf3471cdf045 Sébastien Delafond: Update README.md with latest one in untangle/openwrt.git
+f7233b2aceebaedb13a4cd4d6510276eb2f91db9 Sébastien Delafond: Robust versioning for our packages
+ffc9ab4dc37f13ab897f320dcb3bbb62616044f3 Sébastien Delafond: Make sure "-v release" does what it advertises: use most recent tag in each package
+c0e35832a4ad5773048600d19798cb3f88e0ed47 Sébastien Delafond: Make sure "-v release" does what it advertises: use most recent tag in each package
+d8b92ec61a7501f82286e948ae86248d3158e16d Sébastien Delafond: [admin] Use /www/admin as target directory when installing
+5f9bf2b92fd89c26fa6e1eba9d2e6f156ddd728d Sébastien Delafond: Dynamic make variable for source extraction
+a4d13cef2fbd33aefc97ea114a9eaab820266868 Sébastien Delafond: Use foo-<commitid> for the pkg builddir
+5ca1d3d4e56c2fdd922ac605eaddb2685b634bed Brett Mastbergen: sync-settings: Use -s instead of -n when generating defaults.json
+642f9861bd552aae335f5ef9e658e55cfad53559 Dirk Morris: Add tables and chains to schema
+b7b56d479800d86c28635c41b3311755d63a930e Dirk Morris: Only create defaults if they don't exist
+8bbbab28bf160ad95db0b9a0e5495370fc993004 Sébastien Delafond: Naming cleanups
+82d892bd39cd1e1797737f04faaf2be854b9b948 Sébastien Delafond: Naming cleanups
+74c252c50ada1e2e325490c26f33f8eaccc2752b Sébastien Delafond: Rename feed to mfw
+b99310d794f37d2cbd28e16372032f2c01f9e79b Sébastien Delafond: Rename feed to mfw
+fb1dbda30ef7b5d24026b1dfec4f27db604e792f Sébastien Delafond: Naming cleanups
+e0c0162212803f473b0d10a533b2f852c7f7abb3 Sébastien Delafond: Manually get rid of old feed
+8cfffc6989383e12776b3dbb336250e8816d7767 Sébastien Delafond: Manually get rid of old feed
+0418bdc5cff6586d80f689e896f567f1c26d4818 Brett Mastbergen: mfw-schema: Move dhcp and dns out of network
+15aac406d0c7ea7e81e72831a83237c149ad6c30 Dirk Morris: Rename interface conditions and add interface name conditions
+d4c959c68d1c03471630fb777f14aad3df06c05e Dirk Morris: Add IP_PROTOCOL condition
+b0bbd9db4b679e287e4970ff8ee12ed6e45974df Dirk Morris: Add gitignore for docs build directory
+65a1ceb3d5802ff3a58407631fe152c65cfbd94f Dirk Morris: Add ACCEPT action, change redundant name from action to type
+6f4d0769985030af5fc560cb8c0d626bd140f60d Dirk Morris: Add docs skeleton directory
+1d0b8187a4835b5c594dc5874bdaaf52f0baa065 Dirk Morris: Move docs to another repo
+1dfe8614b1229bf9a754c0dd748eff303ec382d4 Sébastien Delafond: Adapt sync-settings packaging to new git repository
+4d2ab76bb8d0f59cfbdce72c0509cc20dfb323ad Sébastien Delafond: Add ReadTheDocs badge and link to README
+eb627ff4b6e893522256de59858bce4f32253843 Sébastien Delafond: Remove extra dashes from README
+3604529cc3e004f5ec314d87159b70f1203cc5bd Sébastien Delafond: Update README from mfw_openwrt
+830772b66ce3748c360ee198056683c978bc4a62 Sébastien Delafond: Update README from mfw_openwrt
+e82f595fcc9dd572bd705da60a7b29d6b67670f7 Sébastien Delafond: Do build sync-settings in a subdirectory
+416fbfe3e74c1f530066c5ec306e12c6581f8554 Sébastien Delafond: Do build sync-settings in a subdirectory
+2d9749f4a7dba7746bde78df61f1bd8d03cfbe94 Sébastien Delafond: Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)
+227f220e33845480827f0750ae2d06996ed3ca08 Sébastien Delafond: Add feeds.conf.untangle, referencing both the Untangle feed and the Untangle-patched Openwrt packages
+23b8b1e5e478b18a707657bc3fb1b4c637b524ae Sébastien Delafond: Add a Docker-based build infrastructure, plus documentation
+1b62dd1f642f0e15c1f9caf688bd3049fd7e570d Sébastien Delafond: Use V=s in TravisCI
+12a62a593e4368279e858d189621b9cb737e699d Sébastien Delafond: Also pass $@ to the "make download" call
+d6313988db85a58cd440e13b2e1cb128b8a7ce84 Brett Mastbergen: Revert "Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)"
+bbd5e27d49f7e9b41c55edb7e9cca4d8da869f64 Brett Mastbergen: untangle: Add dict support
+cc383d6b97b7a0b0a6b46bd82297229bcca5f22a Sébastien Delafond: Annoying, but 172.1x quickly conflicts with our existing addressing plan
+bb377d526688b38e996d2d4c2f6c373b803997fb Sébastien Delafond: FORCE_UNSAFE_CONFIGURE=1
+37725ee2e741c3092e5cbbfedbb05f75a6a3e943 Sébastien Delafond: Update build.sh and documentation
+f4d4dee7e7d13b596ffa9094d81a94a2768d883f Sébastien Delafond: Typo in default make switch
+53a9331c1463e6054af11130d60ad346f189dfdd Sébastien Delafond: Remove useless networks stanza from docker-compose config
+7eb09c7e4de134f0cd3ce330e4391224a428eab8 Brett Mastbergen: kernel/libnftnl/nftables: Add 'set' support for nftables dict rules
+3f3a7db2a8ba65f384dce52f500e02202773360c Brett Mastbergen: netfilter.mk: If CONFIG_NFT_QUEUE is set, include nft_queue.ko
+dbb8b42db49b5399c265a45a4662e84f2ef8882f Sébastien Delafond: Use official packages repository, now that our diffutils PR has been merged
+28607bf766fc9082da0030cb9ddd881a22f33f6d Sébastien Delafond: [build] Install all definitions from packages feed
+2ffb6b1c5f6c742c1d2e32dbe8d3c05dd16b33ce Sébastien Delafond: Command-line switch to pass build.sh the UNTANGLE_VERSION variable now recognized by our Makefiles
+9ae9d42e0bdde2497da41ef01f5f4a6f94ae80a7 Sébastien Delafond: Change semantics of build.sh's -v
+4cf9014be74d863d1d9f44d7a1e300e2752939f7 Dirk Morris: Remove -j32 which seems to cause periodic build failures
+7e4ddbeb8cb322a5a3ac9678ffa218b88acd5a32 Brett Mastbergen: build.sh: Add UNTANGLE_VERSION=${VERSION} to make
+c8361cc6ca20aba7061acb790edf8bd452233fc0 Dirk Morris: Add ruby-sass to build requirements to see if that helps fix admin build
+9fbaf281627c2d2ab44afc038bd92c9daa69d4d7 Sébastien Delafond: Put ruby-sass at the end of existing dependencies, to re-use as many Docker layers as possible
+75ac854c15afc3e9178d684a38040ccc72f027f0 Sébastien Delafond: Add ./tmp to .dockerignore
+e6279edf69463346d04ec0bd33c9d6ca043db964 Sébastien Delafond: Default back to -j32
+533bf2a08761b3a4380e41222c18c6697b5922d7 Sébastien Delafond: Use -m to pass arguments to OpenWRT's make calls
+9f4dfee1a06826b608335e60c89fda97944bc379 Dirk Morris: Add LC_ALL definition if not defined to avoid annoying perl warning
+09ab69cc8fa1be5fc442b1296aa988f572c11f9e Dirk Morris: update README.md
+2af7987f26d27bd85eccfae87cad8b0647c40c91 Sébastien Delafond: Make sure "-v release" does what it advertises: use most recent tag in each package
+7a55c47bd5119a1446e39264412e157778ea2100 Sébastien Delafond: Naming cleanups
+55ff5fcaf564cdd339a26e27e3eb12ef2538b555 Sébastien Delafond: Rename feed to mfw
+a212cc73027c5677564a3bf137e762c4379a19e8 Sébastien Delafond: Manually get rid of old feed
+811a93e406e45be6c3ffb0766f70ad2a701d1e70 Sébastien Delafond: Update README from mfw_openwrt
+7e2bf7c16539dfab2a4b277697ffcaca452de95a Sébastien Delafond: Use the openwrt-18.06 branch for official packages
+26db710201c1d9a8e0a077d87c78e921fe4767c3 Sébastien Delafond: Use the openwrt-18.06 branch for mfw packages
+d5b1079c50d26f2491e0d9e517d18d2198b05182 Sébastien Delafond: Only use make recursively expanded variables where needed
+a205f0bf8b280b7160f3f2c1d6eb989dd78e3917 Brett Mastbergen: geoip-database: Update database checksum
+27b67feb40036a686d1f678a55b346d73638e88f Sébastien Delafond: Merge remote-tracking branch 'origin/master' into openwrt-18.06
+6c3e3fe537ce41d1fcab0fdf9396eb9d3b112a5e Sébastien Delafond: Also use openwrt-18.06 branch for luci & routing
+df39634a1308d811ad72461449bc6cf39e31b91d Brett Mastbergen: libnftnl: Rebase dict patches on 18.06
+83b6c3dab83ee87edace99b0818066146536ac49 Brett Mastbergen: nftables: Rebase dict patches on 18.06
+e47a9d2e3e257b985c4955ce0f5074223d34f219 Brett Mastbergen: kernel: dict: Fix buffer over-read
+cdbcf02ce0a8730fac3796a55058795d9728b294 Brett Mastbergen: geoip-database: Update database checksum
+4167721e7325e12e7b0cc333d26f506c423e920e Brett Mastbergen: kernel: generic: Fix nftables inet table breakage
+17bdaed8d94078e53b7ac36cc249c298d685d538 Sébastien Delafond: Add classd
+deaf284050c7198462b8e3c9d8e34de3ea0d16fe Sébastien Delafond: Do not require classd until we have MUSL-compatible dynamic libraries
+13471fa328df27eac991821406498fe3973f6b6b Brett Mastbergen: kernel: generic: Backport multiple NAT hook support from v4.16
+aa7dfe39b99560013c52f0b240af0db808a450a0 Sébastien Delafond: Merge remote-tracking branch 'origin/openwrt-18.06' into openwrt-18.06
+faabe4b54533a94440238188e4369b52dcb2f6fb Sébastien Delafond: Move MFW-specific files into a subdirectory
+edf4fb2e83f679edd1422402291cfe4110fd33dd Sébastien Delafond: Add symlinks for backward compatibility
+8e02ec781573eb6c3d76aab09347dc41c76e874c Sébastien Delafond: Add 'build/' from commit '830772b66ce3748c360ee198056683c978bc4a62'
+1d2a1db4bce50a9e67aef63fc1d2d456b039583f Sébastien Delafond: Replace /README.md with a symlink to the subtree's README.md
+ab6f49d4bcb5865bfcc87a859be36f840731eb3f Sébastien Delafond: Remove mfw/ subdirectory, to be replaced with a subtree
+f3303650f5614b7b322367da3512f142f2363b14 Sébastien Delafond: Add 'mfw/' from commit '830772b66ce3748c360ee198056683c978bc4a62'
+37e21672c533a02dcf73bd52ec3a9555a01ce419 Sébastien Delafond: Move MFW-specific files into a subdirectory
+25b99fb9ab0fab62f78cca5e6c3a6e2dba3c0c36 Sébastien Delafond: Add symlinks for backward compatibility
+1ec379ffec9500f77ae6eb4e1fa2bee2cd10b5b9 Sébastien Delafond: Remove mfw/ subdirectory, to be replaced with a subtree
+eded63434cb018aed5f98db6eca17f96aad10272 Sébastien Delafond: Add 'mfw/' from commit '830772b66ce3748c360ee198056683c978bc4a62'
+897a26b06bb351832e9048306c1242922d653e28 Sébastien Delafond: Build each feed from the same branch we're currently on
+70fddf532ffa4e30307a8273436d1c6bbc21bd34 Sébastien Delafond: Merge commit '897a26b06bb351832e9048306c1242922d653e28'
+a00e4310df6843b33d23f3aa7190486ba4bd94c9 Sébastien Delafond: Merge commit '897a26b06bb351832e9048306c1242922d653e28'
+0bfbcea0bac3628c743fe9540ce4f49a3357e76f Sébastien Delafond: Merge commit '897a26b06bb351832e9048306c1242922d653e28' into openwrt-18.06
+e9bfe7f5a26600ec3772437360f3dcf70ef34c1a Sébastien Delafond: Add LICENSE
+86c77c1fc588d4a2c5b0e492c5676229d0adbb5b Sébastien Delafond: Do not error out if a symbolic branch name can't be derived from the current checkout
+b53ba1cfedab051615b11d7c66a518e031354615 Sébastien Delafond: Merge commit 'e9bfe7f5a26600ec3772437360f3dcf70ef34c1a'
+ec914f4c550107d0f0826f2f9c922fe0cbaddc9d Sébastien Delafond: Merge commit '86c77c1fc588d4a2c5b0e492c5676229d0adbb5b' into openwrt-18.06
+d3f927993cb7295d3306085461b6e38ba5cbf948 Sébastien Delafond: Merge commit '86c77c1fc588d4a2c5b0e492c5676229d0adbb5b'
+1545c2e49be504b5e937c6dffe56c1ecfc66a549 Brett Mastbergen: linux: generic: 4.14: Add patches for unconfirmed conntrack clash fix
+a0dbef15ff56036dda337986859d7706c1e6704d Dirk Morris: never flush entire ruleset
+01088c800328beedc8f00421f420be33ad8ec7cd Brett Mastbergen: kernel: dict: Add flush support
+ce62fb836544ec642813782a77f90c1abd038c31 Brett Mastbergen: geoip-database: Update database checksum
+2dd7386f3b9e39bdc60ed02e916bede355e3f5d8 Brett Mastbergen: sync-settings: Add dependencies for QoS/limiting
+73442267b6b81f4e3e1d6923342f6bfe01af4ef4 Brett Mastbergen: netsupport: Add act_pedit and act_csum to sched-core
+5ea3661f85ac67283c597403feafa7fae2aab6e7 Sébastien Delafond: pyconnector WIP
+cbf6536efb1a99546495c65ad7457c694518534f Sébastien Delafond: [pyconnector] Add a dummy git source
+c71802ce20f7f6177ef4240687110fb794c16e0c Sébastien Delafond: [pyconnector] Create usr/bin
+f315d016c12b04352fb225b33ffee7c16e3bf09a Sébastien Delafond: [build] Let developers specify their own branches in the feed list
+e02adb0aef0815418a2426f2dfbebf093368c50a Sébastien Delafond: [build] Let developers specify their own branches in the feed list
+3076c52fb5d56299c8fa6085d33cf8043f732232 Sébastien Delafond: Merge commit 'e02adb0aef0815418a2426f2dfbebf093368c50a'
+eceac5d97bbfbfc15b87430fbe71ac24b9772181 Brett Mastbergen: geoip-database: Update database checksum
+bfd83a7a46c011cf685818b47856c98c3d1e9592 Brett Mastbergen: sync-settings: Generate /etc/config/uid
+bf4054224b3fb0b86ab8cc78a2447b8281b7a941 Sébastien Delafond: [pyconnector] Remove uvm references
+c571be71e58ca7f1256848d71e5514bc8bb922af Dirk Morris: Change to python3
+b900f24bc56e06c5201c2e528665e2ac24867a47 Dirk Morris: Connect to dev-cmd for now
+2339cc7cbc20f5ad72db06161b4155d095ab623a Brett Mastbergen: kernel: dict: Fix buffer over-read
+2cb0862dfb87183bedfd828c4aab8f444a66345e Brett Mastbergen: kernel: generic: Fix nftables inet table breakage
+d01e92781c5832ddefdf8998e339a6c0d5f00e68 Brett Mastbergen: kernel: generic: Backport multiple NAT hook support from v4.16
+6b57774c8789455bc8f06a9d612504c03bece69a Brett Mastbergen: linux: generic: 4.14: Add patches for unconfirmed conntrack clash fix
+ed32979bd2beddfd2ff3eced54e4b992453318ec Brett Mastbergen: kernel: dict: Add flush support
+2f69bb003a469d6733f8ea321fae04ff3a937ed9 Brett Mastbergen: netsupport: Add act_pedit and act_csum to sched-core
+b9057ef8580537c5bdff52d95f034dcb812e2581 Sébastien Delafond: Add a -c switch to start clean
+fbe2cfa54e0e10917a55eb4c538027bf6669c3da Sébastien Delafond: Merge commit 'b9057ef8580537c5bdff52d95f034dcb812e2581'
+ab8f71ce02cd61e144bbabca65ea2e4d3e50e98b Sébastien Delafond: Add a update-subtrees.py helper
+03b67f27320c7ce5b98bde0a3076ca5f0d10d816 Sébastien Delafond: Add a update-subtrees.py helper
+19a40864cc21671947bc815ee53750d30fad0f13 Sébastien Delafond: Merge commit 'b9057ef8580537c5bdff52d95f034dcb812e2581' into openwrt-18.06
+1c54ce453e27d70998324d4e503913b235238369 Sébastien Delafond: Perform manul, additional cleanup if explicitely requested
+9168491547f2419b9cfa6086109df61fbe7394f6 Sébastien Delafond: Merge commit '1c54ce453e27d70998324d4e503913b235238369' into openwrt-18.06
+41112dc7dc5f13078865f8c2125b579263fe5ae7 Sébastien Delafond: Only wipe out ./target after running make clean
+33effe9844cfc4a74e82c6fe7687bfe542def6be Sébastien Delafond: Leave ./target alone; staging_dir and build_dir should be good to go
+0f328d605a3b9e03569638438de8f3c068d63c3f Sébastien Delafond: Merge commit '33effe9844cfc4a74e82c6fe7687bfe542def6be' into openwrt-18.06
+d38da108e9c5960e2c72a8eda4116638477acfc9 Sébastien Delafond: Change -c to require an OPTARG, so it's easier to plug into Jenkins
+e41482970049e0848a64386dee44930f27331322 Sébastien Delafond: fixup! Change -c to require an OPTARG, so it's easier to plug into Jenkins
+1329baf3dd883b9c94e719a5b3e4dd48f225feda Sébastien Delafond: Update doc string for build.sh
+fe3c628857a4d7b3e0e894fdccf8e26f1d4b77bc Sébastien Delafond: Merge remote-tracking branch 'origin/openwrt-18.06' into openwrt-18.06
+1070882d97b9bef3d364fadf8f52504ad340f6d3 Sébastien Delafond: Enable debug mode
+91b420715d3c078c73720d0e6e0c83fa6ca21f24 Sébastien Delafond: Merge commit '1070882d97b9bef3d364fadf8f52504ad340f6d3' into openwrt-18.06
+2de2bf1fae58a0053c19c07008490921d829431b Sébastien Delafond: Change a couple of URLs to use GitHub directly
+1290ae818be90f2361fbd91801ac9a9f608db81f Brett Mastbergen: configs: common: Add ip-full
+f5871505f445da117ce42635a78c184a25364acc Brett Mastbergen: geoip-database: Update database checksum
+c9139f3d49694b161289b45f31c4b94540462192 Brett Mastbergen: sync-settings: Add ifupdown hotplug script
+7ca0a5e30d81ec45954c60baa7547e9a40eecacd Dirk Morris: Run sync-settings after haveged so we have enough randomness
+1f2ca2043e4cd5b00c29d0db41c32c5b04431e4a Dirk Morris: Fix build manually for now. Filed bug to find real fix
+7c1c4b3d1cc4b5183bc407919c0368f10c7e8f19 Dirk Morris: Add startup file
+97eb591e568617e32ca76e180941bc1405af1558 Dirk Morris: Add utility script
+f3fdb5f66a3ae4cebc7ff72735e1c16121748000 Brett Mastbergen: linux: mvebu: Use dsa switch driver for linksys devices
+cadbc5d7f2c8393ca2fa56238435a5c54f2fbb5a Sébastien Delafond: [geoip] Let's remove PKG_HASH altogether, as a first step
+e639e8376399f017364292e2b47b5c049719f929 Brett Mastbergen: Add jsonschema
+e2f8825fd52229bb56ae00f2ed1f90a086b97997 Brett Mastbergen: sync-settings: Depend on jsonschema
+4e1afc51f10692463b1fc9c3b57ecf1043d11a0d Sébastien Delafond: Revert "[geoip] Let's remove PKG_HASH altogether, as a first step"
+5018e0085b1cdfb94d4150a102a4378892cfebea Sébastien Delafond: Merge remote-tracking branch 'origin/master' into openwrt-18.06
+bdd05d53ed8f4848358c4d2fc9482252306ea9b7 Sébastien Delafond: Document branch selection for feeds a little better
+904de88e55149885d22ea6c650152cbbeb9cb453 Sébastien Delafond: Merge commit 'bdd05d53ed8f4848358c4d2fc9482252306ea9b7' into openwrt-18.06
+66948ca713d4a7ee8af0f844e115061f4112d2ff Sébastien Delafond: Skip hash checking on GeoLite, so we can keep using the latest version
+c3bb77ff271efb304b4a3d5e042937ec261023fa Sébastien Delafond: build.sh's -h doesn't require an argument
+08fe894a76599df24da26be696db444ead631482 Sébastien Delafond: [jsonschema] Attempt to fix build failure when using openwrt/packages;openwrt-18.06
+3ace73af38dd1a32533c04179ece9b8cb563a101 Sébastien Delafond: [jsonschema] Build-depend on python3-openssl
+65f24245e46d9e0ad041de6a5f6641455043ecaa Sébastien Delafond: [jsonschema] Build-depend on python3-urllib3
+94af98c395302f75a95922453886f2b00210e6af Sébastien Delafond: Add python3-vcversioner
+d873f372e286f5c0212e67503fd1699bbb2a13a7 Sébastien Delafond: Upstream tarball contains versioner-x.y.z/*
+c46621fd573cd8734c601f699c2604c6e64d951f Sébastien Delafond: Do not use vcversioner during early setup_requires phase
+6815acfc8f61767eadd083e658a5f3c835d85aab Sébastien Delafond: Do not use vcversioner during early setup_requires phase
+67a4dcf93e58f73732133a8bd4b4d4d8225452ae Dan Hadarau: Install mfw UI into /www not /www/admin
+70ff4d3b970932513e56bec453f023314fcef79b Dan Hadarau: Install mfw UI into /www not /www/admin
+6b1289a032d1ac51b7fe46b74a7eba996f512dc2 Brett Mastbergen: sync-settings: Depend on kmod-nft-bridge
+ac42ad9982b0107c7e62acbafc2b2be33adec66b Dirk Morris: Move executable to cmd pattern
+fe9982f9146b5afb561e6a421854feca65e58f92 Dirk Morris: Merge remote-tracking branch 'origin/openwrt-18.06'
+63930cbda350f4bffa8a3c9815dd281e03587578 Sébastien Delafond: Merge commit 'c3bb77ff271efb304b4a3d5e042937ec261023fa' into openwrt-18.06
+b459a6fc10278cd981e0243a85e196045c56630d Sébastien Delafond: Merge commit 'c3bb77ff271efb304b4a3d5e042937ec261023fa' into openwrt-18.06
+678a8537f286ac818a048b4d5d8dec034115899f Sébastien Delafond: Merge remote-tracking branch 'origin/master' into openwrt-18.06
+39da8f1dff4a63112c79a6cdd718b7b5cf8ef27b Brett Mastbergen: Revert "sync-settings: Depend on kmod-nft-bridge"
+58ec3d8532c63c0b4fb3821b513412ea8fbb7e7a Sébastien Delafond: Force targetting musl
+4d1e5902dd77dce7c8fdf1c6e31d717bb0b05189 Sébastien Delafond: Enable classd package
+bd496ae3bf5c528f3875fdf2ebdfbec6d4d67b9c Sébastien Delafond: Accept more arguments for -c
+e4b9b7c84a9169bd7da495f636b6caf3d33109f7 Sébastien Delafond: Merge commit 'bd496ae3bf5c528f3875fdf2ebdfbec6d4d67b9c' into openwrt-18.06
+af7fd8a71e055d59717829293c3ea9d03cc29da1 Sébastien Delafond: [classd] Add dependency on libstdcpp
+4efa104c1a351a8a2a951ca95df9470ab14d4853 Sébastien Delafond: [classd] Remove MUSL=1 flag
+bece8e41c0688ee95bde3c5bb851efdf5148fcfb Sébastien Delafond: Use cmake
+fb96ebc27d6278b614e0e63fa29f19d8410e374c Sébastien Delafond: [classd] Install classd binary and protolist.csv
+b0d6984387a5e29f217c9dbb5b1ec642c3ed1f5a Sébastien Delafond: Allow for calling /path/to/mfw_build/build.sh directly
+9a50b64632a1ac3df55ee4354696c286da435d78 Sébastien Delafond: Remove feeds.conf.mfw from toplevel directory
+2105d3230342b2e4785d406b988ba3a49c59160e Sébastien Delafond: Merge commit 'b0d6984387a5e29f217c9dbb5b1ec642c3ed1f5a' into openwrt-18.06
+cff6b9d1441db1b82f46acf03821f9c4cbb53e28 Sébastien Delafond: Auto-retry build with -j1 V=s if it fails the first time
+f882ffc145067513f6287973279e317c5af40d8e Sébastien Delafond: Merge commit 'cff6b9d1441db1b82f46acf03821f9c4cbb53e28' into openwrt-18.06
+2a2fd140997c2ed13120ddd11accc6ac3e48e819 Dirk Morris: Fix builds
+b6cd712941371de855930b558f53463e30f5fd48 Dirk Morris: Fix builds
+3fb43f5910ba8b59857180cf91c73963ae4fc2c4 Dirk Morris: Add who and watch utilities
+d390e623c7dfc7790786cc3b76fdd949d33d45a6 Brett Mastbergen: configs: common: Add conntrack
+b1d46cebda181798e52e4ad78656ff8d7fe7de40 Brett Mastbergen: netfilter: Add fib support for nftables
+2aca17090d4576d6e4e5be3bca98de07a6464a2b Brett Mastbergen: sync-settings: Depend on nft-fib
+dc618eedbf96e9d29ef51e648f10939f27627e6e Dirk Morris: Change banner
+5098f6ab819d6097b89e05fb78521e63ff39c2b6 Dirk Morris: Change banner
+65fa6fd11c13d5031f55532c89f7fae8c4578778 Sébastien Delafond: Force targetting musl
+f37ea4dec298c9aa40b830e24e95eb4f0a3ab34f Sébastien Delafond: Enable classd package
+487833910f0cfb53b16ce1597a02b004faa0f107 Sébastien Delafond: [classd] Our cmake-based build is now smart enough to figure out if it should use musl or not
+64de5d5dffd136e5fddfa6747d0f4127aea30858 Sébastien Delafond: Add sqlite3
+d622be446553330844f57d9db83490c189de7c80 Sébastien Delafond: Merge branch 'classd' into openwrt-18.06
+3671a274a9be30fd4c2897a18514e4ade7affe89 Sébastien Delafond: [classd] Install libnavl.so to /usr/lib
+60c769aa4798d41ba26f7dd3e3a472c87bdd0f76 Sébastien Delafond: Install sqlite3-cli (Closes: MFW-162)
+8cbec2ebe230945e074f9a23a3e93a1648364801 Sébastien Delafond: [container] Add container/docker kernel options via a dependency-only package
+fba8fce4fa1490a6f612fbc0b170fd8aef788fa0 Sébastien Delafond: [container] Add more options to container/Config
+cd2097a00d66be1ea6ca60906ad956d79d98db51 Sébastien Delafond: [container] Add some dependency packages
+d2babd7a1d5d8bd00efb9c313ff93d188bb7de5e Sébastien Delafond: [container] Add more kernel options
+9e6e8110fe1213a0224e527e56d00ba435a6a6d6 Sébastien Delafond: Merge branch 'docker' into openwrt-18.06
+178d81021de0bb23c04242e0f1b6e0ede2eba246 Sébastien Delafond: Revert "Fix builds"
+04837b4d2a7f24c36f47148d88b2cd874b8afaf1 Sébastien Delafond: Revert "Fix builds"
+e3d29215e99bdf9d17e5befe85802b45ebd87e50 Sébastien Delafond: Build directly from mfw/, to minimize symlink spraying in OpenWrt repository
+e2dd22659b6b3a1f2fbc9fc8ff8e8fca59e1131b Sébastien Delafond: Remove build.sh link from root directory; call ./mfw/build.sh instead
+db70efa521e496caf72f12c94821bde1299ea5c7 Sébastien Delafond: Merge commit 'e3d29215e99bdf9d17e5befe85802b45ebd87e50' into openwrt-18.06
+85b3c147657baf15a9cf90e6cc685b70e424fbe0 Sébastien Delafond: Mount parent directory in container
+cd54e4f12d68d763282100644ff55130f2001588 Sébastien Delafond: Merge commit '85b3c147657baf15a9cf90e6cc685b70e424fbe0' into openwrt-18.06
+99a2175219a6360cc6a3549a9879a4fb494824a3 Sébastien Delafond: basic jenkinsfile for x86_64
+b473207ad4247433fb9c2a629bf5308db25ce80f Sébastien Delafond: Specific x86_64 stage
+9dbc5bc444bc3bdca2c9c2da6e8cf6b4f47b8af9 Sébastien Delafond: Only run builds on agents labelled 'mfw'
+59bf94395592d66b2cdb9d5fb74e37967d2f8e74 Sébastien Delafond: Correct name for docker-compose config file
+9d509fdcb677fc2ccff54b9a7ea53b799026f866 Sébastien Delafond: Disable routing feed since we don't use it
+ad721c0857f9269a81e18df9161ab406ec620385 Sébastien Delafond: Disable luci feed since we don't use it
+dc8d8f4a5d4d530f4d677cce0e238eb1dab7173c Sébastien Delafond: Remove branch decision logic from build.sh and hardcode it in feeds.conf.mfw
+bc343585bc40cf7105035bac00696f6770bfad6e Sébastien Delafond: Build feeds from master branch
+870f2a2638932ca6157800216abc511fc114afad Sébastien Delafond: Merge branch 'openwrt-18.06' into jenkinsfile
+fbde352851f0ba54725d97c69f6f66d22b0937c9 Sébastien Delafond: Specify a different project name for each MFW build, to avoid collisions in docker network names
+435acf4af1b36023d5e47ad30060b37f4519ed28 Dirk Morris: Disable pyconnector for now
+a08b78e3047970a52bda2eab88c08bace82f4af6 Dirk Morris: Disable pyconnector for now
+fda2b6a1393142291577c180fd5082057303716b Dirk Morris: Bump partition size for x86_64 build
+90255ba8929021a3b5d923db99bdb977d3832d86 Sébastien Delafond: Start clean
+a076dd76104513f72920b669cfd77338533ce402 Sébastien Delafond: Introduce // stages (without factorization of build command for now)
+6c8449ea350e088d90263e761e63c4d40100eb60 Sébastien Delafond: Remove startClean=1
+96c7ba9744c16a52a5736c3680c17b9528571bfe Sébastien Delafond: Syntax
+0d1f38e2070356bc41e5330b8342b5bff2bfcc82 Sébastien Delafond: Factorize buildMFW call
+f10c32e9e3e3d6dfb6de84eb2c04b4a27af1d578 Sébastien Delafond: Revert "Factorize buildMFW call"
+5b27a06740a30a8ccf216dbefa3ae2b3c28fa621 Sébastien Delafond: Dedicated build directory for each device
+0986de401ac310803b75ca5a6a511608626f20ff Sébastien Delafond: Dedicated dir
+a3b8254eb2b3dd690f7bb7132eea108c5afefef6 Sébastien Delafond: Fix .travis.yml
+29bd609ef034fb436f6d3d5572584745b78684ad Sébastien Delafond: Add build-no-volume to docker-compose
+b0ff665d2b639e410329fe1bf0aa7757491222f7 Sébastien Delafond: Parameterize pipeline
+cea47215a631c7f518168dc320824497dcae5159 Sébastien Delafond: Checkout in subdirectory
+c511ea5307fae51217cefd5ce695fd131ccaf882 Sébastien Delafond: Syntax
+a341c4ffda3cd1f905f98dd54dba25ad7ba0c02d Sébastien Delafond: Workflow
+bd54536173d7d0fa5a648575615f6b6bcae98e69 Sébastien Delafond: Workflow
+40aa6e90fd75d915301eea48db8f948da3ab0fe5 Sébastien Delafond: Quoting
+b8950ab841d7b02099ebb4b1367db4c3b576d0f9 Sébastien Delafond: Templatable string in sh step, to allow for expansion of {$params.*}
+8fad6a377bfd864d9fea7f4a933cbfd562fe9cf9 Sébastien Delafond: No need to cd
+29c905cd7d0ac41ca71a99d717afe2548453386c Sébastien Delafond: Re-add wrt2300 build
+c8d78cc252cbdad656c5ff4436ab1575d2124c11 Sébastien Delafond: Quoting
+ad249d2bbf6835b359dcff3941bb37e0244373c2 Sébastien Delafond: Add device name to all stage names
+ea83e91cfdfff8fe176d258814670327c8a78cd7 Sébastien Delafond: Archive the artifacts
+ecd34b82d3f2de49b52f48410edd26dfbc5eca28 Sébastien Delafond: Use a function to archive the artifacts
+75668fea7aa5f2bb8c72306bf0946164a835511b Sébastien Delafond: String literals from stage names
+71ebdccbf1253f1d862b668769e3932e946185b0 Sébastien Delafond: Post after stages
+1b945fc59c2c1266b482ff8e9da7d205ef55c29c Sébastien Delafond: Shorten prep stage name, and try to dispatch on different nodes
+4c53d25d37aed4ba82b4bcdde803cddb18cb45be Sébastien Delafond: Revert previous failed attempt at dispatching, and add wrt1900 with a buildDir underneath its workspace
+c009ea05c16aab22c0fd0e196651f2a98a3f8b4d Brett Mastbergen: Remove patched version of dict
+7d89f101f769c1d4d57cf45bdb9d616a9ddfb6aa Sébastien Delafond: Use per-device build directories underneath the main workspace
+c6a3c150c560385c43b29465700f6e9e273e71a8 Brett Mastbergen: Add kmod-nft-dict
+09c7e971a51a0e63af8b4eee7abc793b9379453a Brett Mastbergen: packetd: Depend on kmod-nft-dict
+d9b98bc8d56a5defb2753c5b7ed2f9bf5bb58b9b Brett Mastbergen: build.sh: Add -f when installing mfw feed packages
+8345fe0cba483980e0d6377e9c04c4aa26c75612 Brett Mastbergen: build.sh: Add -f when installing mfw feed packages
+a439082eed5f963a6fe92769ea7306f590720a18 Brett Mastbergen: Merge commit '8345fe0cba483980e0d6377e9c04c4aa26c75612' into openwrt-18.06
+5b966f3ffb278ea909bf22de26726c5728613d7c Brett Mastbergen: Add patched version of libnftnl
+225aaf0c7cdc053eda26cff95922221d24e97f92 Brett Mastbergen: Add patched version of nftables
+89bfef448ebb2fd961d72c85bb21f1ae5a8d2516 Brett Mastbergen: Remove unnecessary patches from libnftnl, nftables, and linux
+9a4a97d6379479cef27c23b6720a5d68e79f6865 Dirk Morris: Add respawn option to packetd.init (also untabify)
+8fcf42de5fe8f058f4ad000e87919779b2670608 Brett Mastbergen: Add crash-collector
+c74e78f1f73cfe1a10914439d75e0becad1af0fa Brett Mastbergen: configs: common: Add crash-collector
+e988cad8353ae8edfd7e1d858eda1f4589bb5656 Sébastien Delafond: Merge remote-tracking branch 'origin/openwrt-18.06' into jenkinsfile
+ed515120a178f0cbe3287bdb9292bf960ef709ea Sébastien Delafond: Add email notice to x86_64 build
+d2687a3d546601fc89460868a65c4195fcc76cda Sébastien Delafond: Do not use ./ for buildDir, as archive() doesn't like it
+fa27d51069442f175f7f8a540efc564929ecd836 Sébastien Delafond: Add slack notification to x86_64 build
+8eeaca5e783b4f8e17de145b25102e2fe16cdc98 Sébastien Delafond: Add emailext-based notification to x86_64 build
+c979687066701eb1d7885beecb6bd73596e6831f Sébastien Delafond: Proper slack recipient
+dca9bfac29e21840cfc56263a41a6d02e9207fa9 Sébastien Delafond: Condense Jenkinsfile a bit
+9c68d84264042c6502c87eb2180500d0c3b8185e Sébastien Delafond: Remove duplicated email notification
+2540c314d6fda3b5e00f205e6f5cdab4d9de5836 Sébastien Delafond: Move test notifications to post{always}
+512e57a8376e6515c51fb3275b9ca2e7f1bbd717 Sébastien Delafond: Use a single post{success} for test notifications
+41b0dd6e3b6ffa658df0c6e7450b190f2ca3d0f6 Sébastien Delafond: Start adding notification on "failure || changed-to-success"
+87e626986178b71a2e4b616ecdce1d04d7264ca1 Sébastien Delafond: Move post section directly after //
+c3a1aeaa80df1158c1301a03118220797ec26043 Sébastien Delafond: Add an "existence-only" test based on stash'ing+unstash'ing the x86_64 rootfs
+0636db994bcc16eb305b135b2bf65a21d11dd518 Sébastien Delafond: More tweaks to post section
+c900191c5241cbe0493d7f463ca083cb3c669ad9 Sébastien Delafond: Hardcode the build dir as ~/build-mfw-$branch-$device
+c285af8d33a003dfd8d416a06431b33f69ce95d1 Sébastien Delafond: Revert notifyEveryUnstableBuild
+5829742b500378eda0247375365f11fc5448e38d Sébastien Delafond: Force email body to $BUILD_URL
+6225c45dc3b8c1a3f192f05ffab0840e99bfbcff Sébastien Delafond: Do not force absolute path when archiving or stashing build artifacts
+a07183c7542e05cb253c76fb2a1e3f370a6d98d9 Sébastien Delafond: Update archiveMFW() calls with new signature
+cb8bf3d96b87b886eba42a7ad203d6e965bbbc6e Sébastien Delafond: Use absolute path when stashing
+fcece32c526344d174c67a3a98abb6103a5d9f93 Sébastien Delafond: Copy x86_64 rootfs back into workspace before stashing
+e146fe2daa491507dc993fca24fbc5fa52c554a5 Sébastien Delafond: Modify buildMFW() to copy images back into the workspace
+5caa7098e9e89d83a13e3650f33a1c95683f29ee Sébastien Delafond: Leave the archive signature as close as possible to a not-out-of-tree build
+24ef033e2eee9f6b004780eec9acfbee103a0307 Sébastien Delafond: Change target copying
+87b7848dca142b59d200d68d11038889336cca15 Sébastien Delafond: targets/*
+ef4151ff881b5d94d3f78c5af8acc5c7d08432fd Sébastien Delafond: One shell step to bring artifacts into workspace
+29b893b361329b7885dbc2f81cab39bfc27d4520 Brett Mastbergen: configs: x86_64: Add mac80211_hwsim
+51cd49d44bd72df6b517362e2e72c4df44ce5b90 Sébastien Delafond: Merge commit 'ef4151ff881b5d94d3f78c5af8acc5c7d08432fd' into openwrt-18.06
+56702ffd260f88955c92f70a558ad6d62b4fad97 Sébastien Delafond: Add omnia to Jenkinsfile
+292088c563cc6c06e66033ce5e93a1b25e195cb3 Sébastien Delafond: Merge commit '56702ffd260f88955c92f70a558ad6d62b4fad97' into openwrt-18.06
+36216712e528729e2a0aadbededea35a201f21ab Sébastien Delafond: Stash from subdirectory
+d412869ca2b8801d79a2265bed3e19046cffa0ce Sébastien Delafond: Merge commit '36216712e528729e2a0aadbededea35a201f21ab' into openwrt-18.06
+1b1d498216da6d248b8754bf1b0365438abf000b Sébastien Delafond: Remove unused docker-compose service
+3dbb0ff32fb98400788379d39db82f275de1f56d Sébastien Delafond: .gitignore
+0f2c8a817793e0646af82d63620a04bcdcf869df Sébastien Delafond: Add testing assets
+e388820d8957feec8e960473b2832f8689c27dde Sébastien Delafond: Merge commit '0f2c8a817793e0646af82d63620a04bcdcf869df' into openwrt-18.06
+bee2fa2bd090014eb62ae86ef13f3023afba38a9 Sébastien Delafond: classd runs on tcp:8123
+635068b1aa921306de7bacbf6345f9da42593f19 Sébastien Delafond: Rework notifications, and build status if tests fail
+0f9b088db7ba8f84a3485ab6f21d2b9ddf1e4b6b Sébastien Delafond: Merge commit '635068b1aa921306de7bacbf6345f9da42593f19' into openwrt-18.06
+6aa3ea2f01c0cb20f8b9de2432eeb6c0e66afaee Sébastien Delafond: Wrap status setting inside a script{} section
+19f83ea61b2a73fb3473d1922bc58f1947db8353 Sébastien Delafond: Merge commit '6aa3ea2f01c0cb20f8b9de2432eeb6c0e66afaee' into openwrt-18.06
+38841473b668c927d1ea1f79e31f722de7b1075f Sébastien Delafond: Working scaffolding for docker-based testing
+d1e9db33468c3c65a0c8a37502e660b3d47420aa Sébastien Delafond: Merge commit '38841473b668c927d1ea1f79e31f722de7b1075f' into openwrt-18.06
+5b2c9b365efcf99306e4d2de87f9d7a76041758d Sébastien Delafond: Run the docker-based tests in the foreground
+9744cad357801b750c0efc49ce90ac5802111c02 Sébastien Delafond: Separate test preparation from actual functional tests
+182f1aa3062c16e7096e971bb159ff4ef3cbc9f1 Sébastien Delafond: Merge commit '9744cad357801b750c0efc49ce90ac5802111c02' into openwrt-18.06
+7dbadaaa3e2510e179a16a25838f667f80c2412b Sébastien Delafond: s/shell/sh/
+d3dcd3acc2b8f63189a19a29d283afe79291a1d0 Sébastien Delafond: Merge commit '7dbadaaa3e2510e179a16a25838f667f80c2412b' into openwrt-18.06
+ff9630c799a94ce0ecf20d6ad9476f8b465e37f9 Sébastien Delafond: Add missing environment variable
+26ad30337f117893562222ac179dbf2dac276da1 Sébastien Delafond: Merge commit 'ff9630c799a94ce0ecf20d6ad9476f8b465e37f9' into openwrt-18.06
+1e7e61c0d5ede812f58a8005b1a41ff93d35c0fc Sébastien Delafond: Typo in docker-compose command
+8d2d431066c27ba908d0ec9cfbc4802d38fbf4e8 Sébastien Delafond: Merge commit '1e7e61c0d5ede812f58a8005b1a41ff93d35c0fc' into openwrt-18.06
+8a90920c5e3dfec697efc6bd12aa230c6132a3aa Sébastien Delafond: Make sure the rootfs tarball is available from within the docker context
+8ac9918985782f3572eb3eaeeffa4358823761ae Sébastien Delafond: Merge commit '8a90920c5e3dfec697efc6bd12aa230c6132a3aa' into openwrt-18.06
+797967d7adca6d27b2b365ebe9f485495d61f7a9 Sébastien Delafond: New variables names
+bab771f6cdec1fc500cbec09326f102727e967e0 Sébastien Delafond: Merge commit '797967d7adca6d27b2b365ebe9f485495d61f7a9' into openwrt-18.06
+d22bac42392464419c2c9e4947f20f5f09fab36c Sébastien Delafond: Also archive kmod-mac80211-hwsim_*.ipk packages
+81402363cf0259bd042b9f09927772e8e82899c7 Sébastien Delafond: Merge commit 'd22bac42392464419c2c9e4947f20f5f09fab36c' into openwrt-18.06
+54433f380763908562319776eb23be881b03bf4e Dirk Morris: Remove timestamps from packetd output going to logd
+194a9b1427f0cfb290961bede89cb7590cbe4a7d Dirk Morris: Use correct option name
+bae6009255f049c1bc88ff31b204f67fd1aacdc0 Sébastien Delafond: Mark build as UNSTABLE instead of FAILED when tests fail
+98d59390b520d679344d1c12a9ce503853a4752e Sébastien Delafond: Merge commit 'bae6009255f049c1bc88ff31b204f67fd1aacdc0' into openwrt-18.06
+cbb330d67c9676e988e1fe971f0d045d7484f8ef Sébastien Delafond: Team notifications
+a4c9c60cd1041b19a7f07e6b3934d3e1bd4e6805 Sébastien Delafond: Merge commit 'cbb330d67c9676e988e1fe971f0d045d7484f8ef' into openwrt-18.06
+f5169727ced6294b61047af2ff7a4f3cd8e0fad2 Sébastien Delafond: Set initial test to ping -c 1
+842f3ff2f5da5e9cff35efed106a1c37401bc291 Sébastien Delafond: Set initial test to ping -c 1
+a106eda65bd495e107b38890e68ed24879ee7d32 Sébastien Delafond: Set initial test to ping -c 1
+9e11c27107057fdd6a98660c517dce531517f0da Sébastien Delafond: Team notification with status
+a25a07def149fd55fef64212ed1a230b33c02b9e Sébastien Delafond: Merge commit '9e11c27107057fdd6a98660c517dce531517f0da' into openwrt-18.06
+20c1414bbf427d83d18fd6ef22bfa56650b43f2e Sébastien Delafond: Merge commit '9e11c27107057fdd6a98660c517dce531517f0da' into openwrt-18.06
+db70bca5780fb3d3d038d5c3e4183bc75e50f4a2 Sébastien Delafond: Intentionally fail the tests
+c6aa1386418b145fb7731451c7707b1649cc7aa6 Sébastien Delafond: Merge commit 'db70bca5780fb3d3d038d5c3e4183bc75e50f4a2' into openwrt-18.06
+cdccafd8df85de7bb434bf4d871ea1b90f7c591a Sébastien Delafond: Merge commit 'db70bca5780fb3d3d038d5c3e4183bc75e50f4a2' into openwrt-18.06
+56f76c5fd2cc9d5c5a2611efb23b7289193def25 Sébastien Delafond: Unfail tests
+e4db59aba8c43b414a7226f50385f17d62dfdffd Sébastien Delafond: Merge commit '56f76c5fd2cc9d5c5a2611efb23b7289193def25' into openwrt-18.06
+f7190e32a388fea92cc50ac2d0c0ded26c21ec61 Sébastien Delafond: Merge commit '56f76c5fd2cc9d5c5a2611efb23b7289193def25' into openwrt-18.06
+41024c99c524232da7ce8f878a0d663136ed15a4 Sébastien Delafond: Use actual timestamp of source files when building images
+01d412f8470cd22762c0ff33bceaa84cf4192338 Sébastien Delafond: Merge commit '41024c99c524232da7ce8f878a0d663136ed15a4' into openwrt-18.06
+da783758fb53b97b9e23602075a63e25daca9113 Sébastien Delafond: Merge commit '41024c99c524232da7ce8f878a0d663136ed15a4' into openwrt-18.06
+9c42644a4c5ad05387a6889b3d7887e3a2f517ea Brett Mastbergen: sync-settings: Depend on openvpn-openssl
+e0c688dc0b5a9f94d4a586ef5af9e7bf705f4b63 Dirk Morris: Update readme
+66d0c60b7079a76169fa9b32516c594aec7ce54a Dirk Morris: Update readme
+917b7b599b3609448d619b45600ce22cc8e4d1ad Dirk Morris: Keep correct filename, but use the symlink instead
+6d06235d1f0b9c96acac9ceed00e83df7b682e32 Dirk Morris: Keep correct filename, but use the symlink instead
+12c1de9493d1c02a2d3651a8d2efb188ec311461 Dirk Morris: Disable build on master
+c708af4449dc96080e7ec9c9b53cda7c53a547e8 Dirk Morris: Disable build on master
+ae15c5d63807de443999783e48b78440c52e784d Sébastien Delafond: Do not exit 1 directly from usage()
+89865db79fd866fb74b1bb8acf9204910e6671bf Sébastien Delafond: Add timestamp and branch information to Jenkins artifacts
+e9a2d9e41666b3b8e5d8137a1f7af478798c2ca5 Sébastien Delafond: Merge commit '89865db79fd866fb74b1bb8acf9204910e6671bf' into openwrt-18.06
+a16a141a45ef4f2b8a6e84082fa5a2cf9ae1b259 Sébastien Delafond: Merge commit '89865db79fd866fb74b1bb8acf9204910e6671bf' into openwrt-18.06
+d56deac51630e776db48d2e5434722c8866c0bc2 Sébastien Delafond: Use new archiveMFW() method
+302f0087b3fa9ce2c813f7893fc43ce4f6210428 Sébastien Delafond: Merge commit 'd56deac51630e776db48d2e5434722c8866c0bc2' into openwrt-18.06
+cb4d4994e9d2a5afaa9f65ddad9c934ba716809d Sébastien Delafond: Merge commit 'd56deac51630e776db48d2e5434722c8866c0bc2' into openwrt-18.06
+71c272de5ff4689a24643a2b7df683d3bafaca17 Sébastien Delafond: Syntax
+0a3668b2194a611522aeaf841ca2701f3567e94f Sébastien Delafond: Merge commit '71c272de5ff4689a24643a2b7df683d3bafaca17' into openwrt-18.06
+34685b8c0b7a44a20efbd11d52beb8749c6ddb64 Sébastien Delafond: Merge commit '71c272de5ff4689a24643a2b7df683d3bafaca17' into openwrt-18.06
+6a092ce4459d48d2882d4f2e5ba7853688f357b8 Brett Mastbergen: Add openvpn-proto
+2739a278309ecc4fea918e69663f6d00311a74b3 Brett Mastbergen: sync-settings: Depend on openvpn-proto
+8fecbb87287ffeb789eb84f820abc5ac090b202e Sébastien Delafond: Add upstream projects
+6024a721321f2d35511a54654977f7bc7c7536c8 Sébastien Delafond: Merge commit '8fecbb87287ffeb789eb84f820abc5ac090b202e' into openwrt-18.06
+65a19c187ae0b765d5ac24257268d8706c30a4f5 Sébastien Delafond: Merge commit '8fecbb87287ffeb789eb84f820abc5ac090b202e' into openwrt-18.06
+0401783bb39fdd512e38d3c28f8a87e2c8edfd9f Brett Mastbergen: sync-settings: Depend on wireguard
+bf7fc41c8cbcc7f187a057809da4a02f6e7a0c79 Dirk Morris: Try earlier launch time for packetd so it doesn't miss traffic
+4c291185a9407893cebf25b3a7acccc499fd9944 Dirk Morris: Try packetd right after networking
+50301539ba69d1e1a5c71e644bfbb5da31a49b15 Dirk Morris: Enable cpuprofiling by default for now
+bc0bcf33b8f8c5ce516c2f2b625637bd430446cc Dirk Morris: Change packetd to use logfile
+77d0f77f0792673e6f6eccbf443f7b2637acd9b2 Dirk Morris: Disable cpuprofiling
+f3f5949d78a51908dd57dfc1e005434961692204 Dirk Morris: add GODEBUG options but commented out
+c3a426dec6e5419d457e20c2e03af14569385472 Sébastien Delafond: Merge tag 'v18.06.2' into openwrt-18.06
+d6f68e63be15b19f0350414b975b9539637d1003 Sébastien Delafond: Add classd/master as an upstream project
+d9960a85eb1532aad91084ca7c2bff7779c13922 Sébastien Delafond: Merge commit 'd6f68e63be15b19f0350414b975b9539637d1003' into openwrt-18.06
+0253f302f392896f6ce28fa0115aaf67498c2d0e Sébastien Delafond: Merge commit 'd6f68e63be15b19f0350414b975b9539637d1003' into openwrt-18.06
+ed6ebfff3d32aa4d2540f074fbd3b1e1f0b70287 Brett Mastbergen: packetd: Add CONFIG_NF_CONNTRACK_TIMESTAMP to KCONFIG
+0913e863b84bc52cbfce5eabea29ee7bb1d0d09e Sébastien Delafond: Remove personal notifications
+ea3d69240e2e610c06dcfe8d9f9670400de73790 Sébastien Delafond: .gitignore
+d35ee864ef085c5f64e1c2c502731cdfb5b0a630 Sébastien Delafond: Merge commit 'ea3d69240e2e610c06dcfe8d9f9670400de73790' into openwrt-18.06
+d9f8076d0aca0745cb5c4846e25979fa5f674653 Sébastien Delafond: Merge commit 'ea3d69240e2e610c06dcfe8d9f9670400de73790' into openwrt-18.06
+b67b74be25aa2bc4bde9d761d5027bc2b37be5d2 Sébastien Delafond: Correct name for docker-compose configuration file
+a6f551d01180051744460363e3909233e2ee89a6 Sébastien Delafond: Merge commit 'b67b74be25aa2bc4bde9d761d5027bc2b37be5d2' into openwrt-18.06
+484a11d41570ed93aeafcc26c3a88f4a8e946bfe Sébastien Delafond: Merge commit 'b67b74be25aa2bc4bde9d761d5027bc2b37be5d2' into openwrt-18.06
+4c253389688d3c0047e2e2f6697024617a43e967 Sébastien Delafond: Move set -x to shebang line so caller can override it with bash ./build.sh
+f5d5ffe563d931373e7fb668a2fbc7d738b7ecd1 Sébastien Delafond: Better form for Dockerfile.build
+1094a7ec1b738f5ef64678dbcfa14f6b63f2cd4c Sébastien Delafond: Merge commit 'f5d5ffe563d931373e7fb668a2fbc7d738b7ecd1' into openwrt-18.06
+4a92211c8d887981abea41127d45ee1518ed4b85 Sébastien Delafond: Merge commit 'f5d5ffe563d931373e7fb668a2fbc7d738b7ecd1' into openwrt-18.06
+12ff38161e6a1976b61b2b306a3c127d79f17916 Sébastien Delafond: version.date belongs in the upstream tree: cleaning it up now means git checkout instead of rm
+a15ae56ad6775348a848092fe33bbb14fe2071ef Sébastien Delafond: Merge commit '12ff38161e6a1976b61b2b306a3c127d79f17916' into openwrt-18.06
+217537346cddd8d06d74594932edfa28208e314c Sébastien Delafond: Merge commit '12ff38161e6a1976b61b2b306a3c127d79f17916' into openwrt-18.06
+858adbf777973bfa600cc9a38d9c0f082fb0727e Sébastien Delafond: make clean doesn't like it when .config doesn't exist
+643d6656b19688e492b1b4db6d17e97fd27d870b Sébastien Delafond: Merge commit '858adbf777973bfa600cc9a38d9c0f082fb0727e' into openwrt-18.06
+960ff3b913dd90a3e357b1b3acdc61598c4a2dd8 Sébastien Delafond: Merge commit '858adbf777973bfa600cc9a38d9c0f082fb0727e' into openwrt-18.06
+ae60b231cdd26500a70d4bbc11d394ae34046bf7 Sébastien Delafond: Make sure defconfig has run before calling make clean
+6428c169a9fa1758e6265730ceb6a6fd3648ae66 Sébastien Delafond: Merge commit 'ae60b231cdd26500a70d4bbc11d394ae34046bf7' into openwrt-18.06
+2957ed875363cd4ccd29f565ac12fa121af616ac Sébastien Delafond: Merge commit 'ae60b231cdd26500a70d4bbc11d394ae34046bf7' into openwrt-18.06
+1ac17deca47b8707c834a25776da09b69fdc5997 Sébastien Delafond: defconfig should be all that's needed to satisfy make clean
+5dc07f59b02ef4218d8c3fdd50ebc3799e06d9e6 Sébastien Delafond: Merge commit '1ac17deca47b8707c834a25776da09b69fdc5997' into openwrt-18.06
+24950c272efc79ee5ee55e0f5e37cf55bc05431b Sébastien Delafond: Merge commit '1ac17deca47b8707c834a25776da09b69fdc5997' into openwrt-18.06
+58e2f17e0aa7895a9c587a75310834a91eb34ffa Dirk Morris: Update pyconnector for python3
+25cc0306eeac10729b691c8cde62d18d5bcb8e00 Dirk Morris: Add some dependencies
+a4f93d98be1daccc6be06865669b8bcdd865c49e Dirk Morris: Remove base64 requirement, changed to just use python instead
+aa6ff8040206ee0379d6ba98085881e61f22b567 Dirk Morris: Fix misspelling
+e14c12152d06804ea643f13c57f3bc16c9e77196 Dirk Morris: Fix misspelling
+cf0886a3be911169306a740fd340ff270ba5e198 Dirk Morris: Add new pyconnector
+c182d3dde2d0685322dd26ac4caa6686ea8a2350 Dirk Morris: Enable pyconnector again
+04057e2065a55c73577f3be7a2f9b73fb766597b Dirk Morris: Removing extra debugging
+3e17b44dbfe2222bb3cb968c73eedfd975349f81 Sébastien Delafond: Store VMWare images as build artifacts
+ed60e3aff4938f7b506c36797b2387aa8f5b768d Sébastien Delafond: Remove unused CL arguments from version-images.sh
+4807bfaf8f0baefb5fe2dcf01ef16977b2d88570 Sébastien Delafond: Rename images to something human-readable
+b587c9d87a6290c04e87406f4b63b770f9a91b97 Sébastien Delafond: Do not version or artifact Packages.gz
+65f9889d63af9430fa2f4606bb42f71b700c7704 Sébastien Delafond: Merge commit 'b587c9d87a6290c04e87406f4b63b770f9a91b97' into openwrt-18.06
+4ac290bd6769b20bc6d91a9011d92774c7a26c22 Sébastien Delafond: Merge commit 'b587c9d87a6290c04e87406f4b63b770f9a91b97' into openwrt-18.06
+5de32576612c842e9a3cb489799a38ade3b12ab8 Sébastien Delafond: Sumplify branch name used in artifacts versions
+c5202362e35accb4d6dbb35298579ffbe8dc7fce Sébastien Delafond: Merge commit '5de32576612c842e9a3cb489799a38ade3b12ab8' into openwrt-18.06
+acf62c8cffa6f86f73e41d80e83e350ddf96af9e Sébastien Delafond: Merge commit '5de32576612c842e9a3cb489799a38ade3b12ab8' into openwrt-18.06
+d6f1513dde1cf4a5d3e6d95e97b3eedd03804d70 Brett Mastbergen: configs: Add support for linksys wrt32x
+7ff86b4272654c692f29267493806027a8602f52 Brett Mastbergen: container: Don't build for linksys wrt32x
+0317efcf2a74d09f50e4bf7fbb3b8bd74da58048 Brett Mastbergen: Jenkinsfile: Add wrt32x
+7176fb9dfe0ca581c75c179e64a3a6df8cb80f2c Brett Mastbergen: Merge commit '0317efcf2a74d09f50e4bf7fbb3b8bd74da58048' into openwrt-18.06
+4931a86757d2272a0277f6c9e026d8eda0445559 Brett Mastbergen: Merge commit '0317efcf2a74d09f50e4bf7fbb3b8bd74da58048' into openwrt-18.06
+018c822b1b28553f0ac17e07a390ff2abf337799 Brett Mastbergen: configs: common: Add inotifyd
+eea10384986a5d9d8988a74d9c64d7cca06495ec Brett Mastbergen: Add wan-manager
+d4c1acc0364f815a0f8235eb3b758d22e59992a1 Sébastien Delafond: Tweak /etc/banner a bit
+b1d5c262311697071ad78efbfff1f343ad50a6e6 Sébastien Delafond: Tentative versioning
+b7c721d7dd62e568307def1e64038ee413252cf8 Sébastien Delafond: Merge commit 'b1d5c262311697071ad78efbfff1f343ad50a6e6' into openwrt-18.06
+31140e63020027da6d258d6fb0c206511886a8ba Sébastien Delafond: Merge commit 'b1d5c262311697071ad78efbfff1f343ad50a6e6' into openwrt-18.06
+c00f1c8736288eac18ec29d3d7e272cfec8c4d00 Sébastien Delafond: Artifacts versioning
+c6e4bb6e27c61bf6e3b1ca1661fa6a670cca78bf Sébastien Delafond: Merge commit 'c00f1c8736288eac18ec29d3d7e272cfec8c4d00' into openwrt-18.06
+ee25feb7fa868edf109407d2a784861b173dded4 Sébastien Delafond: Merge commit 'c00f1c8736288eac18ec29d3d7e272cfec8c4d00' into openwrt-18.06
+d9cfe8bcd8423f5305eac9bb9f3870312d89d5d9 Brett Mastbergen: wan-manager: Touch /tmp/stats.json on boot
+e1fdec80d5697bba0a327b9d435428fa98339e03 Brett Mastbergen: sync-settings: Depend on wan-manager
+572a3669919ace8f34a454197f764528143847c1 Sébastien Delafond: Artifacts versioning
+42eb38572ab16a9a98ae47306206620d00e7443e Brett Mastbergen: wan-manager: Fix stats file path
+c89dfdf39f0606cadbd83ebddef541077a0b0d8f Sébastien Delafond: Merge commit '572a3669919ace8f34a454197f764528143847c1' into openwrt-18.06
+95dbe8dfef9dc222352f8a4a24b846c3d6a6ac2b Sébastien Delafond: Merge commit '572a3669919ace8f34a454197f764528143847c1' into openwrt-18.06
+36440bc016c3ea4959399f0f909dd32575fe2cad Sébastien Delafond: Shorten stage labels in Jenkins
+4fd9dbb727e3db0147384b86575b4def2f2d2a85 Sébastien Delafond: Merge commit '36440bc016c3ea4959399f0f909dd32575fe2cad' into openwrt-18.06
+7e576f05d8906add3ff5c21ad2327c4ef2a4064f Sébastien Delafond: Merge commit '36440bc016c3ea4959399f0f909dd32575fe2cad' into openwrt-18.06
+b622db23be052269860d1a3a38cc6e43052aa078 Brett Mastbergen: wan-manager: Initialize stats.json with empty json
+f04803873862430f9a619d992bb2ee50bfe780c5 Brett Mastbergen: wan-manager: Deal with an empty stats.json
+7ec44fdc78ebe2347b01bb58d1af4236220dbdf0 Brett Mastbergen: wan-manager: Add state_schema
+7499b72a7eba36fd26bcdcf648bcc9303225ed9d Brett Mastbergen: wan-manager: Make sure balance rule weights are integers
+050710159a05b7ff87d0df1c8287a4a5f201c07d Sébastien Delafond: Artifacts versioning
+548406579385e9b0ae4302868d36a1ad451c4fd9 Sébastien Delafond: Merge commit '050710159a05b7ff87d0df1c8287a4a5f201c07d' into openwrt-18.06
+0c8297a51836757bd62acda1a788881e96803905 Sébastien Delafond: Merge commit '050710159a05b7ff87d0df1c8287a4a5f201c07d' into openwrt-18.06
+cec3e8b0d063f0cc044b93b6fbdba5665584bde0 Brett Mastbergen: wan-manager: Write wan_policy to sessions table, not session
+c090178531c91f7eb80de53ff9ba8daaadb8d3c8 Sébastien Delafond: Add Jenkinsfile
+f4bd2dbf07a454082caebf3824eb47122fabfc9e Sébastien Delafond: Add feeds/master as an upstream project
+886154d8d167cd03767062073934bc96d358270f Sébastien Delafond: Merge commit 'f4bd2dbf07a454082caebf3824eb47122fabfc9e' into openwrt-18.06
+d6c810e4486891e69e003c95e4f135b585867826 Sébastien Delafond: Merge commit 'f4bd2dbf07a454082caebf3824eb47122fabfc9e' into openwrt-18.06
+90b925ec49e7deb456c5d8f67339378756bac2a6 Sébastien Delafond: Add ./update-subtrees.py
+53b11df3c62a5b7c40377ba173301fc66455aba2 Sébastien Delafond: Merge commit 'f4bd2dbf07a454082caebf3824eb47122fabfc9e' into openwrt-18.06
+cc236feaac60d08e92e4cab204bfcdafd9146191 Sébastien Delafond: Change upstream project from feeds/master to feeds/openwrt-18.06
+17d9c03bd69f40f423ecd9ecb3d3ec5b8a23f05d Sébastien Delafond: Merge commit 'cc236feaac60d08e92e4cab204bfcdafd9146191' into openwrt-18.06
+ec4c84a4876e0845a548dcaf0703cf64bd471f77 Sébastien Delafond: Merge commit 'cc236feaac60d08e92e4cab204bfcdafd9146191' into openwrt-18.06
+6a2e4e77787cf22ca8316a25fb9dbb71dd119909 Sébastien Delafond: Document Jenkinsfile purpose
+fdb7a2a6210a8e3a62147335d461a8c3490a7136 Sébastien Delafond: Add admin/master as an upstream project
+3e73b1d8b8a0e90f0143bade1e68c86836e4662a Sébastien Delafond: Merge commit 'fdb7a2a6210a8e3a62147335d461a8c3490a7136' into openwrt-18.06
+fae3dada52d8071797d96a171ef7c22b4af5cf76 Sébastien Delafond: Merge commit 'fdb7a2a6210a8e3a62147335d461a8c3490a7136' into openwrt-18.06
+b1212bf03ec84e4d60299b18b26863d46ed3487c Sébastien Delafond: Shorten labels, now that BlueOcean labels parallel stages by default
+32d2f4bb92c3cc4230515230d5a6e658e6901341 Sébastien Delafond: Merge commit 'b1212bf03ec84e4d60299b18b26863d46ed3487c' into openwrt-18.06
+3598fbad4f9848cac5abaa7fed2f36b90d2e9046 Sébastien Delafond: Merge commit 'b1212bf03ec84e4d60299b18b26863d46ed3487c' into openwrt-18.06
+99c69f14670f515a1b5d8e3c8f1fe87ea9955e3c Sébastien Delafond: Revert "Shorten labels, now that BlueOcean labels parallel stages by default"
+18d0ad099c44c075abe0e2954288ee6b8e01b69f Sébastien Delafond: Remove unnecessary OpenWrt string
+5859abe094061f3dedb9643268ddfaf10513c579 Sébastien Delafond: Merge commit '18d0ad099c44c075abe0e2954288ee6b8e01b69f' into openwrt-18.06
+006cfd8e6a6ae887aaa000f8ca558896e88f3e8e Sébastien Delafond: Merge commit '18d0ad099c44c075abe0e2954288ee6b8e01b69f' into openwrt-18.06
+9b67afdc1e6b3ac0c733a63447dcc67d7e91e363 Sébastien Delafond: Add a list of MFW packages to the artifacts
+377b9904533efe5366dfa4e8dddedeacd65e46b8 Sébastien Delafond: Add wrt32x
+d628fcee6e9ffe3a9a7f4ea23d7bd2f0fd5f8b63 Sébastien Delafond: Merge commit '377b9904533efe5366dfa4e8dddedeacd65e46b8' into openwrt-18.06
+b8587a29b5c0961bfe33ee3bdd741bc4fbf56a30 Sébastien Delafond: Merge commit '377b9904533efe5366dfa4e8dddedeacd65e46b8' into openwrt-18.06
+09a12c090d368e47a357cdc02dfaf3f37bcc9394 Sébastien Delafond: Add a list of MFW packages to the artifacts
+d4b3cd732f5f2193abe686f063b77cba0a660b2f Sébastien Delafond: Merge commit '09a12c090d368e47a357cdc02dfaf3f37bcc9394' into openwrt-18.06
+88a75781c48138b33ec332719166988f9d1e8fd3 Sébastien Delafond: Merge commit '09a12c090d368e47a357cdc02dfaf3f37bcc9394' into openwrt-18.06
+0e9da69394f12ae1b614963f8ef8baec01d3da45 Sébastien Delafond: Start by cleaning output dir
+4160c041c22fedf95bea40751e93c67664cbddde Sébastien Delafond: Merge commit '0e9da69394f12ae1b614963f8ef8baec01d3da45' into openwrt-18.06
+8046ffb7e039cc24a64754b29bc66813ca663639 Sébastien Delafond: Merge commit '0e9da69394f12ae1b614963f8ef8baec01d3da45' into openwrt-18.06
+6afbfc3d21f87e0952e90df8357a6af9f9b2d215 Sébastien Delafond: Remove constructor from image name
+7df1b0bf5a9202c2b28a0270c9e404052fa22063 Sébastien Delafond: Merge commit '6afbfc3d21f87e0952e90df8357a6af9f9b2d215' into openwrt-18.06
+42a0b32b174d5796a7c5d0738d3ae7cb4e8e6f43 Sébastien Delafond: Merge commit '6afbfc3d21f87e0952e90df8357a6af9f9b2d215' into openwrt-18.06
+ec0779fe871c96613e9f3a46cc519c02cf3f06cb Sébastien Delafond: [travis] Run in verbose mode to avoid timing out
+7db0f57e7b027a041d9e278b9b3dbcab03ca3f89 Sébastien Delafond: Merge commit 'ec0779fe871c96613e9f3a46cc519c02cf3f06cb' into openwrt-18.06
+cd462fb015ec0e78f7b8458fb600e0409cada61d Sébastien Delafond: Merge commit 'ec0779fe871c96613e9f3a46cc519c02cf3f06cb' into openwrt-18.06
+b32c6f3e9cfb525cc89b615d959874080ae15d85 Sébastien Delafond: More readable artifacts copying, plus creation of bin/ in case it got deleted
+9e76a26f66976bc9c38bb70860f4b01ca5487bcd Sébastien Delafond: Merge commit 'b32c6f3e9cfb525cc89b615d959874080ae15d85' into openwrt-18.06
+8e96df8681ca2b1dd484507ce7f1b48bbc70ce4c Sébastien Delafond: Merge commit 'b32c6f3e9cfb525cc89b615d959874080ae15d85' into openwrt-18.06
+7520837bfdeadc1501c9d4fff447587fd3f57d86 Sébastien Delafond: Sneak in Jenkins build URL into /etc/os-release, as LEDE_DEVICE_MANUFACTURER_URL
+ed518fdacc3e7c63e85b18c7ef31acc9afe1edcf Sébastien Delafond: Merge commit '7520837bfdeadc1501c9d4fff447587fd3f57d86' into openwrt-18.06
+69ed8b28f4ad58b6185eb37d42344e5a627986fd Sébastien Delafond: Merge commit '7520837bfdeadc1501c9d4fff447587fd3f57d86' into openwrt-18.06
+532d699c9c68e96675ff54a541388432db724968 Sébastien Delafond: Do not hesitate to write syntactically-correct shell
+36dc96ae1356ead2c4ec36af61e166cef0037eb8 Sébastien Delafond: Merge commit '532d699c9c68e96675ff54a541388432db724968' into openwrt-18.06
+6eb0ef0438e6f92a5b62f9f9bf04e548cdbd4a9a Sébastien Delafond: Merge commit '532d699c9c68e96675ff54a541388432db724968' into openwrt-18.06
+0931a934a8e2243e0b834cd72680749c5ae5ac4d Sébastien Delafond: Make sure BUILD_URL env variable is passed through compose
+ae5e329fc32db9515099cbc530247a26a6537def Sébastien Delafond: Merge commit '0931a934a8e2243e0b834cd72680749c5ae5ac4d' into openwrt-18.06
+bb51a95700bbdd9a88d26f3599ff3f4cedfef701 Sébastien Delafond: Merge commit '0931a934a8e2243e0b834cd72680749c5ae5ac4d' into openwrt-18.06
+448eddf6432222dbb398cc7cc94feaf432f358e3 Sébastien Delafond: Unscrew YAML indentation
+b4a7e2aeb8ff2923d9c32197b44d0df7c2e28399 Sébastien Delafond: Merge commit '448eddf6432222dbb398cc7cc94feaf432f358e3' into openwrt-18.06
+c40685f8cc0cd2364bee59c8f046085edb1cdd5c Sébastien Delafond: Merge commit '448eddf6432222dbb398cc7cc94feaf432f358e3' into openwrt-18.06
+df31a0e437b98cbd9098718f40173ced459fbdfa Dirk Morris: Change dev cert
+1f90a07577c9c39bee2700f55a88c96f929b0efc Sébastien Delafond: Add golang-1.12
+05d704583ee5e2a6681868e987be8b97f8bd9379 Sébastien Delafond: Use golang-1.12 to build packetd
+71686c4b968eb7417b8e363cf756ea2094a9f818 Sébastien Delafond: If present, allow golang from MFW-feeds to take priority over the one in OpenWRT-feeds
+1003464fea31a31c62a8b53eb74f604efe5ec4b2 Sébastien Delafond: Merge commit '71686c4b968eb7417b8e363cf756ea2094a9f818' into openwrt-18.06
+4b6327a3821772fa1f3ecc6374925093a1cfd700 Sébastien Delafond: Merge commit '71686c4b968eb7417b8e363cf756ea2094a9f818' into openwrt-18.06
+3a252dfa434729c1897ffdd364e79e27f15dd90d Sébastien Delafond: Merge commit '71686c4b968eb7417b8e363cf756ea2094a9f818' into openwrt-18.06
+abc19bcff7dc0d8655d383df044bd522e04f6f92 Sébastien Delafond: Merge branch 'openwrt-18.06+golang-1.12' into openwrt-18.06
+ca18eef0c606e0af8c9b5f596674b20d90d82e34 Dirk Morris: move packetd back to system log
+3da7a82461bb01a7d3cd7dcc97361e596fdcd4bc Sébastien Delafond: Document how to keep our DockerHub's untangleinc/mfw:x86-64 current
+f8024081dd57946c43bcbf6ce2e386554fee91c4 Sébastien Delafond: Merge commit '3da7a82461bb01a7d3cd7dcc97361e596fdcd4bc' into openwrt-18.06
+8f4f5d42a25cae7fac85f82729b71ea8bdf3ea89 Sébastien Delafond: Merge commit '3da7a82461bb01a7d3cd7dcc97361e596fdcd4bc' into openwrt-18.06
+d9e03bc28da2f6991fc7122e1ac123466465e5a5 Dirk Morris: Add support for multiple pyconnectors
+d85973986f7df0c40f8c734605e5410486603cb4 Dirk Morris: shell fixes
+0363b337dc63d78c99c07e0f09743e9ab4591546 Dirk Morris: Allow multiple instances of pyconnector
+7ddaa35fc078ff0ddfc2e2f1cdf57af6a5bf803a Dirk Morris: add back CA crt
+46941936951cf8f37ae2d57a43e02f988e373236 Brett Mastbergen: wan-manager: Quiet things down a bit
+6a39479e0181cb90dd9d9022756afb2225339ea8 Brett Mastbergen: openvpn-proto: Support username/password auth
+d902ff25d63e377134b2e62cf2f87c3b77e80340 Sébastien Delafond: Do not clobber VERSION_REPO in os-release, as opkg derives its repository URL from that
+22fa24f51f4cf92314f4d30f252a3ca95949734c Sébastien Delafond: Start on better versioning for individual packages
+07c27679035a4de98b03cc09902983b96d50dc1d Sébastien Delafond: Start on better versioning for individual packages
+f2979a2b38196749c5fbbb364ea056236de45404 Sébastien Delafond: Barely functional git-remote-describe.sh
+b31576cd233700b7ad912650488e4558e49e00e7 Sébastien Delafond: Merge commit 'f2979a2b38196749c5fbbb364ea056236de45404' into openwrt-18.06
+cfd543de20c5783e563cf06b32f3ae813764ff42 Sébastien Delafond: Merge commit 'f2979a2b38196749c5fbbb364ea056236de45404' into openwrt-18.06
+7990c3e9341c3660a95266f0e5e22c67a1c6c366 Sébastien Delafond: Use a relative path to get to git-remote-describe.sh
+8f91a535428c49cb36b0478a5c2f4d02b346827e Sébastien Delafond: Use a relative path to get to git-remote-describe.sh
+5c981bb0be09bea808217b627aedebfb8fbdd1e0 Sébastien Delafond: Merge commit 'f2979a2b38196749c5fbbb364ea056236de45404' into openwrt-18.06
+988737c1b2de66187ddc76d238e0476bcb0c997a Sébastien Delafond: Use a relative path to get to git-remote-describe.sh
+1835a8d0af972050e334ebd199c8a7393fb0540a Sébastien Delafond: Directly use temporary directory for git clone
+6128d42a3157ea6a192be8466aa4ada3ca1be743 Sébastien Delafond: Use sync-settings git repository as placeholder for components that don't have their own repository
+2b05a7260c10ad2c679277cc373639da1e67763b Sébastien Delafond: Merge commit '1835a8d0af972050e334ebd199c8a7393fb0540a' into openwrt-18.06
+a3e9da6d779d54075dc19aefc3a58453cccee6a3 Sébastien Delafond: Merge commit '1835a8d0af972050e334ebd199c8a7393fb0540a' into openwrt-18.06
+fc8b461a8a38405e80a516d4b2472aa7944a814a Sébastien Delafond: Use a single timestamp everywhere
+c474bffd1a1409712fa252f7f21db6b61202beb0 Sébastien Delafond: Merge commit 'fc8b461a8a38405e80a516d4b2472aa7944a814a' into openwrt-18.06
+258f67a17c19049c0be0c13304846d38fb2abbce Sébastien Delafond: Merge commit 'fc8b461a8a38405e80a516d4b2472aa7944a814a' into openwrt-18.06
+0917547e33876ede005db39afc2105855fe0dd21 Sébastien Delafond: Unconfuse Jenkins' string substitution mechanism
+6d81a75d777c5330c5819027bca9883795a8aa9f Sébastien Delafond: Merge commit '0917547e33876ede005db39afc2105855fe0dd21' into openwrt-18.06
+ff14dbd9f452947bef2be5703d7125d4144d421b Sébastien Delafond: Merge commit '0917547e33876ede005db39afc2105855fe0dd21' into openwrt-18.06
+8f5c48c2f86003a99237ea8b60c3f36fa1dafefd Sébastien Delafond: Make sure archiveMFW() has access to our build timestamp even after the build finishes
+5271ad85979cd4b2b8f69d4411b60e6028587a73 Sébastien Delafond: Merge commit '8f5c48c2f86003a99237ea8b60c3f36fa1dafefd' into openwrt-18.06
+79a37bcee069c61a37669970c99d9e89862f05f1 Sébastien Delafond: Merge commit '8f5c48c2f86003a99237ea8b60c3f36fa1dafefd' into openwrt-18.06
+6d3f53f0bdf9539dfa384e0a1f0a95e797844352 Sébastien Delafond: Bring in tmp/version.date alongside other build products
+427a3894c6a0386a43234dd513b43a01b0b27ab0 Sébastien Delafond: Merge commit '6d3f53f0bdf9539dfa384e0a1f0a95e797844352' into openwrt-18.06
+a0a6cd67e9001b7085532ca2d47be95d71a8a01d Sébastien Delafond: Merge commit '6d3f53f0bdf9539dfa384e0a1f0a95e797844352' into openwrt-18.06
+a929f959e0dcc3d93981f3c9d59bf06a4cccbe71 Sébastien Delafond: Do the epoch-to-humanreadable conversion directly in build.sh
+2a2bcb63e38ad22e2ba44cb9b6dd48bf95c84d3a Sébastien Delafond: Merge commit 'a929f959e0dcc3d93981f3c9d59bf06a4cccbe71' into openwrt-18.06
+c1f495e634a245b2b9fad837fd81f22409ce06eb Sébastien Delafond: Merge commit 'a929f959e0dcc3d93981f3c9d59bf06a4cccbe71' into openwrt-18.06
+378c4a5a79ea9689287387eb8ead1c5305319ef9 Sébastien Delafond: Store the human-readable timestamp as a variable
+e912d63755bc005a2a64bf79c46c66391868adb8 Sébastien Delafond: Merge commit '378c4a5a79ea9689287387eb8ead1c5305319ef9' into openwrt-18.06
+eb1602811303690df6a00f346e737432eb032a66 Sébastien Delafond: Merge commit '378c4a5a79ea9689287387eb8ead1c5305319ef9' into openwrt-18.06
+a6950fa01c1b9ae1b219dcdbb40237e966c8074d Sébastien Delafond: Force timezone to HQ, to ensure proper time conversion from epoch format to human-readable
+418e463765f9bfaff80e90562fe3cff25d1827ad Sébastien Delafond: Merge commit 'a6950fa01c1b9ae1b219dcdbb40237e966c8074d' into openwrt-18.06
+ec86891bb05b34a3578075e0a8b8bb7b968bb8d4 Sébastien Delafond: Merge commit 'a6950fa01c1b9ae1b219dcdbb40237e966c8074d' into openwrt-18.06
+f75b048dac57845b87d0db0b59f9bd420d8681ec Brett Mastbergen: sync-settings: Disasble dropbear ; Tweak sshd_config
+dd11532789f758454706515e38a69f3deff1915a Sébastien Delafond: Revisit jenkins+email alerting on failed MFW builds
+582433e83d17a92a11a9cd880408b3b6429c163e Sébastien Delafond: Merge commit 'dd11532789f758454706515e38a69f3deff1915a' into openwrt-18.06
+b17a06520bdea313cc60fa5b66610d92acc05dfe Sébastien Delafond: Merge commit 'dd11532789f758454706515e38a69f3deff1915a' into openwrt-18.06
+111b98a4c220aa9215dc3302dd3664fb1fd59847 Brett Mastbergen: nftables/libnftnl: Support comparing signed values
+ce20c696405e93284d3b1d197d8f3205a57ade29 Sébastien Delafond: First pass at exposing the package manifest in a public location
+73186623ac761eb6da3e54ecc6b528191e6e57cd Sébastien Delafond: Merge commit 'ce20c696405e93284d3b1d197d8f3205a57ade29' into openwrt-18.06
+d630844f750c42fda675cd3fd477e05fe26d3a63 Sébastien Delafond: Merge commit 'ce20c696405e93284d3b1d197d8f3205a57ade29' into openwrt-18.06
+2fb768cef33fb04fbc3806fab4ccb3d1deb309cc Sébastien Delafond: Correct s3cmd syntax
+5d3f854f84064de6a08530019d72515f485e655d Sébastien Delafond: Merge commit '2fb768cef33fb04fbc3806fab4ccb3d1deb309cc' into openwrt-18.06
+f5eb37a1312d64cb58362b4a704070ec61a7dbd2 Sébastien Delafond: Merge commit '2fb768cef33fb04fbc3806fab4ccb3d1deb309cc' into openwrt-18.06
+e75ac3f3adeba8fc92114fbb8ef2ed3d40396346 Sébastien Delafond: Pass more environment variables to docker container
+0c4cc5683dcf4172da35cf90f2444b08a5241113 Sébastien Delafond: Merge commit 'e75ac3f3adeba8fc92114fbb8ef2ed3d40396346' into openwrt-18.06
+d428cc9824ac72e946de5bd41c28412e717f9cf4 Sébastien Delafond: Merge commit 'e75ac3f3adeba8fc92114fbb8ef2ed3d40396346' into openwrt-18.06
+371107add0084d964c722fbdde8faac595aedf4b Sébastien Delafond: Correct link to package manifest
+0e554d296bc4eb9f5da086d571024c5a78f4367c Sébastien Delafond: Merge commit '371107add0084d964c722fbdde8faac595aedf4b' into openwrt-18.06
+0addf6039aee5dddbe9f38cd498db2674cbfb39e Sébastien Delafond: Merge commit '371107add0084d964c722fbdde8faac595aedf4b' into openwrt-18.06
+078b34992ec5fdaa6f382dbed2fdfd554f3e23ef Brett Mastbergen: configs: Use GNU wget
+e3845d7b2d9291e0bb1993fea1bf82a64653dcf1 Dirk Morris: Use /tmp
+5fe85843825947664ace996132b2af902f3d157e Dirk Morris: Use /tmp
+b261ab21973976f7c1c6c4d1b671ed55f8cdb3a8 Brett Mastbergen: configs: busybox: Add RANDOM support
+7705682da4528b40a190a8773f115605fe404043 Brett Mastbergen: sync-settings: Add /etc/init.d/qos
+35de3bc926c2bc21a0a4126013a65c1cc2e16b3a Brett Mastbergen: sync-settings: Add speedtest.sh
+cae9e7451af20ee2b2a691195b532c17347c1587 Brett Mastbergen: sync-settings: Add nft_debug
+86d88cf80be252c56afcb2bfc1e34a038c53ad43 Sébastien Delafond: Fix typo in Jenkinsfile
+f5efa971193766414efc63eaf5fea913a5aff28b Sébastien Delafond: Merge commit '86d88cf80be252c56afcb2bfc1e34a038c53ad43' into openwrt-18.06
+ed3aa4e973920896cc27e78d5e9cd1912d02366e Sébastien Delafond: Merge commit '86d88cf80be252c56afcb2bfc1e34a038c53ad43' into openwrt-18.06
+170dff63f7a7d53888995d409d654e57408c8056 Sébastien Delafond: Merge commit '86d88cf80be252c56afcb2bfc1e34a038c53ad43' into openwrt-18.06
+fdfaed84af8526fe5b2923bb542f408d5e261559 Sébastien Delafond: Externalize tag finding process into its own script
+9a595f7807027bcf5165ee63014bd040518c70fa Sébastien Delafond: Merge commit 'fdfaed84af8526fe5b2923bb542f408d5e261559' into openwrt-18.06
+0abb790899671c30e475928fb2e3ed5502cd9a16 Sébastien Delafond: Merge commit 'fdfaed84af8526fe5b2923bb542f408d5e261559' into openwrt-18.06
+0ff0bd08040481a2910606e900ce913fe82a80b9 Sébastien Delafond: Externalize tag finding process into its own script
+c88051b78662bacaa6b5553867058031cd326e94 Sébastien Delafond: Merge commit 'fdfaed84af8526fe5b2923bb542f408d5e261559' into openwrt-18.06
+31cbf01b2278b0c6c5dafcbb261da5f22ffa36b0 Sébastien Delafond: Support release builds
+88ded1786c72c248a244f8a27587d56bcd79fdfd Sébastien Delafond: Change logic for release builds ("latest tag in each subproject")
+a18243403a3de2fbc26054d213535e441e336ab9 Sébastien Delafond: Merge commit '88ded1786c72c248a244f8a27587d56bcd79fdfd' into openwrt-18.06
+1e7fc0a5e785b9a8e524bdcc4e58a2e4ca9942da Sébastien Delafond: Merge commit '88ded1786c72c248a244f8a27587d56bcd79fdfd' into openwrt-18.06
+7912d981ec52e69c0e1077cacec9cb38bfcd691d Sébastien Delafond: Merge commit '88ded1786c72c248a244f8a27587d56bcd79fdfd' into openwrt-18.06
+6fe42a850b6f23ddb42194e9f1dbde93174026ab Sébastien Delafond: Revert "Use /tmp"
+7ffa28243de0c9e762d6e7401ecec99eb32e220b Sébastien Delafond: Revert "Use /tmp"
+4bae1de7adead98effc8e3f5013ec558b26a1d47 Sébastien Delafond: Do not only use annotated tags when git describe'ing
+575789453b4505ac9ae3b7bd977661ff3cad218a Sébastien Delafond: Do not only use annotated tags when git describe'ing
+fe359d76cefb5443ed4f8f92de724e6f1963b679 Sébastien Delafond: Merge commit '575789453b4505ac9ae3b7bd977661ff3cad218a' into openwrt-18.06
+eb56604738beee4d98b7d5d2822b3e409d0d2920 Sébastien Delafond: Merge commit '575789453b4505ac9ae3b7bd977661ff3cad218a' into openwrt-18.06
+0ed57b1e02e798016efbc2ee268398b39cfc3fde Sébastien Delafond: Merge commit '575789453b4505ac9ae3b7bd977661ff3cad218a' into openwrt-18.06
+c4ed7a696a1621edb3d3c9c27eba33a42ec51679 Sébastien Delafond: Create tmp/ if necessary
+33b5aae106bd2f0a08d628d645c28837d4103bdf Sébastien Delafond: Merge commit 'c4ed7a696a1621edb3d3c9c27eba33a42ec51679' into openwrt-18.06
+253a3c7392aa363c78be5be4078c4c865623d25b Sébastien Delafond: Merge commit 'c4ed7a696a1621edb3d3c9c27eba33a42ec51679' into openwrt-18.06
+ebeef567ded85f249eff2c00b60d158f38f56956 Sébastien Delafond: Merge commit 'c4ed7a696a1621edb3d3c9c27eba33a42ec51679' into openwrt-18.06
+3d70cb5a24060238c3232b4c2af01045fcecc6c2 Sébastien Delafond: Allow Jenkins builds to specifically target a release build
+1d911e1ee75710089dac69909843b1de98dc6924 Sébastien Delafond: Merge commit '3d70cb5a24060238c3232b4c2af01045fcecc6c2' into openwrt-18.06
+fc3c932f8b78249bd8d2807467b8e91807a2501b Sébastien Delafond: Merge commit '3d70cb5a24060238c3232b4c2af01045fcecc6c2' into openwrt-18.06
+75f539e3e7f5f4ff1226b7ebbca048bda597d149 Sébastien Delafond: Groovy has serious typing abilities, let's use them (we don't have a choice anyway)
+7cac523a04af8b43b2ac7e5a3adf1c635b2714c8 Sébastien Delafond: Merge commit '75f539e3e7f5f4ff1226b7ebbca048bda597d149' into openwrt-18.06
+5c860e793cfca4433468083e607ef132defbdf8c Sébastien Delafond: Merge commit '75f539e3e7f5f4ff1226b7ebbca048bda597d149' into openwrt-18.06
+f5d4d8a2d8aef69f91b75eee6894fb622fa1817a Sébastien Delafond: Bring in latest update-subtrees.py & subtrees.yaml from ngfw_pkgs
+5624898f26bfa0ad9f216cb70159ab6707189700 Sébastien Delafond: Add Jenkinsfile.subtrees
+e221772ad00493e7cc33ac0ca4cf0da4b134c9fd Sébastien Delafond: Bring in latest update-subtrees.py & subtrees.yaml from ngfw_pkgs
+700874dc30f3c386aac43bcc869504020c61f906 Sébastien Delafond: Add Jenkinsfile.subtrees
+7c4adca89cbfde164cbd3deef8a4b6333d8ed05a Sébastien Delafond: Use push mode by default in Jenkins job
+6aab90b1c740c3f97a5cb165e9bfa4dc963a20a5 Sébastien Delafond: Use push mode by default in Jenkins job
+80cf56bc9196eec7240e09821c18d8ffe0f00447 Sébastien Delafond: Add ca-certificates
+c556329a5803d0a7dcda16dcb42e19712069fd1b Brett Mastbergen: openvpn-proto: Support binding to a particular wan
+fe59193378f33e46fccc7013409e32b6e5a86acb Brett Mastbergen: configs: common: Add at
+ffc41d097d73b8fbdbc812dde639a81954a0cd99 Brett Mastbergen: configs: Add espressobin device support
+1a05c52b75e5277f782ddbe239bb64688de734aa Jo-Philipp Wich: mwlwifi: update to version 10.3.8.0-20181210
+5bc18b1429c68110ee0d6f1cd7b6d0a73047bece Kabuli Chana: mwlwifi: Fix pcie timeout issue
+b25908ee2b2243714bc27bbdffdc3645373eab8c Brett Mastbergen: Jenkinsfile: Add espressobin
+0167be059986710b62f1c676fa18baa9db228d27 Brett Mastbergen: Merge commit 'b25908ee2b2243714bc27bbdffdc3645373eab8c' into openwrt-18.06
+cb893e0d623069e78bbca857ba7450143aa8fe30 Brett Mastbergen: configs: x86_64: Support caswell CAF-0262
+0d5719b01cd3e02ea7e90879fab3bb3bb9a0ab51 Brett Mastbergen: configs: espressobin: Support Atheros QCA986x/988x
+c767c24eb86958e33dcf79e2235917270331a247 Brett Mastbergen: Add kmod-gpio-nuvoton
+a688a4c684371bb4660939c5ad456ac6b321e699 Brett Mastbergen: Add wifi led to gpio-nuvoton
+69bbbcc44e21accf1a2619b8dc09e416bc415430 Brett Mastbergen: Add caswell-wifi-led
+8c962e78737f4c3d884a0a27bebb9df9f1d26c1f Brett Mastbergen: configs: x86_64: Add caswell-wifi-led
+be2c0c0629b0295c09be1d9bae352195e4a99d50 Brett Mastbergen: Prepare for upstream image name swizzles
+d3617bfaab21aafcf67f39780904532c976003a8 Brett Mastbergen: Merge commit 'be2c0c0629b0295c09be1d9bae352195e4a99d50' into openwrt-18.06
+bdd56e5e43df562db38e3687d39bd4e6a6e58f0d Damir Samardzic: mvebu: initial support for Marvell Armada 3720 DB board
+efa61d46a982def30a4d2fb4b7950f67ee4a8e08 Damir Samardzic: mvebu: initial support for Marvell Armada 7k and 8k DB boards
+25e79820dae333e78db460cca8be1952628263d8 Kevin Darbyshire-Bryant: hostapd: add basic variant
+6cc186228d99261c1db32ebce704372520a9985d Christian Lamparter: apm821xx: unify My Book Live Single + Duo images
+6e0fac3afd9b5ff9086e7ec7367279ed5c359baa Daniel Golle: brcm2708: Add wifi driver, firmware and NVRAM for RPi1
+c3021633a6227343ac73a7d775744a7d1e1831f9 Daniel Golle: brcm2708: add brcmfmac-firmware-43455-sdio to DEFAULT_PACKAGES
+b8951b8461c4132afdc0e9f60f4fcb731cbc0f68 Daniel Golle: brcm2708: move wifi calibration EEPROMs out of base-files
+b7c7131d578a46f9d3436b927b01498ae40f5342 Christo Nedev: brcm2708: Add wifi driver, firmware and NVRAM for Raspberry Pi 3 b
+c43bfb998d92b3690b875ee0aeb7f2c85234b808 Ademar Arvati Filho: ramips: add support for Blueendless Kimax U35WF
+f16ee44180f1139010b4bfadd80a18b71ae05190 INAGAKI Hiroshi: ramips: add support for I-O DATA WN-AX1167GR
+ba3ea01f86628ace9a403214ae8ba4294b54ab5f Maxim Anisimov: ramips: move zyimage define to common Makefile
+fa9eb716e8cf59f115787409bee8a2953be6329d INAGAKI Hiroshi: ramips: add support for I-O DATA WN-AC1167GR
+c61b03777487a718e1864e66e062a438f0132692 Luo chongjun: ar71xx: add support for GL.iNet GL-AR750S
+cdb675b5fd651e08adee1199aa65a9a31fbc6ddd David Ehrmann: ar71x: add support for Mikrotik Routerboard wAP R
+afed20f8c27b872b6c5bf41b93159217845de51e Mathias Kresin: ar71xx: mikrotik: cleanup nand image build code
+87db1b4965fa0a5fe333687eb6a18a1659e493a2 Thibaut VARÈNE: ar71xx: add support for MikroTik RB931-2nD
+ae091b2199aabfed5466e3532504c12907d946e3 Kin Chan: ar71xx: Move F9K1115v2 under ar71xx tiny target
+0c864dab4d65f773d4cb7318c08027dca494b5da John Crispin: mac80211: make ath10k-ct the default ath10k
+4b118e9de816f34e667280ae2051651bebd0797c Mathias Kresin: lantiq: complete AVM FRITZ!Box 3370 support
+6feb8fc5600f24aabfaaaeea3da38e233d2287f5 Johann Neuhauser: lantiq: add support for FritzBox 7312
+e729cad291536e6abb76ff18c2830ee9bfecfc64 Mathias Kresin: treewide: use wpad-basic for not small flash targets
+fb1b5e3b9a64b7a7ebf3aed30a36247950537601 Hauke Mehrtens: mvebu: Add dependency to kmod-i2c-mux-pca954x for armada-macchiatobin
+10386ee54879f6e50c35d48a1d4cc769be2a0685 Andre Heider: sunxi: fix build without ext4 rootfs
+3e44df0a6dda1638a56640b1d16f641118759d37 Andre Heider: omap: fix build without ext4 rootfs
+9b6ffeeb4a680c5c71900d966f1fc8b613250ac7 Tomasz Maciej Nowak: mvebu: make bootfs size for sdcard image configurable
+fe6f3a24ea4de7dd5bcf32c93107d2abb14a0c9c Tomasz Maciej Nowak: mvebu: use ext4 for clearfog image bootfs
+a2f3f8470b124c3446eb20d35de22157df398385 Tomasz Maciej Nowak: mvebu: shrink amount of packages and reorganize them
+504fa5ddea38d032c0fa439124fe8e7aad16578f Tomasz Maciej Nowak: mvebu: base-files: autodetect upgrade device
+6f99c6f328b9f982018d682f78827afde4e10cd7 Tomasz Maciej Nowak: mvebu: sysupgrade: sdcard: keep user added partitons
+dabadfcc5d23700cdde6c5e6329ede313025aa54 Tomasz Maciej Nowak: mvebu: remove unnecessary code building dtbs
+139ef68a7ccca782c836955bec688e08e1832bd9 Tomasz Maciej Nowak: mvebu: image: stack repeated variables
+4c26c8494d78f167a72cb921b2b5a2e1b59758c0 Tomasz Maciej Nowak: mvebu: image: introduce BOOT_SCRIPT variable
+7c45edf29f1fc4762ea30ea9db748bbfaf15e3ab Tomasz Maciej Nowak: mvebu: image: improve readability of device recipes
+111e8d5384bc455f90226ef7e96c33fd0db7e3fa Tomasz Maciej Nowak: mvebu: image: don't create unnecessarily shell variables
+390f3d681e64531335fe8f536c1503ff8a7f08a1 Tomasz Maciej Nowak: mvebu: align device names to vendor_device format
+ef442a489a71d8e0b3124cf3f0099e1e4085554e Klaus Kudielka: mvebu: fix board_name condition in 79_move_config
+8ce25af79110a14ad1cff9807fe316ee7f37bc10 Hauke Mehrtens: mvebu: Fix typo in MACCHIATOBin detection
+279883bc100fab6051261aed4cd720d67221923c Tomasz Maciej Nowak: mvebu: use device-tree board detection
+d62ba965b10ff066c1b40b6b04ea961cc345544f Tomasz Maciej Nowak: mvebu: replace espressobin spi patch with upstream one
+c698afda1e5698bba8f717691d6e21acfb03cdb0 Tomasz Maciej Nowak: mvebu: espressobin: correct spi node in dts
+d758ffeb800e1b070994cba2b7132394443bb45e Tomasz Maciej Nowak: mvebu: add images for additional ESPRESSObin boards
+5d648efa23f0fcbca081cdb7eeb64d3f98d77950 Tomasz Maciej Nowak: mvebu: sort armada 37xx upstream patches chronologically
+4c2a4ed55f031afa06c90e637accb5139b131f70 Vladimir Vid: mvebu: image: fix generic-arm64.bootscript mmc selection
+9e5d5fd8244145e5f73641b57680866313a6bdd7 Vladimir Vid: mvebu: fix regression for non-generic ESPRESSObin versions
+b3c2f7a296ebe20a385fe9fc221d4082de32da6c Brett Mastbergen: configs: Tweak CONFIG_TARGET_* defines
+742c6604232c7abb33bcb071d95d99fd6cfda075 Brett Mastbergen: sync-settings: Support settings reset via usb thumb drive
+11caef01f685ae3d2bd3f811c85da4c6ecf1486d Brett Mastbergen: sync-settings: Fix whitespace
+10c12801ddd100ee7698bbfb6634072f84564f40 Brett Mastbergen: speedtest: Kill wgets after measurement period
+bd04b356d6a1fc99786a5384e5692a7763ac6f9e Brett Mastbergen: speedtest: Measure over 4 seconds
+414e394759a052cf8fad53b4e978bc329fd1c2a1 Brett Mastbergen: speedtest: Re-verify our range to target...
+74b0fb645a0395f139a44bee1182c41117aa80c9 Brett Mastbergen: container: Update wrt32x target name
+ab646196b52a84ab70ba517fcbbd2cbc924d37a1 Brett Mastbergen: speedtest: Use a unique test file per interface
+23fae9ce1fad60c34f562e9a494f5b2953fbed87 Brett Mastbergen: usb_reset: Check for reset_settings.txt too
+d4793f7570e53c89467faeb26f35d56799fc22be Brett Mastbergen: mvebu: Fix platform.sh for non-generic espressobin versions
+fd07d7889b5c92202d01e3d99e17530d643a1b3e Sébastien Delafond: Fixing the builder in Jenkins would be too expensive, so rename the Packages file instead
+9a9d2510f80f62f70dd46314e79d931580aa6042 Sébastien Delafond: Merge commit 'fd07d7889b5c92202d01e3d99e17530d643a1b3e' into openwrt-18.06
+8cffd3c55c7a98bd467852dcfeb17017d707fec5 Sébastien Delafond: Fixing the builder in Jenkins would be too expensive, so rename the Packages file instead
+18d00f4af1b64dc10c507e929ded7f7b4665b53e Sébastien Delafond: Merge commit '8cffd3c55c7a98bd467852dcfeb17017d707fec5' into openwrt-18.06
+c175669c64822c22c95fdc4137cbf1d32b18cefc Brett Mastbergen: libnetfilter-log: Sync with current kernel headers
+d151e268629dcdea51ff0a4d26ec7b058c092a89 Dirk Morris: Initial package for upgrade scripts
+21c20f5cb0641d1e77fdb32954d339be5d05d2f1 Dirk Morris: Temp upgrade script
+28103fd0d676a7435c4861017edbdebb5bbc412a Dirk Morris: Add upgrade-scripts package
+7d869948406daa6b5924846163d3c5e600f60b21 Dirk Morris: Remove obsolete file
+900b12b921b8ed68d9c1128b9bf402a39f417a4f Brett Mastbergen: wan-manager: JITTER and PACKET_LOSS aren't balance algos
+131cf5c0c99c8ff1b7d6e0663eb4257ce44769d2 Brett Mastbergen: wan-manager: Add support for BANDWIDTH balance algorithm
+84822a33d6bd2a9bed3e89ccbbd555f548641a98 Sébastien Delafond: Adjust manifest name to use exact device specification from OpenWrt
+0a2f91010935d13fc05822ecd430dea18b7f9209 Sébastien Delafond: Adjust manifest name to use exact device specification from OpenWrt
+369fecac632292190fc14b67e7fe3c1720621a99 Sébastien Delafond: Merge commit '84822a33d6bd2a9bed3e89ccbbd555f548641a98' into openwrt-18.06
+9bedde8dbb409cdbc5f4680eb78482a2ac4836f4 Sébastien Delafond: Merge tag 'v18.06.4' into openwrt-18.06
+817448a4a84e78bf23faaffa7b7b9dfb4e3ab997 Dirk Morris: Add ct id patch so it stays consistent pre-routing first packet til later
+f2fc94cd4873484ab637680671daffe31a3cdb20 Sébastien Delafond: Python E305
+88fb1b4744322f5e1e4d95e62bd2a786d3f792d3 Dirk Morris: Update ct hash patch to v2
+8e1d82a58f3d6eb546d6dd7fd7006ef4911ef0a6 Dirk Morris: Move to v3 patch
+6d16bf47d59bb02ee6f1a9f6b4540855bb985f07 Dirk Morris: Change to use actual upgrade service
+d18a37c3c6d6c5e825f44da3176e3f17cc3820b3 Brett Mastbergen: configs: x86_64: Add qmi wwan support
+019a52c215c4e8321df831c459db3ac3663088c3 Brett Mastbergen: configs: x86_64: Add kmod-i2c-i801 and i2cset
+1f0b0f5243090ff5949ff1d83e5bd05c163bee31 Dirk Morris: License scripts - WIP
+af26c89abab0a7c04acc577977342288424bb252 Dirk Morris: Stop reading settings and just take desired rate as argument
+2cc5d5e76d447145378ff5ac77d4e9a20ceff271 Dirk Morris: Add cron job
+4928bd6cd438ff9d9d07ce5303eb3763c5ba102f Dirk Morris: Add cronjob to makefile
+f613b7478054661874b8243a4084585cc26c39e9 Dirk Morris: Add interface-kbps script
+8088648506afa27751ae04673f0d1e6c60719c24 Dirk Morris: Add dir to makefile
+43ef17a98f8ed213169bea22961de3311a668b11 Dirk Morris: Add return line
+12f3020e2e0ea1a27f679fc6f3bcff23f1ef2eec Brett Mastbergen: Revert "iproute2: q_cake: Also print nonat, nowash and no-ack-filter keywords"
+8ce2d2c8ac9a7ea004762d50d092e3522a4e740d Brett Mastbergen: Revert "iproute2: q_cake: Add printing of no-split-gso option"
+851a815b42483f0bb0a1c1317caa080f6b057ef9 Brett Mastbergen: Revert "iproute2: update cake man page"
+6178bb1796cfc914af99c2f3230efb49b3c4acb8 Brett Mastbergen: Revert "iproute2: cake: make gso/gro splitting configurable"
+823e9b82631cb8ae8a8f7087f1b41887676fa662 Brett Mastbergen: Revert "iproute2: tc: backport canonical cake support"
+1d8c50b19ffac7b49e965178af4cff72e507302b Hans Dedecker: iproute2: update to 4.17.0
+5b739985c43b67788d6fae67f896d43e6345ce2d Kevin Darbyshire-Bryant: iproute2: tc: backport canonical cake support
+f3ec0f10f7f76d37e38a3fc691e1fd6f42b78a26 Kevin Darbyshire-Bryant: iproute2: cake: make gso/gro splitting configurable
+43247cc3311b4f1f6958cea5824ead43231118eb Hans Dedecker: iproute2: add libutil to InstallDev section
+b417551e02a47beb4da12b4d35a0a59f3ad947e6 Hans Dedecker: iproute2: remove libutil from InstallDev section
+bf6bbb2be5b7f19d2a5dcc0df4d6ad440d4d97c4 Hans Dedecker: iproute2: update to 4.18.0
+5dbef24b207946520c2822f6f6b1426c30086896 Kevin Darbyshire-Bryant: iproute2: update cake man page
+550ca08892ae55e039c7b61a4072fc8af626d0c8 Kevin Darbyshire-Bryant: iproute2: q_cake: Add printing of no-split-gso option
+e1923c7113df3b2849ce8de0e79edfcb56b198f1 Kevin Darbyshire-Bryant: iproute2: q_cake: Also print nonat, nowash and no-ack-filter keywords
+b4cce5fb73af58982c8f77ef0fba1b22f1b393fa Dirk Morris: Remove cron job from package
+8372d205f42beffa093f3979d128ec6499eca97c Brett Mastbergen: wan-manager: Switch to new wan-manager architecture
+260f9b98fd8aab7c07cf13662f87842fcd767987 Dirk Morris: Re-add accidently deleted line
+cb2376c755b20afcca8c424e32f99bef01e4e316 Dirk Morris: fix name
+522cca51f5d1be27cfcbf6e9d9525614c5f32ade Dirk Morris: check for empty output
+3f9e1ab4b5e2a72396425c1fad745626276e07ae Dirk Morris: change API root
+e92e3806fafa98b3c032ce77a3e38c15cfeaba88 Brett Mastbergen: sync-settings: Add wwan_status.sh
+58dd4af36b793597983072659e723b483a5db6f6 Brett Mastbergen: Add caswell-rssi-leds
+1af5002797549ad344ffe79c88787dee09ade995 Brett Mastbergen: configs: x86_64: Add caswell-rssi-leds
+83a5f70a895d9999e91f63b84a482145e1ef1acd Brett Mastbergen: caswell-rssi-leds: Only start on interface up
+923397abe60ed574adcd804b648361eb5cc7a92e Brett Mastbergen: espressobin-v7-emmc: dts: Rename ethernet ports
+6bcbdb04ec7cea69b1fe12bbfb47db606e69eaa5 Dirk Morris: Don't decode string
+dda0a79291b41358fa22b8571b6991892815fa86 Brett Mastbergen: sync-settings: Add serial.init
+29ec3282ce57d2570b216198e01637d3ad7fbe40 Brett Mastbergen: config: common: Add iwinfo
+4d66b59942b8cb16d0319918c22916942ebebd84 Brett Mastbergen: caswell: Support production e6
+5758d676a430a0b263a32aa9ade229365de9f565 Felix Fietkau: procd: update to the latest version, fixes gcc 8 build error
+c99a65e3d7694705db69a41071ec6fec807f50a7 Felix Fietkau: procd: compile with LTO enabled
+0323b82629e58dd352e7c3d5cd9e708339d2c5ab Hans Dedecker: procd: update to latest git HEAD
+f17968c15c086d65a6be99cbba63417daba8cced Brett Mastbergen: sync-settings: Support reset_settings with any extension
+2f6aff03023bfade9169a6860f92c6ecb459e1da Brett Mastbergen: configs: common: Add kmod-fs-vfat
+b1cb1ea6da28b87676387d5063fc75f478610ceb John Sommerville: MFW-568 switch manufacturer URL to https
+0dd55443c7f7f5698a7eeccf9c49572550c931f5 John Sommerville: Merge commit 'b1cb1ea6da28b87676387d5063fc75f478610ceb' into openwrt-18.06
+595a5a8bdc0f05f5d02cfe3b95ba4ae9e1b51d24 John Sommerville: Merge commit 'b1cb1ea6da28b87676387d5063fc75f478610ceb' into openwrt-18.06
+151171d13ec49a81734cdd4be04c18c64e2bf6b5 Brett Mastbergen: wan-manager: Retry nft -f
+462d9c05bc87f864145dc64a276bd095d68e4010 John Sommerville: MFW-568 move manufacturer URL to https://downloads
+a7300ac804be0b7e77f4d98beddaceb30543d7ca John Sommerville: Merge commit '462d9c05bc87f864145dc64a276bd095d68e4010' into openwrt-18.06
+4586f511df1f2585e82aca32095d63e98d4c5671 John Sommerville: Merge commit '462d9c05bc87f864145dc64a276bd095d68e4010' into openwrt-18.06
+1d668bd847e97a4a4132c49377df5c181ad1ce41 Brett Mastbergen: sync-settings: Add untangle-board-name
+651f2a572ad259616bea75d12e0031fa3f014c60 Brett Mastbergen: untangle-board-name: Start board name with Untangle
+74e1e2d1a3c522767cb25e3c48d7ed85764b06da John Sommerville: build: build proper VMDK formats for ESXI 6.5
+6930f76cfef35cc8fad94ffdef8b2f0a92a05c89 Brett Mastbergen: Revert "build: build proper VMDK formats for ESXI 6.5"
+6667348650f72d93258a81759f5d3a7bae8daeba Dan Hadarau: mfw-cli initial commit
+30abbf2dd4aa603b91da85f0d19bf55c714627a2 Dan Hadarau: mfw-cli updated the download url in readme
+eebf14e4f29ebd26f6b1e16b11b2d567b7dd47b3 Sébastien Delafond: Use new unstable() call from Jenkins Pipeline API: avoid marking the entire build as unstable when only the test step failed
+71030fd5d18e0c98193026aea0ef7c909f9c4d77 Sébastien Delafond: Merge commit 'eebf14e4f29ebd26f6b1e16b11b2d567b7dd47b3' into openwrt-18.06
+65781c41476397af91b88c79c17afce6567174aa Sébastien Delafond: Error-handling in update-subtrees.py
+5fc4e85fc5a45a395fc7504dcd07a71029f33ba3 Sébastien Delafond: Merge commit 'eebf14e4f29ebd26f6b1e16b11b2d567b7dd47b3' into openwrt-18.06
+0626b4c8ed220cbaccadd4e7f8a6bdbd6dae1162 Sébastien Delafond: Error-handling in update-subtrees.py
+15fea4ce6c85983b76609fa3eadab055dcaa5a39 Sébastien Delafond: check_output's  text argument is only in python>=3.7: decode bytes ourselves instead
+28967e8ecc7e3ce7e0d5cd643bd88d240ff89699 Sébastien Delafond: check_output's  text argument is only in python>=3.7: decode bytes ourselves instead
+60723b532a459d21e9bd4c97153b735ca9fb659e Sébastien Delafond: Strip last's carriage return for all shell output
+5ce74334aa9fedeb4570ad9366004c72cfaf3552 Sébastien Delafond: Strip last's carriage return for all shell output
+4e985d73757311aad4e95481bcd5019dc76172c8 Sébastien Delafond: Merge remote-tracking branch 'origin/openwrt-18.06' into openwrt-18.06
+09f8c276d3307ba5b3c13e97d467d65bd8652eb4 Sébastien Delafond: Rename gh.com:untangle/mfw_openwrt to gh.com:untangle/mfw_feeds
+6e953de52afad61737c9de573ecd571dba335db6 Sébastien Delafond: Merge commit '09f8c276d3307ba5b3c13e97d467d65bd8652eb4' into openwrt-18.06
+d339495968eb6a05b00977ce29c0cbad8d0e05a8 Sébastien Delafond: Merge commit '09f8c276d3307ba5b3c13e97d467d65bd8652eb4' into openwrt-18.06
+631b4fb3eace43b24aef1c24680333613ea6f7ee Sébastien Delafond: Rename gh.com:untangle/mfw_openwrt to gh.com:untangle/mfw_feeds
+b00a6c60cde7abc7f19841103266b876710dff36 Sébastien Delafond: Correct URL for wan-manager
+4a0ce67dabd78d65201fd820532960a6cc99bc47 Sébastien Delafond: Standardize on https://github.com and non-variabilized PKG_SOURCE_URL
+ba8e6f7827eaff4ad964ebad2a66cbd3b1e1245f Dan Hadarau: Some improvements on cli tool
+c16e96cdff7f8ff1cf080d92e73291b6ea7bbf58 Florian Eckert: target/x86/image: use qemu-img from STAGING_DIR_HOST
+1ddb8ff64fd58c38b1d0f2ed78c62f39d56eb9b6 Brett Mastbergen: tools: qemu: Add patches to support adapter_type and monolithicFlat
+8988ff66ce2aa6fdc1aa7dad6f76a173a69f8015 John Sommerville: build: build proper VMDK formats for ESXI 6.5
+f1e189eb598d5c3d16a8bc17e4bf68ef906ae65f Sébastien Delafond: Version manifest path in s3 bucket, by putting them under /sdwan/${shortVersion}/manifest
+7384266102e01fbab59317138fe27b2a918f7f1b Sébastien Delafond: Merge commit 'f1e189eb598d5c3d16a8bc17e4bf68ef906ae65f' into openwrt-18.06
+67568cd3ece6eadfd3ff138771e2a50e282bdf71 Sébastien Delafond: Temporarily enable debug mode in version-images.sh
+887b3635e8784f49cbf5de0be8e34ac675b7cb95 Sébastien Delafond: Merge commit '67568cd3ece6eadfd3ff138771e2a50e282bdf71' into openwrt-18.06
+d554f6220fea1309be36a812ad153c2497da69b9 Sébastien Delafond: However ridiculous that may sound, s3cmd has trouble uploading during the 1st try
+9a55b3b9718829557dfb7bc562ebe89c73a216a5 Sébastien Delafond: Merge commit 'd554f6220fea1309be36a812ad153c2497da69b9' into openwrt-18.06
+6a4288e9958fbcc7b194ca7b5197630ef565416a Sébastien Delafond: Remove debug mode in version-images.sh
+e93dbe5b88ab2fde12e699add1b6673a40e77936 Sébastien Delafond: Merge commit '6a4288e9958fbcc7b194ca7b5197630ef565416a' into openwrt-18.06
+5af6050be5c7b9774afcfae990ac540db9a407aa John Sommerville: pyregex findall utility script and makefile update
+62c97d9c9826daaf7a1c8d2995bb8e2fa0ff44ca John Sommerville: implement device and version regex fetch-licenses
+8799b7fcb38a3b7312b47308f08cfc36be5962bc John Sommerville: implement device and version regex for upgrade.sh
+de877d54bfbe57696c6a8d7c6c3b2595cb8a52b2 Sébastien Delafond: Merge branch 'master' into openwrt-18.06
+0176578de7a090df4754e145afa166e7b77b2c71 Sebastien Delafond: Merge remote-tracking branch 'origin/openwrt-18.06'
+ec52793129686b8a15c6c0b843e831c9b4b69c18 Sébastien Delafond: Merge remote-tracking branch 'origin/master' into openwrt-18.06
+422631cfc97b6eb833cc49a06ad597e9d715bafa Sébastien Delafond: Merge commit 'ec52793129686b8a15c6c0b843e831c9b4b69c18' into openwrt-18.06
+8d5b79f63a3a7c8ddb73485f6a1fccf743b166f4 Sébastien Delafond: Merge remote-tracking branch 'untangle/openwrt-18.06'
+581bd52d368f6199b1524ae5bef0f192fcc68942 Sébastien Delafond: Merge remote-tracking branch 'untangle/openwrt-18.06'
+7e3f4dcbc8ea72582bb9d792c40a4347e8e40ffb Sebastien Delafond: Correct PKG_SOURCE_URL for those packages that are directly hosted in mfw_feeds.git
+39489dff99717874b04200fcd082b4bfded036c3 Sebastien Delafond: Merge branch 'openwrt-18.06'
+778f3a2bc77d2a599e75d427f5e3f1aa883ea7d9 Sebastien Delafond: Correct URL for pyconnector
+a6c6bcb2bbd61cbc8d16a2ca80bb533946d1379d Sébastien Delafond: Add create-branch.sh
+2fe78c240445c242fcefb18567b527a24d21b1f4 Sébastien Delafond: Merge commit 'a6c6bcb2bbd61cbc8d16a2ca80bb533946d1379d'
+edc4bedd8248d2805d45dfdf787622d232c00998 John Sommerville: Merge branch 'master' into MFW-620-cloud-api-fixes
+06c5faa95212177bc2935b089d6db6653e30eaf3 Sébastien Delafond: Force re-download of external zip files during mfw build
+83ea650b97e37c974a2d66be59e4c5ac5079e56f Sébastien Delafond: Trigger build on feeds/master
+81bc6626a7f409db0973558d55b3182c1b27ae47 Sébastien Delafond: Merge commit '83ea650b97e37c974a2d66be59e4c5ac5079e56f'
+05ebbe6aa024350e56f735376b18b846bd18faef Brett Mastbergen: configs: common: Add nano
+cf1889d44fdd19014373d58e5dc57ff7484da93f John Sommerville: remove pyregex script
+c66a1671dcfa79bac26b8c2e967f24aa536f0b11 John Sommerville: remove python regex script, use sed capture groups
+f8a5a9b34b602a93280234dc3d2eb635ad1750fa John Sommerville: some logic for untangle_board_name
+31f2b873244e0da557f6dc21c4d7fcf5063fa6d0 Brett Mastbergen: feeds.conf.mfw: Use mfw_feeds master
+d8d14f3a584cb4d16c853543c7c214703009c3c9 John Sommerville: Merge branch 'master' into MFW-620-cloud-api-fixes
+e2a53fea37967cf124a69c90462e977e39502f86 Brett Mastbergen: feeds.conf.mfw: Point mfw to master branch
+d9734438176e6abaeebb02e2d17308bed1800d3b Brett Mastbergen: Merge commit 'e2a53fea37967cf124a69c90462e977e39502f86'
+db985464fc5c450000c84bfc7059842e1f4178c1 Sébastien Delafond: Modify create-branch.sh to so release branch points to release feeds
+d7980afa69a5f0f77750794962ac12bac5fdaa0e Sébastien Delafond: Merge commit 'db985464fc5c450000c84bfc7059842e1f4178c1'
+421a53486a0870162d46fefd7b7d66202cb98ddc John Sommerville: fix for upgrade and license scripts
+16427932028cfb7fd25ab00c6ba3ded4e922a395 John Sommerville: fix for upgrade and license scripts
+1471b8a046452d2e450f69107ab945c13988c12e Sébastien Delafond: Do not allow Jenkins operators to force a specific version
+8a26c8a1b5540bcbe9154ed056d2627dbb99c21e Sébastien Delafond: Merge commit '1471b8a046452d2e450f69107ab945c13988c12e' into release-1.1
+dfc7508ed934552caf69fbdf6cfdce2107145bec Brett Mastbergen: git-remote-descibe: Describe the remote reference
+0c480a28928361f2f36ff7c2237d6e3a305564ae Brett Mastbergen: git-remote-descibe: Describe the remote reference
+63f3a355e784110e6f4cc01d3992038e17644bfe Sébastien Delafond: This is real low
+d20c44065d70551dc6cbc9d8bc415990ccdc9220 Brett Mastbergen: Merge commit '0c480a28928361f2f36ff7c2237d6e3a305564ae' into release-1.1
+ccda11d8e4c41a5c612d511fe3675ef5497c0cf0 Sebastien Delafond: Merge remote-tracking branch 'origin/release-1.1'
+ac75ead84a5626694238ad812f86ccf6fd03d47e Sébastien Delafond: One-to-one branch mapping for upstream projects
+18cf24c8c37ebcff8874ec93e5b278e5efcc3435 Sébastien Delafond: Merge commit 'ac75ead84a5626694238ad812f86ccf6fd03d47e' into release-1.1
+efe30197c5a7ddbb115bde3362468e6f909d43fb John Sommerville: version ID check needs better quantifier
+3564a2f846d5fcd4f5c9fd6a09b0b13584e00aa8 Sébastien Delafond: Do not build Omnia on Jenkins
+6f09790eb2f207450fdd063e73e3e56ebfffb597 Sébastien Delafond: Merge commit '3564a2f846d5fcd4f5c9fd6a09b0b13584e00aa8' into release-1.1
+645638fa94baaf0c7a4a193ac75b9750f3ef9fc9 Sébastien Delafond: Do not build Omnia on Jenkins
+4179f5e88693be03306c927656a115a42eadd4ef Sébastien Delafond: Merge commit '645638fa94baaf0c7a4a193ac75b9750f3ef9fc9' into release-1.1
+881b90e64dc354e7238b96561440be7112f8944d Sébastien Delafond: Merge remote-tracking branch 'untangle/release-1.1'
+aeb789e17f61ab7b14500555c86345df5faee1a1 Brett Mastbergen: version-images.sh: Fixup path to esxi-flat vmdk
+20d57843b0cb2abbba938e44e28f3dc8f4259a88 Brett Mastbergen: Merge commit 'aeb789e17f61ab7b14500555c86345df5faee1a1' into release-1.1
+cce1fd922a198296c1decddefb6de1cc3fa99c10 Brett Mastbergen: upgrade.sh: Fix typo
+1642b94ec8e0a1e15d6490db3c545f30f218f5c8 Brett Mastbergen: fetch-licenses.sh: Fix typo
+c67bf888d0d8c97dbcce508deef5c215c750e6e5 Brett Mastbergen: fetch-licenses.sh: Restart qos on success
+89778a6c72381ad54bfd601f93f40ee0b3cc6f70 Sebastien Delafond: Merge remote-tracking branch 'origin/release-1.1'
+6c5b40f144d27d16f1d886c712e2974dfd7784db Sebastien Delafond: Merge remote-tracking branch 'origin/release-1.1'
+dd7ac5d699beabc18ccf25c7bfc5b856d881bf82 Brett Mastbergen: upgrade.sh: Include fullVersion
+e36e1a67f60a4156178c42aa129440c410f286b2 Brett Mastbergen: caswell-rssi-leds: Monitor the correct interface
+82bcadfa8d4553f8cb7ae6156d44b864da5a5e2c Brett Mastbergen: wwan_status: Encode iccid/imsi/imei/msisdn as strings
+d07f7495126d3684714999463ec8893e54d3f22e Sebastien Delafond: Merge commit '8e4b788328b6fc693fd73a3dce17c75420d42c75'
+f0ee97b9098f389b1c7d094ae5732b84c402c1fe Brett Mastbergen: Bump openwrt/release-1.1 revision
+3a716c779df6671a6cd5787e573b47b276af91c2 Sébastien Delafond: Restore mfw_build repository to, well, only containing build tool/scripts...
+28f753e3dfa6668449e2aed2a80ba5e8604c1989 Sébastien Delafond: Restore mfw_build repository to, well, only containing build tool/scripts...
+189cc077978509cd868cb41d435f3e7daf2ebe5a Sébastien Delafond: Remove subtree that got properly fubar'ed earlier this month
+18c852f2d62f9fdea0e03ff966775e43ed8321c1 Sébastien Delafond: Add 'mfw/' from commit '3a716c779df6671a6cd5787e573b47b276af91c2'
+e89d0a1fab938adf9ec71e6b7148e37c9a25db5b Sébastien Delafond: Add *rootfs*.tar.gz to .gitignore
+3a634f6a15eb159d67994e9422da596934df9a91 Sébastien Delafond: Add .dockerignore
+9d6f100ec3b94f340db1735aa2de9c40b98a1035 Sébastien Delafond: Remove more files from feed repository
+eecf8502058ae878eb77625b641b781f3fb060f0 Sébastien Delafond: Merge branch 'release-1.1'
+c4a4046d97215ad37885c4e9c9bcc6814f49034f Sébastien Delafond: Recover sdwan-vbox-helper that got wiped out in earlier cleanup
+4fe4c5498a3b9f04a39f37f3e823ed2180aeae5c Sébastien Delafond: Merge branch 'release-1.1'
+26dac089af3bd03cd17b4aa2f58d6b2dd11a40f7 Sébastien Delafond: Merge commit '4fe4c5498a3b9f04a39f37f3e823ed2180aeae5c'
+a879ab66d0b6b7efe852b16e7f1dc8c7967a72a7 Sébastien Delafond: Remove subtree that got properly fubar'ed earlier this month
+8b9ce25ae2f72d9f084865e1d50ab54995b35c07 Sébastien Delafond: Add 'mfw/' from commit 'c4a4046d97215ad37885c4e9c9bcc6814f49034f'
+2eb0c301619b54a77c625cfbb2e7dcf87570de54 Sébastien Delafond: Merge branch 'release-1.1'
+8505d2981a023b7d349a84dda9c5bbe588c5d371 Sébastien Delafond: Hardcoding release-1.1 in mfw_build's master copy of feeds.conf is terribly wrong
+b39ab1802c13d32aabb013a938b82b6e67162c2b Sébastien Delafond: Merge commit '8505d2981a023b7d349a84dda9c5bbe588c5d371'
+24828dd581606ced8cfa9e4eb8934d8c4a6f00d8 Sébastien Delafond: Add ssh-agent to build image
+58b58e46e3150d6d1923a47f501c6127f04d1e46 Sébastien Delafond: Expose ssh-agent inside build containers
+6f9c255506ef11209c8d65fa7f639010a6cdd2cf Sébastien Delafond: Tell build.sh about github's SSH host key, and check ssh-agent
+1fe07098f27b69a0e8c30d46aca1915ebcc3c246 Sébastien Delafond: Merge commit '6f9c255506ef11209c8d65fa7f639010a6cdd2cf' into release-1.1
+b82be8382dbeffbc374a661bebc0dd02bee43d61 Sébastien Delafond: Use sshagent Jenkins plugin to expose a specific global credential to our build process
+1960efe9562eaba82375a4123089d0e893a0bc5b Sébastien Delafond: Merge commit 'b82be8382dbeffbc374a661bebc0dd02bee43d61' into release-1.1
+238683b7d42dca6fae2164495a82931fe29e3482 Sébastien Delafond: Merge branch 'release-1.1'
+871fd88888b103e2d0098d9dbd062fa7d314e813 Sébastien Delafond: Merge branch 'release-1.1'
+e9b2cd38ad65ff354b1f83d15812c11db42c58f2 Sébastien Delafond: Merge branch 'release-1.1'
+4f5be750cf105a01848ad3850807436e2afdc864 Sébastien Delafond: Merge commit '238683b7d42dca6fae2164495a82931fe29e3482'
+dabc109f49bd4fcce9b69402e5a3df2feb26cdc5 Sébastien Delafond: Merge commit '238683b7d42dca6fae2164495a82931fe29e3482'
+a4138a55178f713ce0b732302d7953a13f3d8c9d Sébastien Delafond: update-subtrees: do not operate on unofficial branches
+0d5861e647c41a6a893238739c0b662617f238b5 Sébastien Delafond: update-subtrees: schedule daily operation regardless of repository activity
+ddf1561caf4704881a6273a95702a64688d3d763 Sébastien Delafond: update-subtrees: schedule daily operation for all stages
+72f2fb2262ab6308b9469b91bcdcdb4d9f3a53c6 Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.1'
+434655e360fabc26593cbb95f23d15c5176eea2e Sébastien Delafond: jenkins: point to #team_engineering after the name change
+a6a0bb679592130f068df367756f0abfa0625343 Sébastien Delafond: Update branching script
+d45409fe99495970e011949aba361c718e53c6c1 Sébastien Delafond: Point to branch release-1.2 for mfw_feeds
+e67996a111de003e95224a08e60644037f3e44f1 Sébastien Delafond: Update mfw_build subtree as part of release branching
+255cc4d53dcbf34b88bb6a2423c23e87ae492baa Sébastien Delafond: branch: pass a starting point, as branching from master is becoming less common
+d6d01f9cb89272a6f1510b2d22fb644d7459c05a Sébastien Delafond: Point to branch release-1.3 for mfw_feeds
+8c8ab8e789b9b200fd8b2994b23a1006923b4e34 Sébastien Delafond: Update mfw_build subtree as part of release branching
+bf791ffb7a43cb75446555d418ea80db5f0f98e0 Brett Mastbergen: feeds.conf.mfw: Point back to master
+df08b2eff622cd1c04589dde3ff824a0075dc96d Sébastien Delafond: readme: document how to build without classd
+6be3dc21b93bb93c0aefbb4a15cdd2edd728cc53 Sébastien Delafond: Merge commit 'df08b2eff622cd1c04589dde3ff824a0075dc96d' into release-1.3
+e4f457b201ade28a9377f0d466b683351665bc1a Sébastien Delafond: Merge branch 'release-1.3'
+fcb16c95dd1975513497582a42c167571d50c0bc Sébastien Delafond: readme: document how to build without classd
+a78381b0881917ceca8548146431a3338c1dc583 Sébastien Delafond: Merge branch 'release-1.3'
+974ddbfa8baff7b7d7947000c51f14691b440144 Sébastien Delafond: Merge commit 'fcb16c95dd1975513497582a42c167571d50c0bc' into release-1.3
+5635e07b7db5f37f75556667e5c37919b8bb281d Sébastien Delafond: Merge commit 'a78381b0881917ceca8548146431a3338c1dc583'
+6a0f8f9bff90476092023d2338d243af915a56ce Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.3'
+72fc6756a95b613e25d4abd0605e2460f4887174 Sébastien Delafond: Point to branch release-1.4 for mfw_feeds
+3a4ea8641f3633cc658d5f6f5bf9df4062bd481b Sébastien Delafond: Update mfw_build subtree as part of release branching
+dfc8d902fa2d3309203632edd14ead19989f46f1 Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.4' into master
+2fff7a259acebc148ce137a1a04b8a7018014fa9 Sébastien Delafond: create-branch: bpfgen
+0b25613b0ba33c522127cea85b25bb138be5ca85 Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.4' into master
+64148aa089b84d365d53d40e7897a4d4a00f4a6c Brett Mastbergen: netfilter: Build and include nft_rt

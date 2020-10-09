@@ -49,12 +49,14 @@ ignore = [
         'version-images.sh',
         'version.mk',
         'wan-manager',
-        'README'
+        'README',
+        'update-subtrees.py',
+        'subtrees.yaml'
         ]
 
 #subprocess.call(("git", "log", "--author=Brett", "--author=Delafond", "--author='John Coffin'", "--author=Sommerville", "--author='Dirk Morris'", "--author=Hadarau", "--format=%H %an", "--reverse"))
 
-commits=open("git_log_all")
+commits=open("git_log_committer_all")
 thisset = set()
 
 total_count=0
@@ -82,7 +84,9 @@ for l in commits:
         print(l.strip())
 
 sortedset=sorted(thisset)
-#print(total_count)
+for s in sortedset:
+    print s
+print len(sortedset)
 commits.close()
 
 
