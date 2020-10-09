@@ -79,7 +79,7 @@ for l in commits:
                 added_to_set=True
     if added_to_set:
         total_count=total_count+1
-        print(commit)
+        print(l.strip())
 
 sortedset=sorted(thisset)
 #print(total_count)
