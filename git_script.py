@@ -63,46 +63,87 @@ our_authors = [
         'Dirk Morris',
         'Blaise',
         'Hotz',
-
         ]
 
-differ_files=open("differing_files")
-differing_files=[]
+doing_commits=False
+use_differing_files=True
+if doing_commits:
+    commits=open("git_log_all")
+    thisset = set()
 
-for d_file in differ_files:
-    differing_files.append(d_file.strip())
-print differing_files
-commits=open("git_log_all")
-thisset = set()
+    total_count=0
+    for l in commits:
+        commit = l.split(' ')[0]
 
-total_count=0
-for l in commits:
-    commit = l.split(' ')[0]
+        cmd=("git", "diff-tree", "--no-commit-id", "--name-only", "-r",  commit)
+    
+        ps = subprocess.check_output(cmd).strip()
 
-    cmd=("git", "diff-tree", "--no-commit-id", "--name-only", "-r",  commit)
+        added_to_set=False
+        if len(ps) > 0:
+            for file_name in ps.split('\n'):
+                add_to_set=True
+                first=file_name.split('/')[0]
+                for i in ignore:
+                    if i in first:
+                       add_to_set=False
+                       break
+                if add_to_set:
+                        thisset.add(file_name)
+                        added_to_set=True
+        if added_to_set:
+            total_count=total_count+1
+            #print(l.strip())
 
-    ps = subprocess.check_output(cmd).strip()
+    sortedset=sorted(thisset)
+    #for s in sortedset:
+    #    print s
+    print total_count
+    commits.close()
+elif use_differing_files:
+    differ_files=open("differing_files")
+    differing_files=[]
 
-    added_to_set=False
-    if len(ps) > 0:
-        for file_name in ps.split('\n'):
-            add_to_set=True
-            first=file_name.split('/')[0]
-            for i in ignore:
-                if i in first:
-                   add_to_set=False
-                   break
-            if add_to_set:
-                    thisset.add(file_name)
-                    added_to_set=True
-    if added_to_set:
-        total_count=total_count+1
-        #print(l.strip())
+    for d_file in differ_files:
+        first=d_file.split('/')[0]
+        add_to_set=True
+        for i in ignore:
+            if i in first:
+                add_to_set=False
+                break
+        if add_to_set:
+            differing_files.append(d_file.strip())
 
-sortedset=sorted(thisset)
-#for s in sortedset:
-#    print s
-print total_count
-commits.close()
+    count=0
+    files_to_use=[]
+    for d_file in differing_files:
+        cmd=("git", "diff", "master", "upstream-openwrt-19.07.4", "--", d_file.strip())
+
+        ps = subprocess.check_output(cmd).strip()
+
+        if len(ps) != 0:
+            files_to_use.append(d_file.strip())
+
+    commits=open("git_log_all_all")
+
+    commits_to_use=[]
+    for l in commits:
+        commit = l.split(' ')[0]
+
+        cmd=("git", "diff-tree", "--no-commit-id", "--name-only", "-r",  commit)
+    
+        ps = subprocess.check_output(cmd).strip()
+
+        if len(ps) > 0:
+            for file_name in ps.split('\n'):
+                if file_name in files_to_use:
+                    if l.strip() not in commits_to_use:
+                        commits_to_use.append(l.strip())
+
+    for s in commits_to_use:
+        print s
+    print len(commits_to_use)
+
+            
 
 
