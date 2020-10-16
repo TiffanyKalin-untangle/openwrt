@@ -51,12 +51,21 @@ ignore = [
         'wan-manager',
         'README',
         'update-subtrees.py',
-        'subtrees.yaml'
+        'subtrees.yaml',
+        'LICENSE'
         ]
 
-#subprocess.call(("git", "log", "--author=Brett", "--author=Delafond", "--author='John Coffin'", "--author=Sommerville", "--author='Dirk Morris'", "--author=Hadarau", "--format=%H %an", "--reverse"))
+our_authors = [
+        'Brett Mast',
+        'John Coffin',
+        'Delafond',
+        'Sommerville',
+        'Dirk Morris',
+        'Blaise',
+        'Hotz',
 
-commits=open("git_log_committer_all")
+        ]
+commits=open("git_log_all")
 thisset = set()
 
 total_count=0
@@ -81,13 +90,11 @@ for l in commits:
                 added_to_set=True
     if added_to_set:
         total_count=total_count+1
-        print(l.strip())
+        #print(l.strip())
 
 sortedset=sorted(thisset)
-#for s in sortedset:
-#    print s
-print total_count
-print len(sortedset)
+for s in sortedset:
+    print s
 commits.close()
 
 

@@ -1,0 +1,1 @@
+git log --since='2018-05-09' --until='2020-09-26' --format='%H %an %cn: %s'
