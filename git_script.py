@@ -65,6 +65,13 @@ our_authors = [
         'Hotz',
 
         ]
+
+differ_files=open("differing_files")
+differing_files=[]
+
+for d_file in differ_files:
+    differing_files.append(d_file.strip())
+print differing_files
 commits=open("git_log_all")
 thisset = set()
 
@@ -86,15 +93,16 @@ for l in commits:
                    add_to_set=False
                    break
             if add_to_set:
-                thisset.add(file_name)
-                added_to_set=True
+                    thisset.add(file_name)
+                    added_to_set=True
     if added_to_set:
         total_count=total_count+1
         #print(l.strip())
 
 sortedset=sorted(thisset)
-for s in sortedset:
-    print s
+#for s in sortedset:
+#    print s
+print total_count
 commits.close()
 
 
