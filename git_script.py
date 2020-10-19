@@ -124,8 +124,8 @@ elif use_differing_files:
         if len(ps) != 0:
             files_to_use.append(d_file.strip())
 
-    for f in files_to_use:
-        print f
+    #for f in files_to_use:
+    #    print f
     commits=open("git_log_all_all")
 
     commits_to_use=[]
@@ -142,10 +142,10 @@ elif use_differing_files:
                     if l.strip() not in commits_to_use:
                         commits_to_use.append(l.strip())
 
-    #for s in commits_to_use:
+    for s in commits_to_use:
         #print s
-        #print s.split(' ')[0]
-    #print len(commits_to_use)
+        print s.split(' ')[0]
+    print len(commits_to_use)
 
             
 

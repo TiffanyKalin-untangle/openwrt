@@ -1,1 +1,1 @@
-git log --since='2018-05-08' --until='2020-09-26' --format='%H %an %cn: %s' --reverse | grep -v 'Tiffany Kalin' | grep -v 'GitHub' | grep -v 'Jenkins'
+git log --since='2018-05-08' --until='2020-10-15' --format='%H %an %cn: %s' --reverse | grep -v 'Tiffany Kalin' | grep -v 'GitHub' | grep -v 'Jenkins'
