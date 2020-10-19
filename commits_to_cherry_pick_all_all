@@ -1,0 +1,219 @@
+6e0fa4a76db667d7f0c1d84a3af5017df26d3fad Daniel Golle Daniel Golle: hostapd: fix mesh+AP
+bfbdeeb3de3da31f7e5f9bd429e079c2d839644a Michael Gray John Crispin: mvebu: add support for WRT32X (venom)
+ba5ec6b77c94a21bbd78b66c63317a4ff9b62962 Sven Eckelmann Daniel Golle: hostapd: fix VHT80 for encrypted mesh channel settings
+e09d4c850d7f9b8dd840ed8066fd2f6cfc819a84 Alberto Bursi John Crispin: kirkwood: support for buttons in Audi and Viper
+0b62fe5ed87ecac52301096b15abb69f96117c8c Mathias Kresin Mathias Kresin: lantiq: complete AVM FRITZ!Box 3370 support
+e6e51ce87fac2d6b9d082336f8d767f12154d79b Christian Lamparter John Crispin: apm821xx: don't select swconfig for the MR24
+707b6c815bba34e9783d2695020bb17385fdcf1d Christian Lamparter John Crispin: brcm2708: add squashfs rootfs image
+d91953cb5351f1ab3e75ae9e2d9622f754d518ed YuheiOKAWA John Crispin: ramips: add support for YUKAI Engineering Inc. BOCCO
+322a02f66607be5fa774f9187003631494bc2809 Damir Samardzic Hauke Mehrtens: mvebu: initial support for Marvell Armada 3720 DB board
+5b7b0c68c7659bb4c0d2c3c52946dafd5703cb13 Damir Samardzic Hauke Mehrtens: mvebu: initial support for Marvell Armada 7k and 8k DB boards
+ae8ff1c65c4ea4e0b2e1e8ef94fad87587d979bc Hauke Mehrtens John Crispin: ar71xx: Fix build for dap-1330-a1 board
+a789c0f49159c618d990541c23e00630f7296ebc Chuanhong Guo John Crispin: ar71xx: Add support for PISEN TS-D084
+ce91c85e01050cb19c89c9a19369a56a94619e7f David Bauer John Crispin: ramips: change wifi led trigger for Archer C50v3
+70e6ea319d3bfdfdb34be540dc7d89aa175b5587 David Bauer John Crispin: ipq40xx: add eva-image for FRITZ!Box 4040
+dc50694bd1a8f81b40c185bc8cacbdc8e821a3c6 Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear r7800
+0c967d92b3d9ca34f01f194ad0353f131b42e986 Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the TP-Link Archer VR2600v
+45b8a7c1a6415125f4fe872ec83b3d31a2fa799b Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear Nighthawk X4 D7800
+c228bbe616a52921a9d8fc961b3efcbdd3880c25 Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear Nighthawk X4 R7500
+c3af761e4740820a29e993414d3d2f49c7eff6e7 Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear Nighthawk X4 R7500v2
+05f53eecca5e1b28706ef074477a55917ed6deb1 Stefan Lippers-Hollmann John Crispin: ipq806x: define KERNEL_SIZE in KB instead of byte for the image generation
+18e9ed2482d6988b5962e856ec0792d5794ad93f Stefan Lippers-Hollmann John Crispin: ipq806x: switch to linux 4.14
+85048a9c1fa4d37b5896d9237d28bbadbbe09d19 Roman Yeryomin John Crispin: base-files: rework _ucidef_set_interface to be more generic
+f47b5802b5a4d697054bb9ee21239c41d511bcd7 Christian Lamparter John Crispin: apm821xx: don't select swconfig for the MR24
+fff02093e602f7c49161746305a4b13c1a2bb441 Christian Lamparter John Crispin: brcm2708: add squashfs rootfs image
+0f35193aecff47bb7a233a1123c87c1b8a9b2a04 YuheiOKAWA John Crispin: ramips: add support for YUKAI Engineering Inc. BOCCO
+9e4f4e1a1fe4e556ca608782d3eb1ca7e46fa7b2 Hauke Mehrtens John Crispin: ar71xx: Fix build for dap-1330-a1 board
+991ec8e5b23366a8ecfb0af69603dd036f735e93 Chuanhong Guo John Crispin: ar71xx: Add support for PISEN TS-D084
+701a7b1c86a9aa99931ad51f93805bc3970b0acb David Bauer John Crispin: ramips: change wifi led trigger for Archer C50v3
+9361c359e4e1648f3ec3f541c51a1982d677f31d David Bauer John Crispin: ipq40xx: add eva-image for FRITZ!Box 4040
+66871d9c6211afc1ae35d537d007798b2254d727 Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear r7800
+ec7d9740551cc559a2b45b23084b1c99ffdfc25d Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the TP-Link Archer VR2600v
+0882a4cf258cb227b4889a11cf55658129df9e7a Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear Nighthawk X4 D7800
+3ec4921c165a41eac5fad899fbbb0ef5d100d81c Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear Nighthawk X4 R7500
+1b39b665c32416f1d9e88fa6bdc986d81787e833 Stefan Lippers-Hollmann John Crispin: ipq806x: increase kernel partition size for the Netgear Nighthawk X4 R7500v2
+e567d313b61a68179a8eea7c6c764926ea35a47c Stefan Lippers-Hollmann John Crispin: ipq806x: define KERNEL_SIZE in KB instead of byte for the image generation
+2301bbdf880b8e222008fbd350cd903fdd447d3e Stefan Lippers-Hollmann John Crispin: ipq806x: switch to linux 4.14
+69f544937f8498e856690f9809a016f0d7f5f68b Daniel Golle Daniel Golle: hostapd: update to git HEAD of 2018-05-21, allow build against wolfssl
+3b749d4acc72a776681d70ba01dffe1d5dc5401e Jo-Philipp Wich Jo-Philipp Wich: ar71xx: fix bad "proto" references in default network configuration
+c8fdd0e9c843dd483f6677dc41f7df17313aa3cd Daniel Golle Daniel Golle: hostapd: convert ssl provider build options to variants
+312d7a4a5aaac8df714da5ad25d8b83a09c9e68c Luo chongjun John Crispin: ar71xx: add support for GL.iNet GL-AR750S
+9685f3978795727ac99d5d20a4af16c808b1e24b Rosen Penev John Crispin: ramips: Use generic board detect for GnuBee devices
+17eb0c48728a1ee2c8c33e86aac26d475e8a56af Rosen Penev John Crispin: ramips: Use generic board detect for GnuBee devices
+78f1974bc565d7544589a49ad8efd92c4ddec5b3 Daniel Golle Daniel Golle: hostapd: update packaging and patches
+987900f2de76e6d292e55aa068c39b03f79c8812 Daniel Golle Daniel Golle: hostapd: properly build hostapd-only SSL variants
+0c0bb629992d3cc2fe277a2348e8cf70fa429567 Matthias Schiffer Matthias Schiffer: ar71xx: switch CPE/WBS 210/510 to okli-loader
+805e59cdcc2b6b2bb3f7583d8ccdb932e6cdeb7b Matthias Schiffer Matthias Schiffer: ar71xx: switch CPE/WBS 210/510 to okli-loader
+e36f8b3f3980903d5cefc51fe274c19c7a0719f2 David Bauer John Crispin: ar71xx: add support for OCEDO Koala
+a32c06f44d6340fd25d1eb276f62b8494de9f462 INAGAKI Hiroshi John Crispin: ramips: add support for I-O DATA WN-GX300GR
+9ec117c5be83f296b8af7862291ea0b70bb1e0e6 David Bauer Mathias Kresin: ar71xx: fix AVM package selection
+daeab36c1bb4e554548b4773224297ba46c01f9c David Bauer Mathias Kresin: ar71xx: use Power-LED as Diag-LED on FRITZBox 4020
+6ea0807f18f96e0ae7f6db23ab3c984b180aa84e Matthias Badaire Mathias Kresin: ramips: fix network config for ravpower wd03
+433fb7d2c7846983f686512a7a6136ac03695559 David Bauer Mathias Kresin: ar71xx: fix AVM package selection
+46e232d8a190c2189e5c34701d8a0119b778d847 David Bauer Mathias Kresin: ar71xx: use Power-LED as Diag-LED on FRITZBox 4020
+21a12f42699d044a669e0d4a6c18bdf4cb3452a1 Matthias Badaire Mathias Kresin: ramips: fix network config for ravpower wd03
+a2f17214cd40c3557db34e262b28e25dcbf47edf Daniel Golle Daniel Golle: brcm2708: add brcmfmac-firmware-43455-sdio to DEFAULT_PACKAGES
+037ef13a161c6167b328aaf6ca0e259a5b7db037 Daniel Golle Daniel Golle: brcm2708: move wifi calibration EEPROMs out of base-files
+82fa7b9d78acf53708ee6480df328b11023e4a56 David Bauer Mathias Kresin: ramips: use phytpt trigger for mt76 wireless
+8956eb502df2d3e40a1c83a46d2781e732f08910 Maxim Anisimov Mathias Kresin: ramips: add support for TP-Link TL-WR842N v5
+be799e8c2a1b56c39743b90242d36a1396bb79f7 David Bauer Mathias Kresin: ramips: use phytpt trigger for mt76 wireless
+5881e2434fce53724c5d09b365945429a4985c41 Maxim Anisimov Mathias Kresin: ramips: add support for TP-Link TL-WR842N v5
+0da9303e5b444e2c98c24719c48c09f4c976c5a7 Rafał Miłecki Rafał Miłecki: mac80211: backport "brcmfmac: cleanup and some rework" from 4.17
+c3d9109fadaf5f9c5b8fd095c7bfb637defbf9db Rafał Miłecki Rafał Miłecki: bcm53xx: drop not ready support for Luxul devices
+4b280ad91a6b155ac71c417aaa7bb5f4e328712f Magnus Frühling John Crispin: ipq40xx: add support for ZyXEL WRE6606
+bb71a3f27efb4140c47e98b933bdb64384cbcbbf Thomas Nixon John Crispin: ar71xx: add kmod-usb-ehci to fix USB on RB hAP AC
+b3b81d9d2a33dcf50ced5d42357a82b2555600bd Thomas Nixon John Crispin: ar71xx: add kmod-usb-ehci to fix USB on RB hAP AC
+b4bf43c66767648f98494dd5f44e1301024b577c David Bauer John Crispin: ar71xx: add support for Fritz!WLAN Repeater 450E
+4fefe840990fabb7d8369261bf898f93ad2a6e9e Sébastien Delafond Sébastien Delafond: Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)
+3a99b278cdbde5e17bcb2584d3916c643bf318ab Mathias Kresin Mathias Kresin: ramips: mt7621: fix wireless package selection
+a1373bc6fce77a7839c5d26c9f2f376ae78ceba7 INAGAKI Hiroshi Mathias Kresin: ipq806x: add support for NEC Aterm WG2600HP
+afe0320ffc212b405e068281d636626df754261e INAGAKI Hiroshi Mathias Kresin: ramips: add support for I-O DATA WN-GX300GR
+da318f3522344ae3344b94c85dae41eeb53b04cc INAGAKI Hiroshi Mathias Kresin: ramips: add support for ELECOM WRC-1167GHBK2-S
+7381ed3d01262519fa616988ec30862790fd1216 Tobias Schramm Mathias Kresin: ramips: Add lzma-loader targets
+1863c386432b4a968547988c8c0538059cb80491 Tobias Schramm Mathias Kresin: ramips: Add support for Mikrotik RouterBOARD RBM33g
+0c4f658d58458e12a48663f1a910a0e909b7a5ee David Bauer Jo-Philipp Wich: ar71xx: add support for OCEDO Koala
+36234df96c6e468cf15c7e25ad2c4d7945478637 Magnus Frühling Jo-Philipp Wich: ipq40xx: add support for ZyXEL WRE6606
+29934e5f0373a7f06c02c3bd6b23fd47cbd48ca2 David Bauer Jo-Philipp Wich: ar71xx: add support for Fritz!WLAN Repeater 450E
+4e9fa569b0279c81aa9ca96a6669bc08115d4227 Arvid E. Picciani Jo-Philipp Wich: ar71xx: add support for TP-LINK Archer C7 v5
+7950e1b9f47417bcd4b80e4361dfc6dccb000ba7 Chuanhong Guo Mathias Kresin: ramips: Add support for Phicomm K2G
+c276abf061bc9ebd96b80d2021d445de66a29011 Mathias Kresin Mathias Kresin: lantiq: fix arcadyan vg3503j switch port indexing
+5dd340074695aa0356335e2217dcd71b05044ba4 Adrian Schmutzler Matthias Schiffer: ar71xx: Add TP-Link Pharos v2 board detection
+286a456319a1ec5cb54bf30defa5c8efd4a667cf Adrian Schmutzler Matthias Schiffer: ar71xx: Add support for TP-Link CPE210 v2
+7775802eb9bc9bbabc0eeaddb4d7ecdf68f88947 INAGAKI Hiroshi Mathias Kresin: ramips: add switch port index for I-O DATA WN-GX300GR
+240c2b12b563de62151ae95ec52a94cf2f838a65 Brett Mastbergen Brett Mastbergen: Revert "Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)"
+92b59b6857c69e45697e38980b5e8c79d99801e0 Brett Mastbergen Brett Mastbergen: untangle: Add dict support
+5505ab5c947b10a2ce3997f2747420ea9ea103ca Felix Fietkau Felix Fietkau: ramips: limit dictionary size for lzma compression
+a80276235a66e0ee873611911ef5d15c53edd8f4 Kevin Darbyshire-Bryant Kevin Darbyshire-Bryant: iproute2: tc: backport canonical cake support
+b84a1c56f3a874c2c3d2b2d8282bc0ad0378d743 Jo-Philipp Wich Jo-Philipp Wich: build: do not alter global default package selection from profiles
+ce2908fb8eca1148082eec57f29f21fd40b934bd Brett Mastbergen Brett Mastbergen: netfilter.mk: If CONFIG_NFT_QUEUE is set, include nft_queue.ko
+bb06f6d3badf188d407ee34b38e6825ce6a2cb58 Thibaut VARÈNE Jo-Philipp Wich: ar71xx: add missing diag LED support for RB wAP 2nD
+cb73dd21a33d17ba3d500a7a52d840087eff0f62 Thibaut VARÈNE Jo-Philipp Wich: ar71xx: rbspi: fix RB wAP AC gpio conflict and LED
+4dc0ff8183a45d80db88a4b42a24cb0371786e35 Christian Lamparter John Crispin: brcm2708: split sdcard.img.gz into a sysupgrade and factory image
+21ad5fb1eafd33f82850c18d1df3b247fce17e0e 张鹏 John Crispin: ar71xx:add support for E558 v2
+11a5128b983fdc78ffeac063bf9060116cad281b 张鹏 John Crispin: ar71xx:add support for E750A v4
+a3dd6c939df83753256566565cad707c9413fbcb 张鹏 John Crispin: ar71xx:add support for E750G v8
+3442ec5d5724ca747c9f76b949dc8d21c94228c0 Thibaut VARÈNE Jo-Philipp Wich: ar71xx: define switch for rb-952ui-5ac2nd
+b0b5c64c22b8a1bf323b8756153e8568f52e1281 Jo-Philipp Wich Jo-Philipp Wich: Revert "ar71xx: define switch for rb-952ui-5ac2nd"
+e3ab280e47000aee3dc0ea916bcb656490e9839d Koen Vandeputte Koen Vandeputte: kernel: remove linux 3.18 support
+4017c528ca9e0fda8eec87ec0cbc93fabfa53530 Koen Vandeputte Koen Vandeputte: kernel: remove linux 4.4 support
+75e4d2d18c0c6a604cc9bf7bce2d6023fcedc78a Zoltan HERPAI Zoltan HERPAI: ramips: add missing USB packages into ASL26555-16M
+79518b7a4b0e1b65ba320ee699630b5072f1df51 Roger Pueyo Centelles Mathias Kresin: ramips: mt7620: add dir-810l network config
+e3022727658166e736198529582a46abf2397ea4 Matthias Schiffer Matthias Schiffer: ar71xx/generic: enable Zyxel NBG6616 in kernel config again
+0f3ec67a838856a4114406a6de5789fdb36600bd Jo-Philipp Wich Jo-Philipp Wich: ramips: only limit lzma dictionary size on mt7621
+2d9749f4a7dba7746bde78df61f1bd8d03cfbe94 Sébastien Delafond Sébastien Delafond: Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)
+d6313988db85a58cd440e13b2e1cb128b8a7ce84 Brett Mastbergen Sébastien Delafond: Revert "Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)"
+bbd5e27d49f7e9b41c55edb7e9cca4d8da869f64 Brett Mastbergen Sébastien Delafond: untangle: Add dict support
+3f3a7db2a8ba65f384dce52f500e02202773360c Brett Mastbergen Sébastien Delafond: netfilter.mk: If CONFIG_NFT_QUEUE is set, include nft_queue.ko
+b2a042b5fe0c07af342981294126f0097dc84207 Kevin Darbyshire-Bryant Kevin Darbyshire-Bryant: iproute2: cake: make gso/gro splitting configurable
+1fdf3b4a4440b8740212697add2bb60bbcb68f9c Kevin Darbyshire-Bryant Kevin Darbyshire-Bryant: iproute2: update cake man page
+a57062a90832b0941d4b55cbaca48bfc0c2f1d34 Kevin Darbyshire-Bryant Kevin Darbyshire-Bryant: iproute2: q_cake: Add printing of no-split-gso option
+13471fa328df27eac991821406498fe3973f6b6b Brett Mastbergen Brett Mastbergen: kernel: generic: Backport multiple NAT hook support from v4.16
+4f6ad3c13ace1d341179ad82f417aa0ce5adf51d Kevin Darbyshire-Bryant Kevin Darbyshire-Bryant: iproute2: q_cake: Also print nonat, nowash and no-ack-filter keywords
+1545c2e49be504b5e937c6dffe56c1ecfc66a549 Brett Mastbergen Brett Mastbergen: linux: generic: 4.14: Add patches for unconfirmed conntrack clash fix
+3a783e59ae0e6599a615fe199768da05609f3da0 Joseph C. Lehner Mathias Kresin: ramips: ex2700: actually remove kmod-mt76*
+e4678c6c01fac468f677633de1bc5116fafefc38 Steffen Förster Mathias Kresin: ramips: fix Archer C20 sysupgrade
+73442267b6b81f4e3e1d6923342f6bfe01af4ef4 Brett Mastbergen Brett Mastbergen: netsupport: Add act_pedit and act_csum to sched-core
+70cb2d20c9f5dff7c1f3344812fd0d1ac06e911d Koen Vandeputte Koen Vandeputte: netfilter: add missing dependency for kernel 4.14
+d01e92781c5832ddefdf8998e339a6c0d5f00e68 Brett Mastbergen Brett Mastbergen: kernel: generic: Backport multiple NAT hook support from v4.16
+6b57774c8789455bc8f06a9d612504c03bece69a Brett Mastbergen Brett Mastbergen: linux: generic: 4.14: Add patches for unconfirmed conntrack clash fix
+2f69bb003a469d6733f8ea321fae04ff3a937ed9 Brett Mastbergen Brett Mastbergen: netsupport: Add act_pedit and act_csum to sched-core
+f3fdb5f66a3ae4cebc7ff72735e1c16121748000 Brett Mastbergen Brett Mastbergen: linux: mvebu: Use dsa switch driver for linksys devices
+0d549271d397b963be4ca26406688bc5dccaf123 Rinki Kumari Matthias Schiffer: ar71xx: fix TP-Link Archer C7 v5 switch LEDs
+1cd945ea2289f5b6047351da09d8cc2338bb002d Martin Weinelt Matthias Schiffer: ramips: fix leds on GL.iNet GL-MT300N-V2
+b1d46cebda181798e52e4ad78656ff8d7fe7de40 Brett Mastbergen Brett Mastbergen: netfilter: Add fib support for nftables
+dc618eedbf96e9d29ef51e648f10939f27627e6e Dirk Morris Dirk Morris: Change banner
+5098f6ab819d6097b89e05fb78521e63ff39c2b6 Dirk Morris Dirk Morris: Change banner
+50789acf4e75606ffe16f1f6e7e3b7ee2e71185d Christoph Krapp Matthias Schiffer: ar71xx: add support for UniFi-AC-Mesh-Pro
+a35f24309021c1c0e9cbed0faedf58b941cb4bd3 Daniel Golle Jo-Philipp Wich: hostapd: update to git HEAD of 2018-05-21, allow build against wolfssl
+0d08c6705864d0ad430dc3d7049b51bf5a218ba7 Daniel Golle Jo-Philipp Wich: hostapd: convert ssl provider build options to variants
+000a3fef0ad9c0f0bcea0a9981c7700d66a97ab8 Daniel Golle Jo-Philipp Wich: hostapd: update packaging and patches
+5826efd18ca970462cefa7f82edcd671493d32fb Daniel Golle Jo-Philipp Wich: hostapd: properly build hostapd-only SSL variants
+7408cdaa310fe75a6da3d4de165d84fcde123c62 Alin Nastac Jo-Philipp Wich: netfilter: add bpf match support
+b1c42ef11571b7fa179d302fa8fbdb074937c19b Lev Jo-Philipp Wich: ramips: fix wizfi630a swapped lan/wan port
+775473cf8d47ef6a4ef22349d4a1d67fed542e86 Mathias Kresin Jo-Philipp Wich: hostapd: cleanup package definition
+4e4d124b27a35d97ab164a9eeea559733f14d07a Mathias Kresin Jo-Philipp Wich: hostapd: fix conflicts hell
+7939cd49c1497593d7d39c21b6244d3456d7a6a6 Rosy Song Jo-Philipp Wich: include: add netdev family support for nftables
+9afbe27bd01fc3b36179120681c1560be3afffdd Keith Wong Jo-Philipp Wich: kernel: add kmod-tcp-bbr
+42dafa0ac589370877747c6647f75ea3ab9572b6 Felix Fietkau Jo-Philipp Wich: build: add support for enabling the rootfs/boot partition size option via target feature
+69f28f3a205d22f44fe79ecb8b30ab1e2f3e60e3 Alexander Couzens Jo-Philipp Wich: hostapd: fix build of wpa-supplicant-p2p
+8bf1a35eda4fc0ae5d40dbd35905e300127ccced Jo-Philipp Wich Jo-Philipp Wich: hostapd: fix MAC filter related log spam
+6b0bafb16b77a5a8e49cbcf0f482bbfcea028cae Tomasz Maciej Nowak Jo-Philipp Wich: x86: add packages files to image bootfs
+c009ea05c16aab22c0fd0e196651f2a98a3f8b4d Brett Mastbergen Brett Mastbergen: Remove patched version of dict
+8a9b0b95df7d96bc51d6e4731264add11f72925d Christian Lamparter Christian Lamparter: apm821xx: switch MX60(W)'s recovery images to multi-image method
+2c7a1ccaeac6bb4a197e12257f166022d6757fb3 Daniel Halmschlager Jo-Philipp Wich: ar71xx: Add usb drivers in Archer C7 v4/v5 images
+e6c2f3feb1e5bf30f25b333f91ec2be6f5b7102d David Santamaría Rogado Jo-Philipp Wich: ar71xx: use correct wan mac address for the TP-Link Archer C7 v4
+bc3eb970abc4d666735866c72951813d49d2a07f Adrian Schmutzler Christian Lamparter: ar71xx: Fix 5 GHz MAC address for Archer C60 v2
+d4c1acc0364f815a0f8235eb3b758d22e59992a1 Sébastien Delafond Sébastien Delafond: Tweak /etc/banner a bit
+dcfca830a85690d6973bf065be0070ec56f8aeb6 David Bauer Christian Lamparter: ipq40xx: copy Fritz4040 UBoot to STAGING_DIR_IMAGE
+9c4fa1bb5bfdc756a3fbfce6360fddfdb67f083a Aubrey McIntosh, PhD Petr Štetiar: ar71xx: Remove ath10k packages from archer-c7-v1 (fixes FS#1743)
+c7eb679047dbc3a15b3eb4d5e5fa376c42f4c7b1 Adrian Schmutzler Petr Štetiar: ar71xx: Add "info" partition for TP-Link Archer C7 v5
+7268ebb1e484ac6619963401f484421fa819cd7d Adrian Schmutzler Petr Štetiar: ar71xx: Correct MAC address for WAN interface of Archer C7 v5
+6ac061f31991a2aad8b1b26fe8710c3347637501 Adrian Schmutzler Petr Štetiar: ar71xx: Fix IMAGE_SIZE for TP-Link Archer C7 v5
+e6e5435c5b418b4fa51fad2ce18866a52d31af51 Andreas Ziegler Matthias Schiffer: ar71xx: GL.iNet AR300M family: correct LED definitions
+b5ce5217e2ee26a24cdb65313217fdec6e7e82e1 Hauke Mehrtens Hauke Mehrtens: ramips: rt305x: Reduce size of a5-v11 image
+cf2aa873ea1787d9206feac0391f748093c4809b Adrian Schmutzler Christian Lamparter: ar71xx: Fix network setup for TP-Link Archer C25 v1
+b463a13881d3699c0f2d67ceeda146c76af58ac6 Hauke Mehrtens Hauke Mehrtens: hostapd: fix multiple security problems
+bdd56e5e43df562db38e3687d39bd4e6a6e58f0d Damir Samardzic Brett Mastbergen: mvebu: initial support for Marvell Armada 3720 DB board
+efa61d46a982def30a4d2fb4b7950f67ee4a8e08 Damir Samardzic Brett Mastbergen: mvebu: initial support for Marvell Armada 7k and 8k DB boards
+25e79820dae333e78db460cca8be1952628263d8 Kevin Darbyshire-Bryant Brett Mastbergen: hostapd: add basic variant
+6cc186228d99261c1db32ebce704372520a9985d Christian Lamparter Brett Mastbergen: apm821xx: unify My Book Live Single + Duo images
+6e0fac3afd9b5ff9086e7ec7367279ed5c359baa Daniel Golle Brett Mastbergen: brcm2708: Add wifi driver, firmware and NVRAM for RPi1
+c3021633a6227343ac73a7d775744a7d1e1831f9 Daniel Golle Brett Mastbergen: brcm2708: add brcmfmac-firmware-43455-sdio to DEFAULT_PACKAGES
+b8951b8461c4132afdc0e9f60f4fcb731cbc0f68 Daniel Golle Brett Mastbergen: brcm2708: move wifi calibration EEPROMs out of base-files
+b7c7131d578a46f9d3436b927b01498ae40f5342 Christo Nedev Brett Mastbergen: brcm2708: Add wifi driver, firmware and NVRAM for Raspberry Pi 3 b
+c43bfb998d92b3690b875ee0aeb7f2c85234b808 Ademar Arvati Filho Brett Mastbergen: ramips: add support for Blueendless Kimax U35WF
+f16ee44180f1139010b4bfadd80a18b71ae05190 INAGAKI Hiroshi Brett Mastbergen: ramips: add support for I-O DATA WN-AX1167GR
+ba3ea01f86628ace9a403214ae8ba4294b54ab5f Maxim Anisimov Brett Mastbergen: ramips: move zyimage define to common Makefile
+fa9eb716e8cf59f115787409bee8a2953be6329d INAGAKI Hiroshi Brett Mastbergen: ramips: add support for I-O DATA WN-AC1167GR
+c61b03777487a718e1864e66e062a438f0132692 Luo chongjun Brett Mastbergen: ar71xx: add support for GL.iNet GL-AR750S
+cdb675b5fd651e08adee1199aa65a9a31fbc6ddd David Ehrmann Brett Mastbergen: ar71x: add support for Mikrotik Routerboard wAP R
+afed20f8c27b872b6c5bf41b93159217845de51e Mathias Kresin Brett Mastbergen: ar71xx: mikrotik: cleanup nand image build code
+87db1b4965fa0a5fe333687eb6a18a1659e493a2 Thibaut VARÈNE Brett Mastbergen: ar71xx: add support for MikroTik RB931-2nD
+ae091b2199aabfed5466e3532504c12907d946e3 Kin Chan Brett Mastbergen: ar71xx: Move F9K1115v2 under ar71xx tiny target
+0c864dab4d65f773d4cb7318c08027dca494b5da John Crispin Brett Mastbergen: mac80211: make ath10k-ct the default ath10k
+4b118e9de816f34e667280ae2051651bebd0797c Mathias Kresin Brett Mastbergen: lantiq: complete AVM FRITZ!Box 3370 support
+6feb8fc5600f24aabfaaaeea3da38e233d2287f5 Johann Neuhauser Brett Mastbergen: lantiq: add support for FritzBox 7312
+e729cad291536e6abb76ff18c2830ee9bfecfc64 Mathias Kresin Brett Mastbergen: treewide: use wpad-basic for not small flash targets
+10386ee54879f6e50c35d48a1d4cc769be2a0685 Andre Heider Brett Mastbergen: sunxi: fix build without ext4 rootfs
+3e44df0a6dda1638a56640b1d16f641118759d37 Andre Heider Brett Mastbergen: omap: fix build without ext4 rootfs
+9b6ffeeb4a680c5c71900d966f1fc8b613250ac7 Tomasz Maciej Nowak Brett Mastbergen: mvebu: make bootfs size for sdcard image configurable
+fe6f3a24ea4de7dd5bcf32c93107d2abb14a0c9c Tomasz Maciej Nowak Brett Mastbergen: mvebu: use ext4 for clearfog image bootfs
+a2f3f8470b124c3446eb20d35de22157df398385 Tomasz Maciej Nowak Brett Mastbergen: mvebu: shrink amount of packages and reorganize them
+504fa5ddea38d032c0fa439124fe8e7aad16578f Tomasz Maciej Nowak Brett Mastbergen: mvebu: base-files: autodetect upgrade device
+6f99c6f328b9f982018d682f78827afde4e10cd7 Tomasz Maciej Nowak Brett Mastbergen: mvebu: sysupgrade: sdcard: keep user added partitons
+4c26c8494d78f167a72cb921b2b5a2e1b59758c0 Tomasz Maciej Nowak Brett Mastbergen: mvebu: image: introduce BOOT_SCRIPT variable
+7c45edf29f1fc4762ea30ea9db748bbfaf15e3ab Tomasz Maciej Nowak Brett Mastbergen: mvebu: image: improve readability of device recipes
+390f3d681e64531335fe8f536c1503ff8a7f08a1 Tomasz Maciej Nowak Brett Mastbergen: mvebu: align device names to vendor_device format
+ef442a489a71d8e0b3124cf3f0099e1e4085554e Klaus Kudielka Brett Mastbergen: mvebu: fix board_name condition in 79_move_config
+279883bc100fab6051261aed4cd720d67221923c Tomasz Maciej Nowak Brett Mastbergen: mvebu: use device-tree board detection
+d758ffeb800e1b070994cba2b7132394443bb45e Tomasz Maciej Nowak Brett Mastbergen: mvebu: add images for additional ESPRESSObin boards
+9e5d5fd8244145e5f73641b57680866313a6bdd7 Vladimir Vid Brett Mastbergen: mvebu: fix regression for non-generic ESPRESSObin versions
+d4793f7570e53c89467faeb26f35d56799fc22be Brett Mastbergen Brett Mastbergen: mvebu: Fix platform.sh for non-generic espressobin versions
+c175669c64822c22c95fdc4137cbf1d32b18cefc Brett Mastbergen Brett Mastbergen: libnetfilter-log: Sync with current kernel headers
+817448a4a84e78bf23faaffa7b7b9dfb4e3ab997 Dirk Morris Dirk Morris: Add ct id patch so it stays consistent pre-routing first packet til later
+88fb1b4744322f5e1e4d95e62bd2a786d3f792d3 Dirk Morris Dirk Morris: Update ct hash patch to v2
+8e1d82a58f3d6eb546d6dd7fd7006ef4911ef0a6 Dirk Morris Dirk Morris: Move to v3 patch
+12f3020e2e0ea1a27f679fc6f3bcff23f1ef2eec Brett Mastbergen Brett Mastbergen: Revert "iproute2: q_cake: Also print nonat, nowash and no-ack-filter keywords"
+8ce2d2c8ac9a7ea004762d50d092e3522a4e740d Brett Mastbergen Brett Mastbergen: Revert "iproute2: q_cake: Add printing of no-split-gso option"
+851a815b42483f0bb0a1c1317caa080f6b057ef9 Brett Mastbergen Brett Mastbergen: Revert "iproute2: update cake man page"
+6178bb1796cfc914af99c2f3230efb49b3c4acb8 Brett Mastbergen Brett Mastbergen: Revert "iproute2: cake: make gso/gro splitting configurable"
+823e9b82631cb8ae8a8f7087f1b41887676fa662 Brett Mastbergen Brett Mastbergen: Revert "iproute2: tc: backport canonical cake support"
+1d8c50b19ffac7b49e965178af4cff72e507302b Hans Dedecker Brett Mastbergen: iproute2: update to 4.17.0
+5b739985c43b67788d6fae67f896d43e6345ce2d Kevin Darbyshire-Bryant Brett Mastbergen: iproute2: tc: backport canonical cake support
+f3ec0f10f7f76d37e38a3fc691e1fd6f42b78a26 Kevin Darbyshire-Bryant Brett Mastbergen: iproute2: cake: make gso/gro splitting configurable
+43247cc3311b4f1f6958cea5824ead43231118eb Hans Dedecker Brett Mastbergen: iproute2: add libutil to InstallDev section
+b417551e02a47beb4da12b4d35a0a59f3ad947e6 Hans Dedecker Brett Mastbergen: iproute2: remove libutil from InstallDev section
+bf6bbb2be5b7f19d2a5dcc0df4d6ad440d4d97c4 Hans Dedecker Brett Mastbergen: iproute2: update to 4.18.0
+5dbef24b207946520c2822f6f6b1426c30086896 Kevin Darbyshire-Bryant Brett Mastbergen: iproute2: update cake man page
+550ca08892ae55e039c7b61a4072fc8af626d0c8 Kevin Darbyshire-Bryant Brett Mastbergen: iproute2: q_cake: Add printing of no-split-gso option
+e1923c7113df3b2849ce8de0e79edfcb56b198f1 Kevin Darbyshire-Bryant Brett Mastbergen: iproute2: q_cake: Also print nonat, nowash and no-ack-filter keywords
+923397abe60ed574adcd804b648361eb5cc7a92e Brett Mastbergen Brett Mastbergen: espressobin-v7-emmc: dts: Rename ethernet ports
+5758d676a430a0b263a32aa9ade229365de9f565 Felix Fietkau Brett Mastbergen: procd: update to the latest version, fixes gcc 8 build error
+c99a65e3d7694705db69a41071ec6fec807f50a7 Felix Fietkau Brett Mastbergen: procd: compile with LTO enabled
+0323b82629e58dd352e7c3d5cd9e708339d2c5ab Hans Dedecker Brett Mastbergen: procd: update to latest git HEAD
+74e1e2d1a3c522767cb25e3c48d7ed85764b06da John Sommerville Brett Mastbergen: build: build proper VMDK formats for ESXI 6.5
+6930f76cfef35cc8fad94ffdef8b2f0a92a05c89 Brett Mastbergen Brett Mastbergen: Revert "build: build proper VMDK formats for ESXI 6.5"
+c16e96cdff7f8ff1cf080d92e73291b6ea7bbf58 Florian Eckert Brett Mastbergen: target/x86/image: use qemu-img from STAGING_DIR_HOST
+1ddb8ff64fd58c38b1d0f2ed78c62f39d56eb9b6 Brett Mastbergen Brett Mastbergen: tools: qemu: Add patches to support adapter_type and monolithicFlat
+8988ff66ce2aa6fdc1aa7dad6f76a173a69f8015 John Sommerville Brett Mastbergen: build: build proper VMDK formats for ESXI 6.5
+64148aa089b84d365d53d40e7897a4d4a00f4a6c Brett Mastbergen Brett Mastbergen: netfilter: Build and include nft_rt
