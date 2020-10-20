@@ -1,11 +1,9 @@
 .dockerignore
 .travis.yml
 README.md
-package/kernel/linux/modules/netfilter.mk
-package/libs/libnftnl/patches/0001-libnftnl-Add-ct-id-support.patch
-package/libs/libnftnl/patches/0002-libnftnl-Add-dict-support.patch
-package/network/services/hostapd/patches/011-mesh-Allow-DFS-channels-to-be-selected-if-dfs-is-ena.patch
-package/network/services/hostapd/patches/014-mesh-do-not-allow-scan-result-to-swap-pri-sec.patch
+diffs
+package/network/services/hostapd/patches/0001-Revert-wpa_supplicant-Increase-authentication-timeou.patch
+package/network/services/hostapd/patches/0002-Revert-wpa_supplicant-Rename-wpas_event_-to-wpas_ap_.patch
 package/network/services/hostapd/patches/018-mesh-make-forwarding-configurable.patch
 package/network/utils/nftables/patches/0001-nftables-Add-ct-id.patch
 package/network/utils/nftables/patches/0002-nftables-Add-dict.patch
