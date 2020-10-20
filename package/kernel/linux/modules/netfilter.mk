@@ -1053,6 +1053,7 @@ endef
 
 $(eval $(call KernelPackage,nft-nat6))
 
+
 define KernelPackage/nft-fib
   SUBMENU:=$(NF_MENU)
   TITLE:=Netfilter nf_tables fib support
@@ -1084,3 +1085,4 @@ define KernelPackage/nft-netdev
 endef
 
 $(eval $(call KernelPackage,nft-netdev))
+
