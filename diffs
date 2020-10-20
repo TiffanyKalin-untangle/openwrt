@@ -2,11 +2,6 @@
 .travis.yml
 README.md
 diffs
-package/network/services/hostapd/patches/0001-Revert-wpa_supplicant-Increase-authentication-timeou.patch
-package/network/services/hostapd/patches/0002-Revert-wpa_supplicant-Rename-wpas_event_-to-wpas_ap_.patch
-package/network/services/hostapd/patches/018-mesh-make-forwarding-configurable.patch
-package/network/utils/nftables/patches/0001-nftables-Add-ct-id.patch
-package/network/utils/nftables/patches/0002-nftables-Add-dict.patch
 target/linux/generic/backport-4.14/500-v4.16-tools-rename-tools-net-directory-to-tools-bpf.patch
 target/linux/generic/backport-4.14/501-v4.16-tools-bpf-add-bpftool.patch
 target/linux/generic/backport-4.14/502-v4.16-tools-bpftool-add-documentation.patch
@@ -104,9 +99,6 @@ target/linux/generic/backport-4.14/593-v4.16-libbpf-introduce-bpf-prog-detatch2.
 target/linux/generic/backport-4.14/594-v4.16-libbpf-add-support-for-BPF_PROG_QUERY.patch
 target/linux/generic/backport-4.14/595-v4.16-Add-in-an-additional-arch-related-include-to-libbpf-.patch
 target/linux/generic/backport-4.14/998-4.14-ct-id.patch
-target/linux/mvebu/image/Makefile
-target/linux/mvebu/image/gen_mvebu_sdcard_img.sh
-target/linux/mvebu/image/generic-arm64.bootscript
 target/linux/mvebu/patches-4.14/105-build_new_dtbs.patch
 target/linux/mvebu/patches-4.14/500-clk-mvebu-armada-37xx-periph-cosmetic-changes.patch
 target/linux/mvebu/patches-4.14/501-clk-mvebu-armada-37xx-periph-prepare-cpu-clk-to-be-u.patch
