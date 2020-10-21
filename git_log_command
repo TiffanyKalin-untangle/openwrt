@@ -1,1 +1,1 @@
-git log --author='Brett Mast' --author=Delafond  --author='John Coffin' --author=Sommerville --author='Dirk Morris' --author=Hadarau --author=Blaise --author=Hotz --format=%H %an: %s --reverse
+git log --since='2018-05-08' --until='2020-10-15' --format='%H %an %cn: %s' --reverse | grep -v 'Tiffany Kalin' | grep -v 'GitHub' | grep -v 'Jenkins'

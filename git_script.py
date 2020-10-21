@@ -68,7 +68,7 @@ our_authors = [
 doing_commits=False
 use_differing_files=True
 if doing_commits:
-    commits=open("git_log_all")
+    commits=open("git_log_us_only")
     thisset = set()
 
     total_count=0

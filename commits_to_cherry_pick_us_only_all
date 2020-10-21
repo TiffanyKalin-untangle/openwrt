@@ -1,0 +1,66 @@
+4fefe840990fabb7d8369261bf898f93ad2a6e9e Sébastien Delafond: Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)
+240c2b12b563de62151ae95ec52a94cf2f838a65 Brett Mastbergen: Revert "Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)"
+92b59b6857c69e45697e38980b5e8c79d99801e0 Brett Mastbergen: untangle: Add dict support
+65f737a2d0b8a152385c967f9d8b5659f2727fc6 Brett Mastbergen: kernel/libnftnl/nftables: Add 'set' support for nftables dict rules
+ce2908fb8eca1148082eec57f29f21fd40b934bd Brett Mastbergen: netfilter.mk: If CONFIG_NFT_QUEUE is set, include nft_queue.ko
+2d9749f4a7dba7746bde78df61f1bd8d03cfbe94 Sébastien Delafond: Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)
+d6313988db85a58cd440e13b2e1cb128b8a7ce84 Brett Mastbergen: Revert "Add conndict support (feeds/untangle/patches/openwrt/0001-Add-conndict-support.patch)"
+bbd5e27d49f7e9b41c55edb7e9cca4d8da869f64 Brett Mastbergen: untangle: Add dict support
+7eb09c7e4de134f0cd3ce330e4391224a428eab8 Brett Mastbergen: kernel/libnftnl/nftables: Add 'set' support for nftables dict rules
+3f3a7db2a8ba65f384dce52f500e02202773360c Brett Mastbergen: netfilter.mk: If CONFIG_NFT_QUEUE is set, include nft_queue.ko
+df39634a1308d811ad72461449bc6cf39e31b91d Brett Mastbergen: libnftnl: Rebase dict patches on 18.06
+83b6c3dab83ee87edace99b0818066146536ac49 Brett Mastbergen: nftables: Rebase dict patches on 18.06
+e47a9d2e3e257b985c4955ce0f5074223d34f219 Brett Mastbergen: kernel: dict: Fix buffer over-read
+4167721e7325e12e7b0cc333d26f506c423e920e Brett Mastbergen: kernel: generic: Fix nftables inet table breakage
+13471fa328df27eac991821406498fe3973f6b6b Brett Mastbergen: kernel: generic: Backport multiple NAT hook support from v4.16
+e9bfe7f5a26600ec3772437360f3dcf70ef34c1a Sébastien Delafond: Add LICENSE
+1545c2e49be504b5e937c6dffe56c1ecfc66a549 Brett Mastbergen: linux: generic: 4.14: Add patches for unconfirmed conntrack clash fix
+01088c800328beedc8f00421f420be33ad8ec7cd Brett Mastbergen: kernel: dict: Add flush support
+73442267b6b81f4e3e1d6923342f6bfe01af4ef4 Brett Mastbergen: netsupport: Add act_pedit and act_csum to sched-core
+2339cc7cbc20f5ad72db06161b4155d095ab623a Brett Mastbergen: kernel: dict: Fix buffer over-read
+2cb0862dfb87183bedfd828c4aab8f444a66345e Brett Mastbergen: kernel: generic: Fix nftables inet table breakage
+d01e92781c5832ddefdf8998e339a6c0d5f00e68 Brett Mastbergen: kernel: generic: Backport multiple NAT hook support from v4.16
+6b57774c8789455bc8f06a9d612504c03bece69a Brett Mastbergen: linux: generic: 4.14: Add patches for unconfirmed conntrack clash fix
+ed32979bd2beddfd2ff3eced54e4b992453318ec Brett Mastbergen: kernel: dict: Add flush support
+2f69bb003a469d6733f8ea321fae04ff3a937ed9 Brett Mastbergen: netsupport: Add act_pedit and act_csum to sched-core
+ab8f71ce02cd61e144bbabca65ea2e4d3e50e98b Sébastien Delafond: Add a update-subtrees.py helper
+03b67f27320c7ce5b98bde0a3076ca5f0d10d816 Sébastien Delafond: Add a update-subtrees.py helper
+f3fdb5f66a3ae4cebc7ff72735e1c16121748000 Brett Mastbergen: linux: mvebu: Use dsa switch driver for linksys devices
+b1d46cebda181798e52e4ad78656ff8d7fe7de40 Brett Mastbergen: netfilter: Add fib support for nftables
+dc618eedbf96e9d29ef51e648f10939f27627e6e Dirk Morris: Change banner
+5098f6ab819d6097b89e05fb78521e63ff39c2b6 Dirk Morris: Change banner
+69d6da1de601eb94285752b0bea44ad4f2381dfe Brett Mastbergen: kernel: generic: Fix nftables inet table breakage
+c009ea05c16aab22c0fd0e196651f2a98a3f8b4d Brett Mastbergen: Remove patched version of dict
+89bfef448ebb2fd961d72c85bb21f1ae5a8d2516 Brett Mastbergen: Remove unnecessary patches from libnftnl, nftables, and linux
+d4c1acc0364f815a0f8235eb3b758d22e59992a1 Sébastien Delafond: Tweak /etc/banner a bit
+90b925ec49e7deb456c5d8f67339378756bac2a6 Sébastien Delafond: Add ./update-subtrees.py
+f5d4d8a2d8aef69f91b75eee6894fb622fa1817a Sébastien Delafond: Bring in latest update-subtrees.py & subtrees.yaml from ngfw_pkgs
+e221772ad00493e7cc33ac0ca4cf0da4b134c9fd Sébastien Delafond: Bring in latest update-subtrees.py & subtrees.yaml from ngfw_pkgs
+d4793f7570e53c89467faeb26f35d56799fc22be Brett Mastbergen: mvebu: Fix platform.sh for non-generic espressobin versions
+c175669c64822c22c95fdc4137cbf1d32b18cefc Brett Mastbergen: libnetfilter-log: Sync with current kernel headers
+817448a4a84e78bf23faaffa7b7b9dfb4e3ab997 Dirk Morris: Add ct id patch so it stays consistent pre-routing first packet til later
+f2fc94cd4873484ab637680671daffe31a3cdb20 Sébastien Delafond: Python E305
+88fb1b4744322f5e1e4d95e62bd2a786d3f792d3 Dirk Morris: Update ct hash patch to v2
+8e1d82a58f3d6eb546d6dd7fd7006ef4911ef0a6 Dirk Morris: Move to v3 patch
+12f3020e2e0ea1a27f679fc6f3bcff23f1ef2eec Brett Mastbergen: Revert "iproute2: q_cake: Also print nonat, nowash and no-ack-filter keywords"
+8ce2d2c8ac9a7ea004762d50d092e3522a4e740d Brett Mastbergen: Revert "iproute2: q_cake: Add printing of no-split-gso option"
+851a815b42483f0bb0a1c1317caa080f6b057ef9 Brett Mastbergen: Revert "iproute2: update cake man page"
+6178bb1796cfc914af99c2f3230efb49b3c4acb8 Brett Mastbergen: Revert "iproute2: cake: make gso/gro splitting configurable"
+823e9b82631cb8ae8a8f7087f1b41887676fa662 Brett Mastbergen: Revert "iproute2: tc: backport canonical cake support"
+923397abe60ed574adcd804b648361eb5cc7a92e Brett Mastbergen: espressobin-v7-emmc: dts: Rename ethernet ports
+74e1e2d1a3c522767cb25e3c48d7ed85764b06da John Sommerville: build: build proper VMDK formats for ESXI 6.5
+6930f76cfef35cc8fad94ffdef8b2f0a92a05c89 Brett Mastbergen: Revert "build: build proper VMDK formats for ESXI 6.5"
+65781c41476397af91b88c79c17afce6567174aa Sébastien Delafond: Error-handling in update-subtrees.py
+0626b4c8ed220cbaccadd4e7f8a6bdbd6dae1162 Sébastien Delafond: Error-handling in update-subtrees.py
+15fea4ce6c85983b76609fa3eadab055dcaa5a39 Sébastien Delafond: check_output's  text argument is only in python>=3.7: decode bytes ourselves instead
+28967e8ecc7e3ce7e0d5cd643bd88d240ff89699 Sébastien Delafond: check_output's  text argument is only in python>=3.7: decode bytes ourselves instead
+60723b532a459d21e9bd4c97153b735ca9fb659e Sébastien Delafond: Strip last's carriage return for all shell output
+5ce74334aa9fedeb4570ad9366004c72cfaf3552 Sébastien Delafond: Strip last's carriage return for all shell output
+1ddb8ff64fd58c38b1d0f2ed78c62f39d56eb9b6 Brett Mastbergen: tools: qemu: Add patches to support adapter_type and monolithicFlat
+8988ff66ce2aa6fdc1aa7dad6f76a173a69f8015 John Sommerville: build: build proper VMDK formats for ESXI 6.5
+63f3a355e784110e6f4cc01d3992038e17644bfe Sébastien Delafond: This is real low
+3a716c779df6671a6cd5787e573b47b276af91c2 Sébastien Delafond: Restore mfw_build repository to, well, only containing build tool/scripts...
+28f753e3dfa6668449e2aed2a80ba5e8604c1989 Sébastien Delafond: Restore mfw_build repository to, well, only containing build tool/scripts...
+9d6f100ec3b94f340db1735aa2de9c40b98a1035 Sébastien Delafond: Remove more files from feed repository
+a4138a55178f713ce0b732302d7953a13f3d8c9d Sébastien Delafond: update-subtrees: do not operate on unofficial branches
+64148aa089b84d365d53d40e7897a4d4a00f4a6c Brett Mastbergen: netfilter: Build and include nft_rt
