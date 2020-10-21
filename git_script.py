@@ -126,7 +126,7 @@ elif use_differing_files:
 
     #for f in files_to_use:
     #    print f
-    commits=open("git_log_all_all")
+    commits=open("git_log")
 
     commits_to_use=[]
     for l in commits:
@@ -145,7 +145,7 @@ elif use_differing_files:
     for s in commits_to_use:
         #print s
         print s.split(' ')[0]
-    print len(commits_to_use)
+    #print len(commits_to_use)
 
             
 
