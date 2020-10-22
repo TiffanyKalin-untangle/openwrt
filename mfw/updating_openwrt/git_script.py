@@ -68,13 +68,15 @@ our_authors = [
 doing_commits=True
 use_differing_files=True
 if doing_commits:
-    commits=open("git_log_us_only")
+    commits=open("git_log_committers")
     thisset = set()
 
     total_count=0
     for l in commits:
         commit = l.split(' ')[0]
+        subject = l.split(':')[1].strip()
 
+        cmd_before=(
         cmd=("git", "diff-tree", "--no-commit-id", "--name-only", "-r",  commit)
     
         ps = subprocess.check_output(cmd).strip()
