@@ -65,7 +65,7 @@ our_authors = [
         'Hotz',
         ]
 
-doing_commits=False
+doing_commits=True
 use_differing_files=True
 if doing_commits:
     commits=open("git_log_us_only")
@@ -96,9 +96,9 @@ if doing_commits:
             #print(l.strip())
 
     sortedset=sorted(thisset)
-    #for s in sortedset:
-    #    print s
-    print total_count
+    for s in sortedset:
+        print s
+    #print total_count
     commits.close()
 elif use_differing_files:
     differ_files=open("differing_files")

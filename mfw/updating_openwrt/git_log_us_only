@@ -961,10 +961,26 @@ c67bf888d0d8c97dbcce508deef5c215c750e6e5 Brett Mastbergen: fetch-licenses.sh: Re
 dd7ac5d699beabc18ccf25c7bfc5b856d881bf82 Brett Mastbergen: upgrade.sh: Include fullVersion
 e36e1a67f60a4156178c42aa129440c410f286b2 Brett Mastbergen: caswell-rssi-leds: Monitor the correct interface
 82bcadfa8d4553f8cb7ae6156d44b864da5a5e2c Brett Mastbergen: wwan_status: Encode iccid/imsi/imei/msisdn as strings
+ca4db5ee32ca711f18b01d08b9cc7fddcb4f81bc Brett Mastbergen: caswell-rssi-leds: Cache sim details
+e53ed3887a7d5703098ac48bbd8f18f62a953eec Brett Mastbergen: caswell-rssi-leds: Only monitor rssi when LTE is up
 d07f7495126d3684714999463ec8893e54d3f22e Sebastien Delafond: Merge commit '8e4b788328b6fc693fd73a3dce17c75420d42c75'
+91e52ce415709776491f7b5ded88b402a04af6af Brett Mastbergen: upgrade.sh: Don't compare versions
+02afef8730aab6cda0465d1cc6fc07e48deab77f John Coffin: Merge pull request #3 from untangle/MFW-771-lte-lockup
+5ca71046f5bbb11c23dd7c79c71424247c833365 Brett Mastbergen: caswell-rssi-leds: Cache sim details
+f6b4001f88c1071d7e458fa7406ebdb0d765d6fb Brett Mastbergen: caswell-rssi-leds: Only monitor rssi when LTE is up
+e142a301ad4bfbf555ed4733197b66b7f65aa0c7 Brett Mastbergen: configs: common: Add ethtool
+e59c1fae0fefc20c2952d0dfcc73b7e973e1c618 Brett Mastbergen: Add speedtest-cli
+376927a45848506a5a41a434cecbe09158a39dad Brett Mastbergen: sync-settings: Switch to speedtest-cli
+55e151912917b72414dac52e28d2198058f5e62b Brett Mastbergen: untangle-board-name: Shorten vmware board name to 'VMware'
+ce003f7ff726c31b8329256cd9cac6e30aa52500 John Coffin: Merge pull request #5 from untangle/MFW-788-vmware-board-name
+0ba4ff8f62f3c463859e7b785a4eeefddafcbcfa Brett Mastbergen: caswell-rssi-leds: Reset modem at boot
+56085084dfddb3c1f709f12d9775952a88729e21 John Coffin: Merge pull request #4 from untangle/MFW-780-improve-throughput-test
+a7af58dad08a3a533101dcbe9691eee5a80e2ad0 John Coffin: Merge pull request #6 from untangle/MFW-802-modem-reset
 f0ee97b9098f389b1c7d094ae5732b84c402c1fe Brett Mastbergen: Bump openwrt/release-1.1 revision
 3a716c779df6671a6cd5787e573b47b276af91c2 Sébastien Delafond: Restore mfw_build repository to, well, only containing build tool/scripts...
 28f753e3dfa6668449e2aed2a80ba5e8604c1989 Sébastien Delafond: Restore mfw_build repository to, well, only containing build tool/scripts...
+15c39c19195decee525f6e15e0410a2a8390fbd7 Sebastien Delafond: Merge commit '3a716c779df6671a6cd5787e573b47b276af91c2'
+c33182dc4a1ad51b34ec71a237fc8bea02f7051e Sebastien Delafond: Merge commit '28f753e3dfa6668449e2aed2a80ba5e8604c1989' into release-1.1
 189cc077978509cd868cb41d435f3e7daf2ebe5a Sébastien Delafond: Remove subtree that got properly fubar'ed earlier this month
 18c852f2d62f9fdea0e03ff966775e43ed8321c1 Sébastien Delafond: Add 'mfw/' from commit '3a716c779df6671a6cd5787e573b47b276af91c2'
 e89d0a1fab938adf9ec71e6b7148e37c9a25db5b Sébastien Delafond: Add *rootfs*.tar.gz to .gitignore
@@ -979,6 +995,12 @@ a879ab66d0b6b7efe852b16e7f1dc8c7967a72a7 Sébastien Delafond: Remove subtree tha
 2eb0c301619b54a77c625cfbb2e7dcf87570de54 Sébastien Delafond: Merge branch 'release-1.1'
 8505d2981a023b7d349a84dda9c5bbe588c5d371 Sébastien Delafond: Hardcoding release-1.1 in mfw_build's master copy of feeds.conf is terribly wrong
 b39ab1802c13d32aabb013a938b82b6e67162c2b Sébastien Delafond: Merge commit '8505d2981a023b7d349a84dda9c5bbe588c5d371'
+3df79a0b5066e9bcc85cdb6f980bde0800a48559 Brett Mastbergen: wan-manager: Update rule table in policy chains
+fbd1e44dc227fb34fb4b85768e56dda20d3d938b John Coffin: Merge pull request #7 from untangle/MFW-828-wan-rule-id
+00b0d0ca31ba8184bbf3e365f81266e999313774 Sébastien Delafond: Get MaxMind MMDB file from our mirror
+d98a57343f2c1b73edbe15e0d1aca22396a82d10 Sebastien Delafond: Merge branch 'release-1.1'
+2cd7e49e8b26b0f633cc4aec9cb79288280ecf4f Sébastien Delafond: Extract MMDB file from archive
+889205b0bf812fc7013f80d017c29c69ad833b09 Sébastien Delafond: Point classd source URL to ssh-based git@github.com, now that the repository is private
 24828dd581606ced8cfa9e4eb8934d8c4a6f00d8 Sébastien Delafond: Add ssh-agent to build image
 58b58e46e3150d6d1923a47f501c6127f04d1e46 Sébastien Delafond: Expose ssh-agent inside build containers
 6f9c255506ef11209c8d65fa7f639010a6cdd2cf Sébastien Delafond: Tell build.sh about github's SSH host key, and check ssh-agent
@@ -990,18 +1012,54 @@ b82be8382dbeffbc374a661bebc0dd02bee43d61 Sébastien Delafond: Use sshagent Jenki
 e9b2cd38ad65ff354b1f83d15812c11db42c58f2 Sébastien Delafond: Merge branch 'release-1.1'
 4f5be750cf105a01848ad3850807436e2afdc864 Sébastien Delafond: Merge commit '238683b7d42dca6fae2164495a82931fe29e3482'
 dabc109f49bd4fcce9b69402e5a3df2feb26cdc5 Sébastien Delafond: Merge commit '238683b7d42dca6fae2164495a82931fe29e3482'
+2fa7506fdc00f2876eb6e1a912ce8ad743e0dfdd Sébastien Delafond: Merge branch 'release-1.1'
+1c73e236ce1e961c7402a865fbb4de781113d043 Brett Mastbergen: caswell-rssi-leds: Disable gnss at boot
+edf7bd955dfd943c0d11692f8d955fe7b592fc85 Sébastien Delafond: Explicitely add python-urllib3 dependency for sync-settings
+b5ed9ad3a30f838beba074543b4776c7845cc0ba Sébastien Delafond: python3-urllib3 is not available in 18.06
+a14ab2b881365d1425d59f3cfc8f0e57db7d7621 Sébastien Delafond: Add python3-urllib3
+05b3c3b4f04d447bd2e1326dc8bdb2b602d04f8c Sébastien Delafond: Do not build python*-urllib3-src
+7b06d90a962913869d6fe2d39e9459d0266f2eb7 Sébastien Delafond: Include python*-package.mk directly from packages feed
+e17bf103d23d2d329f3c0dbeabb490757bd829af Sébastien Delafond: Include python*-package.mk directly from packages feed
+bc3096a9c64454b05325f718f984c259a4158b87 Sébastien Delafond: Explicitely add python-urllib3 dependency for sync-settings
+04d26984d463cd1399bd497211147a47c3e842e3 Sébastien Delafond: Use source package name in config
+04cb9732953d4ef2e99cdf3a5bbe7568752ec362 Sébastien Delafond: Add python3 and python3-urllib3 to sync-settings' build-depends
+909ef1a8b8c515d5b863ec11f73d493ca2a0bb49 Sébastien Delafond: python3-urllib3 should be it
+fe3f98e340de5894e10facc3325e7d031db84faf Sébastien Delafond: One does not simply override an existing source package name and expect shit to magically work
+2ce95705d6788f3238f60fd87ce44cb8d37d10f7 Sébastien Delafond: One does not simply override an existing source package name and expect shit to magically work
+05d9c4620f67fd98702ceecf2e86c9e10be91a19 Sébastien Delafond: One does not simply override an existing source package name and expect shit to magically work
+82e29cacaca61385fa5270e08ad38e99e876e618 Sébastien Delafond: Do not include python2 packaging functions
+94872ef412e459d4740799b5e201de72dd12a89d Sébastien Delafond: Correct DEPENDS
+d035eb316c268081b7089f4cb9f4629e2ea8bfc6 John Coffin: Merge pull request #8 from untangle/MFW-887-disable-gnss
+4c9176dcc78d09cbcb840c311a99a3946b4eb316 Sébastien Delafond: update-subtrees: do not operate on unofficial branches
+38565df2e000e73da83704f31430a59a8c90ffac Sébastien Delafond: update-subtrees: schedule daily operation regardless of repository activity
 a4138a55178f713ce0b732302d7953a13f3d8c9d Sébastien Delafond: update-subtrees: do not operate on unofficial branches
 0d5861e647c41a6a893238739c0b662617f238b5 Sébastien Delafond: update-subtrees: schedule daily operation regardless of repository activity
+0be52afed9e43bbe2f3d88992e6ece5338100ea8 Sébastien Delafond: update-subtrees: schedule daily operation for all stages
 ddf1561caf4704881a6273a95702a64688d3d763 Sébastien Delafond: update-subtrees: schedule daily operation for all stages
+196a700940b930db8ef1de6617c78d9e649621be Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.1'
 72f2fb2262ab6308b9469b91bcdcdb4d9f3a53c6 Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.1'
 434655e360fabc26593cbb95f23d15c5176eea2e Sébastien Delafond: jenkins: point to #team_engineering after the name change
+57015b0a1f11b72c33e0d2cf6bff8962ba85a6b6 Brett Mastbergen: wan-manager: wan-routing has moved from inet to ip
+eecebf728f50648067d9fca7090bd3220cb9589a Brett Mastbergen: license-scripts: Create fake unlimited license for linksys and virtualbox devices
+f139f7a92e45e967aeee5ba79ff6f3fc178ca752 John Coffin: Merge pull request #9 from untangle/MFW-794-qos-for-linksys
 a6a0bb679592130f068df367756f0abfa0625343 Sébastien Delafond: Update branching script
 d45409fe99495970e011949aba361c718e53c6c1 Sébastien Delafond: Point to branch release-1.2 for mfw_feeds
 e67996a111de003e95224a08e60644037f3e44f1 Sébastien Delafond: Update mfw_build subtree as part of release branching
+e4b0e7a873d0c99dd23429355d1578d5d56a0980 Brett Mastbergen: sync-settings: Run 'sync-settings -n' at boot
 255cc4d53dcbf34b88bb6a2423c23e87ae492baa Sébastien Delafond: branch: pass a starting point, as branching from master is becoming less common
 d6d01f9cb89272a6f1510b2d22fb644d7459c05a Sébastien Delafond: Point to branch release-1.3 for mfw_feeds
 8c8ab8e789b9b200fd8b2994b23a1006923b4e34 Sébastien Delafond: Update mfw_build subtree as part of release branching
+32c3f4185cb8373f854e0de78785c769567c5663 John Sommerville: openvpn: add default ipv6 route to tunnel as well
+01fbfd4de891f0e46fd6516d270e161417ea098a John Sommerville: wan-manager: implement ip6 wan-routing table
+f782f0228fae250c2696f6ecc83e9097f855e11b John Coffin: Merge pull request #11 from untangle/MFW-962-bpfgen-git-based
+5bb7655cae664cf989bbe3557441490f3844aa8a John Sommerville: wan-manager: flush ip6 tables/chains when policy is disabled
+36d1e26968599836dc2b6cc9187910a95a55cfa2 John Sommerville: openvpn-proto: allow binding to ipv6 enabled WANs
 bf791ffb7a43cb75446555d418ea80db5f0f98e0 Brett Mastbergen: feeds.conf.mfw: Point back to master
+51a6c82fc89b3ed4c7b1b49473c4986641afd243 John Coffin: Merge pull request #12 from untangle/MFW-584-IPv6-Wan-Routing
+ed818bfe267d84b19a5924b1df65e236d8c580cd Brett Mastbergen: license-scripts: Add startup script
+8bae9cf47598f402175b15fd2ff43ff8e52e64c9 John Coffin: Merge pull request #14 from untangle/MFW-955-imr-jit-rule
+109d1893aaee50f2b413b00bbb90a87fba2542ba John Coffin: Merge pull request #15 from untangle/MFW-978-fetch-licenses-at-boot
+5a3dc05df6698cfda4391aaf5a8e335c483035bf John Coffin: Merge pull request #13 from untangle/MFW-963-bpftool
 3f0f3042cd37f40daf8d7ac73d5d5ad587b1e175 John Coffin: Merge pull request #2 from untangle/MFW-963-bpftool-patch
 df08b2eff622cd1c04589dde3ff824a0075dc96d Sébastien Delafond: readme: document how to build without classd
 6be3dc21b93bb93c0aefbb4a15cdd2edd728cc53 Sébastien Delafond: Merge commit 'df08b2eff622cd1c04589dde3ff824a0075dc96d' into release-1.3
@@ -1010,10 +1068,56 @@ fcb16c95dd1975513497582a42c167571d50c0bc Sébastien Delafond: readme: document h
 a78381b0881917ceca8548146431a3338c1dc583 Sébastien Delafond: Merge branch 'release-1.3'
 974ddbfa8baff7b7d7947000c51f14691b440144 Sébastien Delafond: Merge commit 'fcb16c95dd1975513497582a42c167571d50c0bc' into release-1.3
 5635e07b7db5f37f75556667e5c37919b8bb281d Sébastien Delafond: Merge commit 'a78381b0881917ceca8548146431a3338c1dc583'
+5c11b124643addab51509d437f873e872143c4e3 Brett Mastbergen: fetch-licenses: Add "untangle-node-throughput" to fake license
+10dd7333bb31f94074376a8e53c98b856b8eff0c John Sommerville: openvpn: Use a separate binding config for IPv6 interfaces
+b05973778c929c495c84037f1bb7ab134c6863a8 John Coffin: Merge pull request #19 from untangle/OpenVPN-IPv6-Binding
+76e2585a07dd70324137114ed1efc0d251e8396f John Coffin: Merge pull request #20 from untangle/MFW-1000-virtualbox-limit
+7a371047cbd7c46be8e7ad04affe922797e16cae John Coffin: Merge pull request #18 from untangle/MFW-966-add-tests-bpfgen
+b1c9ac73b5073e310b9c27d84ea373c092bcc5c4 John Sommerville: OpenVpn-Proto: Only bind IPv6 when IPv4 on WAN is not available
+bab678052b28e7bc6b5035e322d3bd7044d07543 John Sommerville: Merge branch 'release-1.3'
 6a0f8f9bff90476092023d2338d243af915a56ce Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.3'
-72fc6756a95b613e25d4abd0605e2460f4887174 Sébastien Delafond: Point to branch release-1.4 for mfw_feeds
+2b7445061ce101f893012f7bb4cef977122aabb3 Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.3'
+5492a360560b7d86c2b620cbcef45696ee1c989d John Sommerville: Merge branch 'master' of github.com:untangle/mfw_feeds
+9eed84eded7c90611a52207fcfccd668d8fe6979 John Coffin: Merge pull request #23 from untangle/MFW-1050-wan-manager-table-verification
 3a4ea8641f3633cc658d5f6f5bf9df4062bd481b Sébastien Delafond: Update mfw_build subtree as part of release branching
+72fc6756a95b613e25d4abd0605e2460f4887174 Sébastien Delafond: Point to branch release-1.4 for mfw_feeds
 dfc8d902fa2d3309203632edd14ead19989f46f1 Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.4' into master
 2fff7a259acebc148ce137a1a04b8a7018014fa9 Sébastien Delafond: create-branch: bpfgen
+c02f78aef5957c297cecd481e936226f261e345d Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.4' into master
 0b25613b0ba33c522127cea85b25bb138be5ca85 Sébastien Delafond: Merge remote-tracking branch 'origin/release-1.4' into master
+913e3419b7a86ef3f362aff09eb216b4545629f3 Brett Mastbergen: libnftnl: Upgrade to 1.1.1
 64148aa089b84d365d53d40e7897a4d4a00f4a6c Brett Mastbergen: netfilter: Build and include nft_rt
+d24df1d97bf17d60f4cbf34b8fe350894a704120 Brett Mastbergen: nftables: Upgrade to 0.9.0
+7201b2b45c3e7efaef1ababd9e6eb4fa61ad2318 Brett Mastbergen: classd: Install libnavl.so*
+1b1e973c521e8b0c0a823d3f747ddd0f79c392d6 Brett Mastbergen: classd: Use copy to install libs
+70a3059d52be6b554aece208be695875a605ce3c Brett Mastbergen: libnftnl: bump to version 1.1.4
+ae64fb44594662433d71ede7db321f8782fd206c Brett Mastbergen: nftables: bump to version 0.9.2
+698b828ba106492fa41d40b551e6e8f3f13bdd61 John Coffin: Merge pull request #25 from untangle/MFW-1126-upgrade-nftables
+123350860f125d6dddeda3f4a6a2d8b164a440a9 Chris Blaise: Base setup of mfw environment for developers.  Expects a second hard drive that will be reformatted and made the new overlay.
+6b40b6c18724b015544fc447991f5bab25bc2a5c Brett Mastbergen: classd: Install libnavl.so*
+c99b70faa5b9f422f8dec9b0a15e6de0dce0a4a5 Brett Mastbergen: classd: Use copy to install libs
+63a2ef4ab46bb9b2c29fcf8651d025c04ce91671 Chris Blaise: Add safety checks.
+cbd0ed60c5ea653efff3ea884008e85133ca498b Sébastien Delafond: branch: better help
+aea332b3beafb9a1d5543d68e58dd9d740e06dbb Sébastien Delafond: branch: increase clone depth so subtree ancestor can be found
+0586d46b1cc04fbde6fcc5a8ac225f8a69457f29 Sébastien Delafond: Update mfw_build subtree as part of release branching
+00b20bf4173e2f75e1a8d41b1d0f7bbbeea9f700 Sébastien Delafond: Point to branch release-2.0 for mfw_feeds
+67bdbff88bba02a763f4b2b98b7e2aea6a240186 Sébastien Delafond: jenkins: add bpfgen as a dependency
+2d4c4993965bb8b09ff504e8ce3947448a60a524 John Sommerville: jenkins: also point these status change alerts to #team_engineering
+246ba911457cb764c5ed78fd003b1c061a31474c John Sommerville: jenkins: use #team_engineering for subtrees status changes
+b5be815b661be921f2534977b966bf258f8cf8ed Sébastien Delafond: Merge remote-tracking branch 'origin/release-2.0' into master
+c9dfd8651fd4960756a68790187f91ee45d87e15 Sébastien Delafond: Merge remote-tracking branch 'origin/release-2.0' into master
+8142d5723bf53930e2acd439f706715ab15003ee Sébastien Delafond: Merge remote-tracking branch 'origin/release-2.0' into master
+083667472b63c8f3ed396ee31a3b0abfad3f3c57 Sébastien Delafond: Merge commit '8142d5723bf53930e2acd439f706715ab15003ee' into master
+a6eaf388a46ff7ac9695c9229c2585d3ccd487ca Sébastien Delafond: Merge commit '8142d5723bf53930e2acd439f706715ab15003ee' into master
+264d8b6317c0ffe33cbb2660f5b82509892a2d67 Sébastien Delafond: Merge commit '8142d5723bf53930e2acd439f706715ab15003ee' into master
+730a9b327aeb5732876b7e1e8146df2fc7d5f84e Sébastien Delafond: Fix feeds.conf.mfw
+aa03fa747d18801c70316ebef82c3c4cdfbee410 Sébastien Delafond: Fix feeds.conf.mfw
+5c1b0ad10043156e174e3943aa1ea25b38b546f7 Sébastien Delafond: Merge commit 'aa03fa747d18801c70316ebef82c3c4cdfbee410' into master
+44c9a74ef35e116d758304e264a474b92071031f Sébastien Delafond: Merge commit '5c1b0ad10043156e174e3943aa1ea25b38b546f7' into master
+cbb0a0576d61ecf116f4ff18cdfe2e411e4759c7 Sébastien Delafond: Merge remote-tracking branch 'origin/release-2.0' into master
+ca47735216227cfd1b44f62c27ac812954957b78 Sébastien Delafond: Recreate mfw/ subtree
+cadc94cc044b42421ec65702b5c313f2c6207116 Sébastien Delafond: Add 'mfw/' from commit '5c1b0ad10043156e174e3943aa1ea25b38b546f7'
+55839e49a66626d8008ddeb5f00e50765720fa3f Sébastien Delafond: Recreate mfw/ subtree
+b27dc45fc3062fca674bc34a4a5e5393f06149b8 Sébastien Delafond: Add 'mfw/' from commit '8142d5723bf53930e2acd439f706715ab15003ee'
+034d1e2dd0cca820e1a1f2a0c38dd14cfc240912 Sébastien Delafond: Recreate mfw/ subtree
+27c270a005fc33f479a8522c1fa06a9c05e02cd3 Sébastien Delafond: Add 'mfw/' from commit 'aa03fa747d18801c70316ebef82c3c4cdfbee410'
