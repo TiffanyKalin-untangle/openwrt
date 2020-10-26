@@ -1,0 +1,1 @@
+git log --author='Brett Mast' --author=Delafond  --author='John Coffin' --author=Sommerville --author='Dirk Morris' --author=Hadarau --author=Blaise --author=Hotz --format='%H %an: %s' --reverse

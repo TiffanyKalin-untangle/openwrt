@@ -1,0 +1,59 @@
+1a05c52b75e5277f782ddbe239bb64688de734aa Jo-Philipp Wich: mwlwifi: update to version 10.3.8.0-20181210
+5bc18b1429c68110ee0d6f1cd7b6d0a73047bece Kabuli Chana: mwlwifi: Fix pcie timeout issue
+bdd56e5e43df562db38e3687d39bd4e6a6e58f0d Damir Samardzic: mvebu: initial support for Marvell Armada 3720 DB board
+efa61d46a982def30a4d2fb4b7950f67ee4a8e08 Damir Samardzic: mvebu: initial support for Marvell Armada 7k and 8k DB boards
+25e79820dae333e78db460cca8be1952628263d8 Kevin Darbyshire-Bryant: hostapd: add basic variant
+6cc186228d99261c1db32ebce704372520a9985d Christian Lamparter: apm821xx: unify My Book Live Single + Duo images
+6e0fac3afd9b5ff9086e7ec7367279ed5c359baa Daniel Golle: brcm2708: Add wifi driver, firmware and NVRAM for RPi1
+c3021633a6227343ac73a7d775744a7d1e1831f9 Daniel Golle: brcm2708: add brcmfmac-firmware-43455-sdio to DEFAULT_PACKAGES
+b8951b8461c4132afdc0e9f60f4fcb731cbc0f68 Daniel Golle: brcm2708: move wifi calibration EEPROMs out of base-files
+b7c7131d578a46f9d3436b927b01498ae40f5342 Christo Nedev: brcm2708: Add wifi driver, firmware and NVRAM for Raspberry Pi 3 b
+c43bfb998d92b3690b875ee0aeb7f2c85234b808 Ademar Arvati Filho: ramips: add support for Blueendless Kimax U35WF
+f16ee44180f1139010b4bfadd80a18b71ae05190 INAGAKI Hiroshi: ramips: add support for I-O DATA WN-AX1167GR
+ba3ea01f86628ace9a403214ae8ba4294b54ab5f Maxim Anisimov: ramips: move zyimage define to common Makefile
+fa9eb716e8cf59f115787409bee8a2953be6329d INAGAKI Hiroshi: ramips: add support for I-O DATA WN-AC1167GR
+c61b03777487a718e1864e66e062a438f0132692 Luo chongjun: ar71xx: add support for GL.iNet GL-AR750S
+cdb675b5fd651e08adee1199aa65a9a31fbc6ddd David Ehrmann: ar71x: add support for Mikrotik Routerboard wAP R
+afed20f8c27b872b6c5bf41b93159217845de51e Mathias Kresin: ar71xx: mikrotik: cleanup nand image build code
+87db1b4965fa0a5fe333687eb6a18a1659e493a2 Thibaut VARÈNE: ar71xx: add support for MikroTik RB931-2nD
+ae091b2199aabfed5466e3532504c12907d946e3 Kin Chan: ar71xx: Move F9K1115v2 under ar71xx tiny target
+0c864dab4d65f773d4cb7318c08027dca494b5da John Crispin: mac80211: make ath10k-ct the default ath10k
+4b118e9de816f34e667280ae2051651bebd0797c Mathias Kresin: lantiq: complete AVM FRITZ!Box 3370 support
+6feb8fc5600f24aabfaaaeea3da38e233d2287f5 Johann Neuhauser: lantiq: add support for FritzBox 7312
+e729cad291536e6abb76ff18c2830ee9bfecfc64 Mathias Kresin: treewide: use wpad-basic for not small flash targets
+fb1b5e3b9a64b7a7ebf3aed30a36247950537601 Hauke Mehrtens: mvebu: Add dependency to kmod-i2c-mux-pca954x for armada-macchiatobin
+10386ee54879f6e50c35d48a1d4cc769be2a0685 Andre Heider: sunxi: fix build without ext4 rootfs
+3e44df0a6dda1638a56640b1d16f641118759d37 Andre Heider: omap: fix build without ext4 rootfs
+9b6ffeeb4a680c5c71900d966f1fc8b613250ac7 Tomasz Maciej Nowak: mvebu: make bootfs size for sdcard image configurable
+fe6f3a24ea4de7dd5bcf32c93107d2abb14a0c9c Tomasz Maciej Nowak: mvebu: use ext4 for clearfog image bootfs
+a2f3f8470b124c3446eb20d35de22157df398385 Tomasz Maciej Nowak: mvebu: shrink amount of packages and reorganize them
+504fa5ddea38d032c0fa439124fe8e7aad16578f Tomasz Maciej Nowak: mvebu: base-files: autodetect upgrade device
+6f99c6f328b9f982018d682f78827afde4e10cd7 Tomasz Maciej Nowak: mvebu: sysupgrade: sdcard: keep user added partitons
+dabadfcc5d23700cdde6c5e6329ede313025aa54 Tomasz Maciej Nowak: mvebu: remove unnecessary code building dtbs
+139ef68a7ccca782c836955bec688e08e1832bd9 Tomasz Maciej Nowak: mvebu: image: stack repeated variables
+4c26c8494d78f167a72cb921b2b5a2e1b59758c0 Tomasz Maciej Nowak: mvebu: image: introduce BOOT_SCRIPT variable
+7c45edf29f1fc4762ea30ea9db748bbfaf15e3ab Tomasz Maciej Nowak: mvebu: image: improve readability of device recipes
+111e8d5384bc455f90226ef7e96c33fd0db7e3fa Tomasz Maciej Nowak: mvebu: image: don't create unnecessarily shell variables
+390f3d681e64531335fe8f536c1503ff8a7f08a1 Tomasz Maciej Nowak: mvebu: align device names to vendor_device format
+ef442a489a71d8e0b3124cf3f0099e1e4085554e Klaus Kudielka: mvebu: fix board_name condition in 79_move_config
+8ce25af79110a14ad1cff9807fe316ee7f37bc10 Hauke Mehrtens: mvebu: Fix typo in MACCHIATOBin detection
+279883bc100fab6051261aed4cd720d67221923c Tomasz Maciej Nowak: mvebu: use device-tree board detection
+d62ba965b10ff066c1b40b6b04ea961cc345544f Tomasz Maciej Nowak: mvebu: replace espressobin spi patch with upstream one
+c698afda1e5698bba8f717691d6e21acfb03cdb0 Tomasz Maciej Nowak: mvebu: espressobin: correct spi node in dts
+d758ffeb800e1b070994cba2b7132394443bb45e Tomasz Maciej Nowak: mvebu: add images for additional ESPRESSObin boards
+5d648efa23f0fcbca081cdb7eeb64d3f98d77950 Tomasz Maciej Nowak: mvebu: sort armada 37xx upstream patches chronologically
+4c2a4ed55f031afa06c90e637accb5139b131f70 Vladimir Vid: mvebu: image: fix generic-arm64.bootscript mmc selection
+9e5d5fd8244145e5f73641b57680866313a6bdd7 Vladimir Vid: mvebu: fix regression for non-generic ESPRESSObin versions
+1d8c50b19ffac7b49e965178af4cff72e507302b Hans Dedecker: iproute2: update to 4.17.0
+5b739985c43b67788d6fae67f896d43e6345ce2d Kevin Darbyshire-Bryant: iproute2: tc: backport canonical cake support
+f3ec0f10f7f76d37e38a3fc691e1fd6f42b78a26 Kevin Darbyshire-Bryant: iproute2: cake: make gso/gro splitting configurable
+43247cc3311b4f1f6958cea5824ead43231118eb Hans Dedecker: iproute2: add libutil to InstallDev section
+b417551e02a47beb4da12b4d35a0a59f3ad947e6 Hans Dedecker: iproute2: remove libutil from InstallDev section
+bf6bbb2be5b7f19d2a5dcc0df4d6ad440d4d97c4 Hans Dedecker: iproute2: update to 4.18.0
+5dbef24b207946520c2822f6f6b1426c30086896 Kevin Darbyshire-Bryant: iproute2: update cake man page
+550ca08892ae55e039c7b61a4072fc8af626d0c8 Kevin Darbyshire-Bryant: iproute2: q_cake: Add printing of no-split-gso option
+e1923c7113df3b2849ce8de0e79edfcb56b198f1 Kevin Darbyshire-Bryant: iproute2: q_cake: Also print nonat, nowash and no-ack-filter keywords
+5758d676a430a0b263a32aa9ade229365de9f565 Felix Fietkau: procd: update to the latest version, fixes gcc 8 build error
+c99a65e3d7694705db69a41071ec6fec807f50a7 Felix Fietkau: procd: compile with LTO enabled
+0323b82629e58dd352e7c3d5cd9e708339d2c5ab Hans Dedecker: procd: update to latest git HEAD
+c16e96cdff7f8ff1cf080d92e73291b6ea7bbf58 Florian Eckert: target/x86/image: use qemu-img from STAGING_DIR_HOST
