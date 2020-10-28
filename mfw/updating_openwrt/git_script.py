@@ -205,7 +205,7 @@ def do_differing_files(print_total_counts, print_all_info_to_file, print_commits
     for s in commits_to_use:
         print_all_info_str+=s
         print_all_info_str+='\n'
-        print_commits_str=s.split(' ')[0]
+        print_commits_str+=s.split(' ')[0]
         print_commits_str+='\n'
     if print_total_counts:
         print len(commits_to_use)
